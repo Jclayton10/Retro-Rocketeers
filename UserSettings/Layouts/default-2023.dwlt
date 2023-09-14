@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 57
+  controlID: 125
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,7 +323,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -333,16 +333,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jclayton10\Retro Rocketeers\Retro-Rocketeers
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a7d0000
-    m_LastClickedID: 32122
-    m_ExpandedIDs: 000000006a7d000000ca9a3bffffff7f
+    m_SelectedIDs: 46580000
+    m_LastClickedID: 22598
+    m_ExpandedIDs: 000000004658000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -370,7 +370,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a7d0000
+    m_ExpandedIDs: 0000000046580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c6230000dc580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +516,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5a3dffff1c3fffffaa7d0000
+      m_ExpandedIDs: 82cdffff0adcffffecf6ffff18fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -938,16 +938,16 @@ MonoBehaviour:
       layout: 4
       size: {x: 390, y: 300}
       sizeOverridden: 1
-    - dockPosition: 1
-      containerId: overlay-container--right
+    - dockPosition: 0
+      containerId: overlay-toolbar__right
       floating: 0
       collapsed: 0
-      displayed: 1
-      snapOffset: {x: 48, y: 48}
+      displayed: 0
+      snapOffset: {x: -43, y: 26}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: AINavigationOverlay
-      index: 12
+      index: 0
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 90.85134, y: -73.5524, z: 55.734097}
+    m_Target: {x: 146.50449, y: -8.270592, z: 78.504974}
     speed: 2
-    m_Value: {x: 90.85134, y: -73.5524, z: 55.734097}
+    m_Value: {x: 146.50449, y: -8.270592, z: 78.504974}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1025,13 +1025,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.26037288, y: -0.46037656, z: 0.14347334, w: -0.83661366}
+    m_Target: {x: -0.033276744, y: -0.5360657, z: 0.020924374, w: -0.8434839}
     speed: 2
-    m_Value: {x: -0.26012516, y: -0.4615738, z: 0.14384592, w: -0.83581865}
+    m_Value: {x: -0.033333093, y: -0.53343236, z: 0.02082053, w: -0.8449293}
   m_Size:
-    m_Target: 69.54609
+    m_Target: 82.224686
     speed: 2
-    m_Value: 69.54609
+    m_Value: 86.099144
   m_Ortho:
     m_Target: 0
     speed: 2
