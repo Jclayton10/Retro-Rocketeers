@@ -49,7 +49,7 @@ public class ThirdPersonCamera : MonoBehaviour
             Vector3 inputDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
             if (inputDir != Vector3.zero)
-                playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
+                playerObj.forward = Vector3.Slerp(playerObj.forward, -inputDir.normalized, Time.deltaTime * rotationSpeed);
         }
         else if(currentStyle == CameraStyle.Combat)
         {
@@ -90,13 +90,14 @@ public class ThirdPersonCamera : MonoBehaviour
 
         //Sets the chosen camera to active
         if (newStyle == CameraStyle.Basic)
+        {
             basicCamera.SetActive(true);
+        }
         else if (newStyle == CameraStyle.Combat)
             combatCamera.SetActive(true);
         else
             buildingCamera.SetActive(true);
 
-        currentStyle = newStyle;
         Debug.Log(currentStyle);
     }
 }
