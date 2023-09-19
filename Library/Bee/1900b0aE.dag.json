@@ -623,8 +623,13 @@
       "DisplayName": "Writing UnityEngine.TestRunner.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
+<<<<<<< Updated upstream
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -639,7 +644,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp",
       "DisplayName": "Writing UnityEngine.TestRunner.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 235,
+=======
+      "PayloadOffset": 233,
+>>>>>>> Stashed changes
       "PayloadLength": 44348,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -656,9 +665,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp2",
       "DisplayName": "Writing UnityEngine.TestRunner.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 44677,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 44675,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -3624,7 +3639,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.TestRunner.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 44828,
+=======
+      "PayloadOffset": 44824,
+>>>>>>> Stashed changes
       "PayloadLength": 7725,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -3933,9 +3952,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.UI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 52658,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 52654,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -3950,7 +3975,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp",
       "DisplayName": "Writing UnityEngine.UI.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 52778,
+=======
+      "PayloadOffset": 52772,
+>>>>>>> Stashed changes
       "PayloadLength": 37377,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -3967,9 +3996,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp2",
       "DisplayName": "Writing UnityEngine.UI.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 90241,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 90235,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -4796,7 +4831,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.UI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 90384,
+=======
+      "PayloadOffset": 90376,
+>>>>>>> Stashed changes
       "PayloadLength": 8321,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -5126,9 +5165,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.TestRunner.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 98818,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 98810,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -5143,7 +5188,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp",
       "DisplayName": "Writing UnityEditor.TestRunner.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 98946,
+=======
+      "PayloadOffset": 98936,
+>>>>>>> Stashed changes
       "PayloadLength": 52548,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -5160,9 +5209,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp2",
       "DisplayName": "Writing UnityEditor.TestRunner.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 151588,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 151578,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -6093,7 +6148,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.TestRunner.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 151739,
+=======
+      "PayloadOffset": 151727,
+>>>>>>> Stashed changes
       "PayloadLength": 8065,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -6414,9 +6473,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.UI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 159909,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 159897,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -6431,7 +6496,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp",
       "DisplayName": "Writing UnityEditor.UI.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 160029,
+=======
+      "PayloadOffset": 160015,
+>>>>>>> Stashed changes
       "PayloadLength": 34427,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -6448,9 +6517,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp2",
       "DisplayName": "Writing UnityEditor.UI.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 194542,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 194528,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -7096,7 +7171,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.UI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 194685,
+=======
+      "PayloadOffset": 194669,
+>>>>>>> Stashed changes
       "PayloadLength": 8647,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -7438,9 +7517,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Analytics.UnityAdditionalFile.txt",
       "DisplayName": "Writing Analytics.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 203432,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 203416,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -7455,7 +7540,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Analytics.rsp",
       "DisplayName": "Writing Analytics.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 203547,
+=======
+      "PayloadOffset": 203529,
+>>>>>>> Stashed changes
       "PayloadLength": 31512,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -7472,9 +7561,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Analytics.rsp2",
       "DisplayName": "Writing Analytics.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 235140,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 235122,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -8026,7 +8121,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Analytics.dll.mvfrm.rsp",
       "DisplayName": "Writing Analytics.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 235278,
+=======
+      "PayloadOffset": 235258,
+>>>>>>> Stashed changes
       "PayloadLength": 8723,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -8371,9 +8470,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.2D.Sprite.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 244114,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 244094,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -8388,7 +8493,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.rsp",
       "DisplayName": "Writing Unity.2D.Sprite.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 244242,
+=======
+      "PayloadOffset": 244220,
+>>>>>>> Stashed changes
       "PayloadLength": 34899,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -8405,9 +8514,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.rsp2",
       "DisplayName": "Writing Unity.2D.Sprite.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 279235,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 279213,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9002,7 +9117,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.2D.Sprite.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 279386,
+=======
+      "PayloadOffset": 279362,
+>>>>>>> Stashed changes
       "PayloadLength": 8723,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -9347,9 +9466,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.2D.Tilemap.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 288223,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 288199,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9364,7 +9489,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Editor.rsp",
       "DisplayName": "Writing Unity.2D.Tilemap.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 288352,
+=======
+      "PayloadOffset": 288326,
+>>>>>>> Stashed changes
       "PayloadLength": 40613,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -9381,9 +9510,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Editor.rsp2",
       "DisplayName": "Writing Unity.2D.Tilemap.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 329060,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 329034,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -10112,7 +10247,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.2D.Tilemap.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 329212,
+=======
+      "PayloadOffset": 329184,
+>>>>>>> Stashed changes
       "PayloadLength": 8723,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -10457,9 +10596,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.ConversionSystem.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 338069,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 338041,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -10474,7 +10619,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.ConversionSystem.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 338218,
+=======
+      "PayloadOffset": 338188,
+>>>>>>> Stashed changes
       "PayloadLength": 32432,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -10491,9 +10640,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.rsp2",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.ConversionSystem.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 370765,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 370735,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -11036,7 +11191,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.ConversionSystem.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 370937,
+=======
+      "PayloadOffset": 370905,
+>>>>>>> Stashed changes
       "PayloadLength": 8723,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -11381,9 +11540,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.AI.Navigation.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 379770,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 379738,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -11398,7 +11563,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 379895,
+=======
+      "PayloadOffset": 379861,
+>>>>>>> Stashed changes
       "PayloadLength": 30666,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -11415,9 +11584,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.rsp2",
       "DisplayName": "Writing Unity.AI.Navigation.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 410652,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 410618,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -11936,7 +12111,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 410800,
+=======
+      "PayloadOffset": 410764,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -12272,9 +12451,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Analytics.DataPrivacy.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Analytics.DataPrivacy.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 419391,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 419355,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -12289,7 +12474,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Analytics.DataPrivacy.rsp",
       "DisplayName": "Writing Unity.Analytics.DataPrivacy.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 419524,
+=======
+      "PayloadOffset": 419486,
+>>>>>>> Stashed changes
       "PayloadLength": 30497,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -12306,9 +12495,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Analytics.DataPrivacy.rsp2",
       "DisplayName": "Writing Unity.Analytics.DataPrivacy.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 450120,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 450082,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -12823,7 +13018,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Analytics.DataPrivacy.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Analytics.DataPrivacy.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 450276,
+=======
+      "PayloadOffset": 450236,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -13159,9 +13358,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 458863,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 458823,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -13176,7 +13381,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 458992,
+=======
+      "PayloadOffset": 458950,
+>>>>>>> Stashed changes
       "PayloadLength": 62060,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -13193,9 +13402,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp2",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 521147,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 521105,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -14288,7 +14503,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.PlasticSCM.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 521299,
+=======
+      "PayloadOffset": 521255,
+>>>>>>> Stashed changes
       "PayloadLength": 8388,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -14621,9 +14840,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Rider.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 529796,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 529752,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -14638,7 +14863,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp",
       "DisplayName": "Writing Unity.Rider.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 529920,
+=======
+      "PayloadOffset": 529874,
+>>>>>>> Stashed changes
       "PayloadLength": 34286,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -14655,9 +14884,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp2",
       "DisplayName": "Writing Unity.Rider.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 564296,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 564250,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -15242,7 +15477,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Rider.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 564443,
+=======
+      "PayloadOffset": 564395,
+>>>>>>> Stashed changes
       "PayloadLength": 8301,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -15572,9 +15811,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 572854,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 572806,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -15589,7 +15834,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.rsp",
       "DisplayName": "Writing Unity.Services.Core.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 572979,
+=======
+      "PayloadOffset": 572929,
+>>>>>>> Stashed changes
       "PayloadLength": 31434,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -15606,9 +15855,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.rsp2",
       "DisplayName": "Writing Unity.Services.Core.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 604504,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 604454,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -16141,7 +16396,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 604652,
+=======
+      "PayloadOffset": 604600,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -16477,9 +16736,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TextMeshPro.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 613233,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 613181,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -16494,7 +16759,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 613356,
+=======
+      "PayloadOffset": 613302,
+>>>>>>> Stashed changes
       "PayloadLength": 35465,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -16511,9 +16780,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp2",
       "DisplayName": "Writing Unity.TextMeshPro.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 648910,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 648856,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -17140,7 +17415,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 649056,
+=======
+      "PayloadOffset": 649000,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -17476,9 +17755,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Timeline.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 657634,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 657578,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -17493,7 +17778,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp",
       "DisplayName": "Writing Unity.Timeline.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 657754,
+=======
+      "PayloadOffset": 657696,
+>>>>>>> Stashed changes
       "PayloadLength": 36549,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -17510,9 +17799,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp2",
       "DisplayName": "Writing Unity.Timeline.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 694389,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 694331,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -18167,7 +18462,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Timeline.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 694532,
+=======
+      "PayloadOffset": 694472,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -18503,9 +18802,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualStudio.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 703121,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 703061,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -18520,7 +18825,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp",
       "DisplayName": "Writing Unity.VisualStudio.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 703252,
+=======
+      "PayloadOffset": 703190,
+>>>>>>> Stashed changes
       "PayloadLength": 34255,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -18537,9 +18846,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp2",
       "DisplayName": "Writing Unity.VisualStudio.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 737604,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 737542,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -19128,7 +19443,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualStudio.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 737758,
+=======
+      "PayloadOffset": 737694,
+>>>>>>> Stashed changes
       "PayloadLength": 8301,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -19458,9 +19777,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Advertisements.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 746183,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 746119,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -19475,7 +19800,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.Editor.rsp",
       "DisplayName": "Writing UnityEngine.Advertisements.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 746322,
+=======
+      "PayloadOffset": 746256,
+>>>>>>> Stashed changes
       "PayloadLength": 32558,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -19492,9 +19821,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.Editor.rsp2",
       "DisplayName": "Writing UnityEngine.Advertisements.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 778985,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 778919,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -20045,7 +20380,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Advertisements.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 779147,
+=======
+      "PayloadOffset": 779079,
+>>>>>>> Stashed changes
       "PayloadLength": 8723,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -20390,9 +20729,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Advertisements.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 787987,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 787919,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -20407,7 +20752,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.rsp",
       "DisplayName": "Writing UnityEngine.Advertisements.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 788119,
+=======
+      "PayloadOffset": 788049,
+>>>>>>> Stashed changes
       "PayloadLength": 35448,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -20424,9 +20773,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.rsp2",
       "DisplayName": "Writing UnityEngine.Advertisements.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 823665,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 823595,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -21043,7 +21398,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Advertisements.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 823820,
+=======
+      "PayloadOffset": 823748,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -21379,9 +21738,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityCore.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityCore.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 832419,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 832347,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -21396,7 +21761,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityCore.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityCore.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 832560,
+=======
+      "PayloadOffset": 832486,
+>>>>>>> Stashed changes
       "PayloadLength": 30647,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -21413,9 +21782,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityCore.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityCore.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 863314,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 863240,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -21932,7 +22307,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityCore.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityCore.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 863478,
+=======
+      "PayloadOffset": 863402,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -22268,9 +22647,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTCore.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTCore.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 872074,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 871998,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -22285,7 +22670,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTCore.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTCore.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 872212,
+=======
+      "PayloadOffset": 872134,
+>>>>>>> Stashed changes
       "PayloadLength": 30535,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -22302,9 +22691,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTCore.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTCore.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 902851,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 902773,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -22819,7 +23214,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTCore.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTCore.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 903012,
+=======
+      "PayloadOffset": 902932,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -23155,9 +23554,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.SpatialTracking.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 911603,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 911523,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -23172,7 +23577,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.rsp",
       "DisplayName": "Writing UnityEngine.SpatialTracking.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 911736,
+=======
+      "PayloadOffset": 911654,
+>>>>>>> Stashed changes
       "PayloadLength": 30583,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -23189,9 +23598,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.rsp2",
       "DisplayName": "Writing UnityEngine.SpatialTracking.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 942418,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 942336,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -23706,7 +24121,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.SpatialTracking.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 942574,
+=======
+      "PayloadOffset": 942490,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -24042,9 +24461,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 951164,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 951080,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -24059,7 +24484,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 951296,
+=======
+      "PayloadOffset": 951210,
+>>>>>>> Stashed changes
       "PayloadLength": 32508,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -24076,9 +24505,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.rsp2",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 983902,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 983816,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -24679,7 +25114,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 984057,
+=======
+      "PayloadOffset": 983969,
+>>>>>>> Stashed changes
       "PayloadLength": 8909,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -25030,9 +25469,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.CollabProxy.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 993081,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 992993,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -25047,7 +25492,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp",
       "DisplayName": "Writing Unity.CollabProxy.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 993211,
+=======
+      "PayloadOffset": 993121,
+>>>>>>> Stashed changes
       "PayloadLength": 31641,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -25064,9 +25513,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp2",
       "DisplayName": "Writing Unity.CollabProxy.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1024948,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1024858,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -25621,7 +26076,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.CollabProxy.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1025101,
+=======
+      "PayloadOffset": 1025009,
+>>>>>>> Stashed changes
       "PayloadLength": 8808,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -25969,9 +26428,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Analytics.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1034029,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1033937,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -25986,7 +26451,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.rsp",
       "DisplayName": "Writing Unity.Services.Core.Analytics.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1034164,
+=======
+      "PayloadOffset": 1034070,
+>>>>>>> Stashed changes
       "PayloadLength": 30526,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -26003,9 +26472,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Analytics.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1064791,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1064697,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -26546,7 +27021,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Analytics.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1064949,
+=======
+      "PayloadOffset": 1064853,
+>>>>>>> Stashed changes
       "PayloadLength": 8554,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -26885,9 +27364,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Internal.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Internal.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1073622,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1073526,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -26902,7 +27387,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Internal.rsp",
       "DisplayName": "Writing Unity.Services.Core.Internal.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1073756,
+=======
+      "PayloadOffset": 1073658,
+>>>>>>> Stashed changes
       "PayloadLength": 38615,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -26919,9 +27408,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Internal.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Internal.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1112471,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1112373,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -27577,7 +28072,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Internal.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Internal.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1112628,
+=======
+      "PayloadOffset": 1112528,
+>>>>>>> Stashed changes
       "PayloadLength": 8554,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -27916,9 +28415,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1121297,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1121197,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -27933,7 +28438,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1121427,
+=======
+      "PayloadOffset": 1121325,
+>>>>>>> Stashed changes
       "PayloadLength": 36005,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -27950,9 +28459,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp2",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1157528,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1157426,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -28601,7 +29116,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1157681,
+=======
+      "PayloadOffset": 1157577,
+>>>>>>> Stashed changes
       "PayloadLength": 8802,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -28949,9 +29468,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Timeline.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1166595,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1166491,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -28966,7 +29491,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp",
       "DisplayName": "Writing Unity.Timeline.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1166722,
+=======
+      "PayloadOffset": 1166616,
+>>>>>>> Stashed changes
       "PayloadLength": 55758,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -28983,9 +29512,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp2",
       "DisplayName": "Writing Unity.Timeline.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1222573,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1222467,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -30080,7 +30615,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Timeline.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1222723,
+=======
+      "PayloadOffset": 1222615,
+>>>>>>> Stashed changes
       "PayloadLength": 8799,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -30428,9 +30967,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.SpatialTracking.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.SpatialTracking.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1231640,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1231532,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -30445,7 +30990,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.SpatialTracking.rsp",
       "DisplayName": "Writing UnityEditor.SpatialTracking.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1231773,
+=======
+      "PayloadOffset": 1231663,
+>>>>>>> Stashed changes
       "PayloadLength": 31789,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -30462,9 +31011,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.SpatialTracking.rsp2",
       "DisplayName": "Writing UnityEditor.SpatialTracking.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1263661,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1263551,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -31021,7 +31576,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.SpatialTracking.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.SpatialTracking.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1263817,
+=======
+      "PayloadOffset": 1263705,
+>>>>>>> Stashed changes
       "PayloadLength": 8812,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -31369,9 +31928,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityStub.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityStub.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1272755,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1272643,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -31386,7 +31951,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityStub.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityStub.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1272896,
+=======
+      "PayloadOffset": 1272782,
+>>>>>>> Stashed changes
       "PayloadLength": 30823,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -31403,9 +31972,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityStub.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityStub.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1303826,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1303712,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -31952,7 +32527,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.SecurityStub.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.SecurityStub.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1303990,
+=======
+      "PayloadOffset": 1303874,
+>>>>>>> Stashed changes
       "PayloadLength": 8570,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -32291,9 +32870,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTStub.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTStub.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1312683,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1312567,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -32308,7 +32893,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTStub.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTStub.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1312821,
+=======
+      "PayloadOffset": 1312703,
+>>>>>>> Stashed changes
       "PayloadLength": 30521,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -32325,9 +32914,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTStub.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTStub.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1343446,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1343328,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -32868,7 +33463,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.WinRTStub.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.WinRTStub.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1343607,
+=======
+      "PayloadOffset": 1343487,
+>>>>>>> Stashed changes
       "PayloadLength": 8567,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -33207,9 +33806,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.XR.LegacyInputHelpers.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1352298,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1352178,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -33224,7 +33829,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.rsp",
       "DisplayName": "Writing UnityEngine.XR.LegacyInputHelpers.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1352437,
+=======
+      "PayloadOffset": 1352315,
+>>>>>>> Stashed changes
       "PayloadLength": 30735,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -33241,9 +33850,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.rsp2",
       "DisplayName": "Writing UnityEngine.XR.LegacyInputHelpers.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1383277,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1383155,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -33763,7 +34378,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.XR.LegacyInputHelpers.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1383439,
+=======
+      "PayloadOffset": 1383315,
+>>>>>>> Stashed changes
       "PayloadLength": 8562,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -34102,9 +34721,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Purchasing.Common.UnityAdditionalFile.txt",
       "DisplayName": "Writing Purchasing.Common.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1392109,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1391985,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -34119,7 +34744,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Purchasing.Common.rsp",
       "DisplayName": "Writing Purchasing.Common.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1392232,
+=======
+      "PayloadOffset": 1392106,
+>>>>>>> Stashed changes
       "PayloadLength": 30700,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -34136,9 +34765,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Purchasing.Common.rsp2",
       "DisplayName": "Writing Purchasing.Common.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1423021,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1422895,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -34686,7 +35321,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Purchasing.Common.dll.mvfrm.rsp",
       "DisplayName": "Writing Purchasing.Common.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1423167,
+=======
+      "PayloadOffset": 1423039,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -35028,9 +35667,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Updater.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.AI.Navigation.Updater.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1431929,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1431801,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -35045,7 +35690,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Updater.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.Updater.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1432062,
+=======
+      "PayloadOffset": 1431932,
+>>>>>>> Stashed changes
       "PayloadLength": 32199,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -35062,9 +35711,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Updater.rsp2",
       "DisplayName": "Writing Unity.AI.Navigation.Updater.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1464360,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1464230,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -35633,7 +36288,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Updater.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.AI.Navigation.Updater.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1464516,
+=======
+      "PayloadOffset": 1464384,
+>>>>>>> Stashed changes
       "PayloadLength": 8997,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -35987,9 +36646,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Analytics.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1473628,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1473496,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -36004,7 +36669,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.rsp",
       "DisplayName": "Writing Unity.Services.Analytics.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1473758,
+=======
+      "PayloadOffset": 1473624,
+>>>>>>> Stashed changes
       "PayloadLength": 34848,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -36021,9 +36690,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.rsp2",
       "DisplayName": "Writing Unity.Services.Analytics.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1508702,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1508568,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -36626,7 +37301,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Analytics.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1508855,
+=======
+      "PayloadOffset": 1508719,
+>>>>>>> Stashed changes
       "PayloadLength": 8222,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -36953,9 +37632,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Configuration.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1517201,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1517065,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -36970,7 +37655,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.rsp",
       "DisplayName": "Writing Unity.Services.Core.Configuration.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1517340,
+=======
+      "PayloadOffset": 1517202,
+>>>>>>> Stashed changes
       "PayloadLength": 31658,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -36987,9 +37676,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Configuration.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1549103,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1548965,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -37528,7 +38223,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Configuration.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1549265,
+=======
+      "PayloadOffset": 1549125,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -37870,9 +38569,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Device.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Device.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1558026,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1557886,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -37887,7 +38592,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Device.rsp",
       "DisplayName": "Writing Unity.Services.Core.Device.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1558158,
+=======
+      "PayloadOffset": 1558016,
+>>>>>>> Stashed changes
       "PayloadLength": 31049,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -37904,9 +38613,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Device.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Device.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1589305,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1589163,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -38432,7 +39147,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Device.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Device.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1589460,
+=======
+      "PayloadOffset": 1589316,
+>>>>>>> Stashed changes
       "PayloadLength": 8563,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -38771,9 +39490,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Internal.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Environments.Internal.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1598155,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1598011,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -38788,7 +39513,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Internal.rsp",
       "DisplayName": "Writing Unity.Services.Core.Environments.Internal.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1598302,
+=======
+      "PayloadOffset": 1598156,
+>>>>>>> Stashed changes
       "PayloadLength": 30581,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -38805,9 +39534,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Internal.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Environments.Internal.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1628996,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1628850,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -39323,7 +40058,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Internal.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Environments.Internal.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1629166,
+=======
+      "PayloadOffset": 1629018,
+>>>>>>> Stashed changes
       "PayloadLength": 8563,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -39662,9 +40401,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Environments.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1637852,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1637704,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -39679,7 +40424,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.rsp",
       "DisplayName": "Writing Unity.Services.Core.Environments.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1637990,
+=======
+      "PayloadOffset": 1637840,
+>>>>>>> Stashed changes
       "PayloadLength": 30622,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -39696,9 +40445,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Environments.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1668716,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1668566,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -40217,7 +40972,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Environments.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1668877,
+=======
+      "PayloadOffset": 1668725,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -40559,9 +41318,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Networking.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Networking.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1677642,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1677490,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -40576,7 +41341,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Networking.rsp",
       "DisplayName": "Writing Unity.Services.Core.Networking.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1677778,
+=======
+      "PayloadOffset": 1677624,
+>>>>>>> Stashed changes
       "PayloadLength": 30699,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -40593,9 +41362,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Networking.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Networking.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1708579,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1708425,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -41116,7 +41891,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Networking.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Networking.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1708738,
+=======
+      "PayloadOffset": 1708582,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -41458,9 +42237,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Scheduler.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Scheduler.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1717502,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1717346,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -41475,7 +42260,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Scheduler.rsp",
       "DisplayName": "Writing Unity.Services.Core.Scheduler.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1717637,
+=======
+      "PayloadOffset": 1717479,
+>>>>>>> Stashed changes
       "PayloadLength": 31095,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -41492,9 +42281,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Scheduler.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Scheduler.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1748833,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1748675,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -42023,7 +42818,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Scheduler.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Scheduler.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1748991,
+=======
+      "PayloadOffset": 1748831,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -42365,9 +43164,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Telemetry.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Telemetry.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1757755,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1757595,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -42382,7 +43187,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Telemetry.rsp",
       "DisplayName": "Writing Unity.Services.Core.Telemetry.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1757890,
+=======
+      "PayloadOffset": 1757728,
+>>>>>>> Stashed changes
       "PayloadLength": 33899,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -42399,9 +43208,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Telemetry.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Telemetry.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1791890,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1791728,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -42984,7 +43799,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Telemetry.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Telemetry.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1792048,
+=======
+      "PayloadOffset": 1791884,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -43326,9 +44145,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Threading.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Threading.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1800812,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1800648,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -43343,7 +44168,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Threading.rsp",
       "DisplayName": "Writing Unity.Services.Core.Threading.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1800947,
+=======
+      "PayloadOffset": 1800781,
+>>>>>>> Stashed changes
       "PayloadLength": 30602,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -43360,9 +44189,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Threading.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Threading.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1831650,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1831484,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -43881,7 +44716,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Threading.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Threading.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1831808,
+=======
+      "PayloadOffset": 1831640,
+>>>>>>> Stashed changes
       "PayloadLength": 8644,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -44223,9 +45062,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.XR.LegacyInputHelpers.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.XR.LegacyInputHelpers.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1840576,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1840408,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -44240,7 +45085,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.XR.LegacyInputHelpers.rsp",
       "DisplayName": "Writing UnityEditor.XR.LegacyInputHelpers.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1840715,
+=======
+      "PayloadOffset": 1840545,
+>>>>>>> Stashed changes
       "PayloadLength": 32256,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -44257,9 +45106,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.XR.LegacyInputHelpers.rsp2",
       "DisplayName": "Writing UnityEditor.XR.LegacyInputHelpers.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1873076,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1872906,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -44827,7 +45682,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.XR.LegacyInputHelpers.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.XR.LegacyInputHelpers.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1873238,
+=======
+      "PayloadOffset": 1873066,
+>>>>>>> Stashed changes
       "PayloadLength": 8907,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -45178,9 +46037,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Configuration.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1882276,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1882104,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -45195,7 +46060,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.Editor.rsp",
       "DisplayName": "Writing Unity.Services.Core.Configuration.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1882422,
+=======
+      "PayloadOffset": 1882248,
+>>>>>>> Stashed changes
       "PayloadLength": 32753,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -45212,9 +46081,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.Editor.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Configuration.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1915287,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1915113,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -45791,7 +46666,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Configuration.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Configuration.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1915456,
+=======
+      "PayloadOffset": 1915280,
+>>>>>>> Stashed changes
       "PayloadLength": 8989,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -46145,9 +47024,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Registration.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Registration.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1924568,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1924392,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -46162,7 +47047,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Registration.rsp",
       "DisplayName": "Writing Unity.Services.Core.Registration.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1924706,
+=======
+      "PayloadOffset": 1924528,
+>>>>>>> Stashed changes
       "PayloadLength": 31184,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -46179,9 +47068,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Registration.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Registration.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1955994,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1955816,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -46871,7 +47766,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Registration.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Registration.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1956155,
+=======
+      "PayloadOffset": 1955975,
+>>>>>>> Stashed changes
       "PayloadLength": 9297,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -47234,9 +48133,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleCore.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleCore.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1965575,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 1965395,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -47251,7 +48156,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleCore.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleCore.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1965713,
+=======
+      "PayloadOffset": 1965531,
+>>>>>>> Stashed changes
       "PayloadLength": 30516,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -47268,9 +48177,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleCore.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleCore.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1996333,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 1996151,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -47786,7 +48701,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleCore.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleCore.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1996494,
+=======
+      "PayloadOffset": 1996310,
+>>>>>>> Stashed changes
       "PayloadLength": 8473,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -48122,9 +49041,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2005080,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2004896,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -48139,7 +49064,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2005208,
+=======
+      "PayloadOffset": 2005022,
+>>>>>>> Stashed changes
       "PayloadLength": 38653,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -48156,9 +49085,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2043955,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2043769,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -48859,7 +49794,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2044106,
+=======
+      "PayloadOffset": 2043918,
+>>>>>>> Stashed changes
       "PayloadLength": 8824,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -49207,9 +50146,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2053047,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2052859,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -49224,7 +50169,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Editor.rsp",
       "DisplayName": "Writing Unity.Services.Core.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2053179,
+=======
+      "PayloadOffset": 2052989,
+>>>>>>> Stashed changes
       "PayloadLength": 44979,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -49241,9 +50190,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Editor.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2098256,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2098066,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -50102,7 +51057,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2098411,
+=======
+      "PayloadOffset": 2098219,
+>>>>>>> Stashed changes
       "PayloadLength": 9553,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -50474,9 +51433,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleMacosStub.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleMacosStub.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2108092,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2107900,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -50491,7 +51456,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleMacosStub.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleMacosStub.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2108235,
+=======
+      "PayloadOffset": 2108041,
+>>>>>>> Stashed changes
       "PayloadLength": 30622,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -50508,9 +51477,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleMacosStub.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleMacosStub.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2138966,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2138772,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -51054,7 +52029,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleMacosStub.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleMacosStub.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2139132,
+=======
+      "PayloadOffset": 2138936,
+>>>>>>> Stashed changes
       "PayloadLength": 8567,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -51393,9 +52372,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleStub.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleStub.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2147822,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2147626,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -51410,7 +52395,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleStub.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleStub.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2147960,
+=======
+      "PayloadOffset": 2147762,
+>>>>>>> Stashed changes
       "PayloadLength": 30597,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -51427,9 +52416,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleStub.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleStub.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2178661,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2178463,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -51948,7 +52943,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.AppleStub.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.AppleStub.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2178822,
+=======
+      "PayloadOffset": 2178622,
+>>>>>>> Stashed changes
       "PayloadLength": 8567,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -52287,9 +53286,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Analytics.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2187511,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2187311,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -52304,7 +53309,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.Editor.rsp",
       "DisplayName": "Writing Unity.Services.Analytics.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2187648,
+=======
+      "PayloadOffset": 2187446,
+>>>>>>> Stashed changes
       "PayloadLength": 32089,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -52321,9 +53330,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.Editor.rsp2",
       "DisplayName": "Writing Unity.Services.Analytics.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2219840,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2219638,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -52891,7 +53906,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Analytics.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Analytics.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2220000,
+=======
+      "PayloadOffset": 2219796,
+>>>>>>> Stashed changes
       "PayloadLength": 9068,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -53248,9 +54267,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Services.Core.Environments.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2229198,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2228994,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -53265,7 +54290,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Editor.rsp",
       "DisplayName": "Writing Unity.Services.Core.Environments.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2229343,
+=======
+      "PayloadOffset": 2229137,
+>>>>>>> Stashed changes
       "PayloadLength": 41458,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -53282,9 +54311,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Editor.rsp2",
       "DisplayName": "Writing Unity.Services.Core.Environments.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2270912,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2270706,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -53989,7 +55024,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Services.Core.Environments.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2271080,
+=======
+      "PayloadOffset": 2270872,
+>>>>>>> Stashed changes
       "PayloadLength": 9097,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -54346,9 +55385,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.DevX.Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Advertisements.DevX.Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2280306,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2280098,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -54363,7 +55408,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.DevX.Editor.rsp",
       "DisplayName": "Writing UnityEngine.Advertisements.DevX.Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2280450,
+=======
+      "PayloadOffset": 2280240,
+>>>>>>> Stashed changes
       "PayloadLength": 32043,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -54380,9 +55429,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.DevX.Editor.rsp2",
       "DisplayName": "Writing UnityEngine.Advertisements.DevX.Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2312603,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2312393,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -54923,7 +55978,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Advertisements.DevX.Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Advertisements.DevX.Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2312770,
+=======
+      "PayloadOffset": 2312558,
+>>>>>>> Stashed changes
       "PayloadLength": 8470,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -55259,9 +56318,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Stores.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.Stores.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2321360,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2321148,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -55276,7 +56341,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Stores.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.Stores.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2321495,
+=======
+      "PayloadOffset": 2321281,
+>>>>>>> Stashed changes
       "PayloadLength": 47047,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -55293,9 +56362,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Stores.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.Stores.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2368643,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2368429,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -56242,7 +57317,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Stores.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.Stores.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2368801,
+=======
+      "PayloadOffset": 2368585,
+>>>>>>> Stashed changes
       "PayloadLength": 8975,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -56593,9 +57672,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Codeless.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.Purchasing.Codeless.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2377898,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2377682,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -56610,7 +57695,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Codeless.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.Codeless.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2378035,
+=======
+      "PayloadOffset": 2377817,
+>>>>>>> Stashed changes
       "PayloadLength": 31273,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -56627,9 +57716,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Codeless.rsp2",
       "DisplayName": "Writing UnityEngine.Purchasing.Codeless.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2409411,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2409193,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -57190,7 +58285,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEngine.Purchasing.Codeless.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.Purchasing.Codeless.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2409571,
+=======
+      "PayloadOffset": 2409351,
+>>>>>>> Stashed changes
       "PayloadLength": 8729,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -57535,9 +58634,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.Purchasing.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEditor.Purchasing.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2418413,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2418193,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -57552,7 +58657,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.Purchasing.rsp",
       "DisplayName": "Writing UnityEditor.Purchasing.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2418541,
+=======
+      "PayloadOffset": 2418319,
+>>>>>>> Stashed changes
       "PayloadLength": 41322,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
@@ -57569,9 +58678,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.Purchasing.rsp2",
       "DisplayName": "Writing UnityEditor.Purchasing.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2459957,
       "PayloadLength": 48,
       "PayloadDebugContentSnippet": "/pathmap:\"D:\\RetroRocketeers\\R",
+=======
+      "PayloadOffset": 2459735,
+      "PayloadLength": 46,
+      "PayloadDebugContentSnippet": "/pathmap:\"F:\\UnityProjects\\Ret",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -58316,7 +59431,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/UnityEditor.Purchasing.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEditor.Purchasing.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2460108,
+=======
+      "PayloadOffset": 2459884,
+>>>>>>> Stashed changes
       "PayloadLength": 8851,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -58664,9 +59783,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt",
       "DisplayName": "Writing Assembly-CSharp.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2469065,
       "PayloadLength": 35,
       "PayloadDebugContentSnippet": "D:\\RetroRocketeers\\Retro-Rocke",
+=======
+      "PayloadOffset": 2468841,
+      "PayloadLength": 33,
+      "PayloadDebugContentSnippet": "F:\\UnityProjects\\Retro-Rockete",
+>>>>>>> Stashed changes
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -58681,8 +59806,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2469186,
       "PayloadLength": 32395,
+=======
+      "PayloadOffset": 2468960,
+      "PayloadLength": 32178,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "InputFlags": [],
@@ -58698,7 +59828,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2501668,
+=======
+      "PayloadOffset": 2501225,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -58967,6 +60101,7 @@
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll",
+<<<<<<< Updated upstream
         "Assets/Scripts/Inventory Scripts/InventoryManagement.cs",
         "Assets/Scripts/Item Scripts/DefaultItemClass.cs",
         "Assets/Scripts/Item Scripts/FoodItemClass.cs",
@@ -58974,6 +60109,11 @@
         "Assets/Scripts/Item Scripts/SlotClass.cs",
         "Assets/Scripts/Item Scripts/ToolItemClass.cs",
         "Assets/Scripts/Player.cs",
+=======
+        "Assets/_Scripts/EnemyMovment.cs",
+        "Assets/_Scripts/EnemySpawn.cs",
+        "Assets/_Scripts/NavmeshBuilder.cs",
+>>>>>>> Stashed changes
         "C:/Program Files/Unity 2023.1.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity 2023.1.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp"
@@ -59235,10 +60375,13 @@
         0,
         0,
         0,
+<<<<<<< Updated upstream
         0,
         0,
         0,
         0,
+=======
+>>>>>>> Stashed changes
         8
       ],
       "Outputs": [
@@ -59684,7 +60827,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 2501764,
+=======
+      "PayloadOffset": 2501321,
+>>>>>>> Stashed changes
       "PayloadLength": 10865,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -62494,7 +63641,11 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "Extracting script serialization layouts",
+<<<<<<< Updated upstream
       "Action": "\"C:/Program Files/Unity 2023.1.9f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity 2023.1.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Purchasing.Common.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Analytics.DataPrivacy.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Analytics.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Analytics.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Configuration.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Device.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Environments.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Environments.Internal.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Internal.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Networking.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Registration.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Scheduler.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Telemetry.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Threading.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Advertisements.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.AppleCore.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.AppleMacosStub.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.AppleStub.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.Codeless.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.SecurityCore.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.SecurityStub.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.Stores.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.WinRTCore.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.WinRTStub.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.SpatialTracking.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.XR.LegacyInputHelpers.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\AnalyticsStandardEvents\\Unity.Analytics.StandardEvents.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\Unity.Analytics.Editor.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\Unity.Analytics.Tracker.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.ext.nunit@2.0.3\\net40\\unity-custom\\nunit.framework.dll\" -a=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\\Newtonsoft.Json.dll\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\ScriptAssemblies\" -s=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\" -s=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\AnalyticsStandardEvents\" -s=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.ext.nunit@2.0.3\\net40\\unity-custom\" -s=\"D:\\RetroRocketeers\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+=======
+      "Action": "\"C:/Program Files/Unity 2023.1.9f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity 2023.1.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Purchasing.Common.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Analytics.DataPrivacy.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Analytics.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Analytics.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Configuration.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Device.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Environments.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Environments.Internal.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Internal.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Networking.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Registration.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Scheduler.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Telemetry.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Services.Core.Threading.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Advertisements.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.AppleCore.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.AppleMacosStub.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.AppleStub.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.Codeless.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.SecurityCore.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.SecurityStub.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.Stores.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.WinRTCore.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.Purchasing.WinRTStub.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.SpatialTracking.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\\UnityEngine.XR.LegacyInputHelpers.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\AnalyticsStandardEvents\\Unity.Analytics.StandardEvents.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\Unity.Analytics.Editor.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\Unity.Analytics.Tracker.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.ext.nunit@2.0.3\\net40\\unity-custom\\nunit.framework.dll\" -a=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\\Newtonsoft.Json.dll\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity 2023.1.9f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\ScriptAssemblies\" -s=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\" -s=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.analytics@3.8.1\\AnalyticsStandardEvents\" -s=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.ext.nunit@2.0.3\\net40\\unity-custom\" -s=\"F:\\UnityProjects\\Retro-Rocketeers\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+>>>>>>> Stashed changes
       "Inputs": [
         "C:/Program Files/Unity 2023.1.9f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity 2023.1.9f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -62977,6 +64128,10 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aE.dag.json",
+<<<<<<< Updated upstream
   "PayloadsFile": "D:/RetroRocketeers/Retro-Rocketeers/Library/Bee/1900b0aE.dag.payloads",
+=======
+  "PayloadsFile": "F:/UnityProjects/Retro-Rocketeers/Library/Bee/1900b0aE.dag.payloads",
+>>>>>>> Stashed changes
   "RelativePathToRoot": "../.."
 }
