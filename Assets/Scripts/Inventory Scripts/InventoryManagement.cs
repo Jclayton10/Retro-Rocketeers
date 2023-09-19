@@ -246,7 +246,7 @@ public class InventoryManagement : MonoBehaviour
     private bool BeginItemMove()
     {
         originalSlot = GetClosestSlot();
-        if (originalSlot == null || movingSlot.GetItem() == null)
+        if (originalSlot == null || originalSlot.GetItem() == null)
         {
             return false;
         }
@@ -281,6 +281,7 @@ public class InventoryManagement : MonoBehaviour
 
     private bool EndItemMove()
     {
+        isMovingItem = false;
         originalSlot = GetClosestSlot();
         if (originalSlot == null)
         {
