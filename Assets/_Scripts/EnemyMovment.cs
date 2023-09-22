@@ -14,7 +14,8 @@ public class EnemyMovment : MonoBehaviour
     public float speed;
     public float maxRange;
     public float minRange;
-
+    
+    
    
     NavMeshAgent agent; 
     // Start is called before the first frame update
@@ -22,16 +23,29 @@ public class EnemyMovment : MonoBehaviour
     {
 
         agent = GetComponent<NavMeshAgent>();
+        agent.speed = speed;
        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (goal != null) 
-        {
-            agent.SetDestination(goal.position);
-        }
+    
+            if (goal != null)
+            {
+            float distanceToGoal = Vector3.Distance(transform.position, goal.position);
+            if (distanceToGoal >= minRange && distanceToGoal <= maxRange) 
+            {
+                agent.SetDestination(goal.position);
+            }
+            else
+            {
+                agent.ResetPath();
+            }
+                
+            }
+        
+        
 
     }
 }
