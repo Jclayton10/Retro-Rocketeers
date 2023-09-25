@@ -6,6 +6,14 @@ using TMPro;
 
 public class InventoryManagement : MonoBehaviour
 {
+    //Singleton
+    public static InventoryManagement inventoryManagement;
+
+    //Bool to see if inventory management is toggled
+    public bool on;
+
+    [SerializeField] private GameObject inventoryPanel;
+
     [SerializeField] private GameObject itemCursor;
 
     [SerializeField] private GameObject slotHolder;
@@ -31,6 +39,8 @@ public class InventoryManagement : MonoBehaviour
 
     private void Start()
     {
+        inventoryManagement = this;
+
         slots = new GameObject[slotHolder.transform.childCount];
         items = new SlotClass[slots.Length];
 
@@ -64,6 +74,23 @@ public class InventoryManagement : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Tab))
+            on = !on;
+
+        if (on)
+        {
+            inventoryPanel.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        else
+        {
+            inventoryPanel.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+
         itemCursor.SetActive(isMovingItem);
         itemCursor.transform.position = Input.mousePosition;
         if (isMovingItem)
@@ -71,7 +98,7 @@ public class InventoryManagement : MonoBehaviour
             itemCursor.GetComponent<Image>().sprite = movingSlot.GetItem().itemIcon;
         }
 
-        if (Input.GetMouseButtonDown(0)) //left click
+        if (Input.GetMouseButtonDown(0) && on) //left click
         {
             //find the closest slot (which would be the slot we clicked on)
             if (isMovingItem)
@@ -85,7 +112,7 @@ public class InventoryManagement : MonoBehaviour
             }
         }
 
-        else if (Input.GetMouseButtonDown(1)) //right click
+        else if (Input.GetMouseButtonDown(1) && on) //right click
         {
             if (isMovingItem)
             {

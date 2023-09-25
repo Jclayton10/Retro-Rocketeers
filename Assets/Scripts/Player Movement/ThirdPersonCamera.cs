@@ -37,6 +37,9 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void Update()
     {
+        if (InventoryManagement.inventoryManagement.on)
+            return;
+
         //rotate orientation
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
         orientation.forward = viewDir.normalized;

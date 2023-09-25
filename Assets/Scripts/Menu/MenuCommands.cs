@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class MenuCommands : MonoBehaviour
@@ -58,7 +57,7 @@ public class MenuCommands : MonoBehaviour
     private void Start()
     {
         MenuProp.GetComponent<Rigidbody>().AddForce(0, 0, -0.1f, ForceMode.Acceleration);
-        MenuProp.GetComponent<Rigidbody>().MoveRotation(new Quaternion());
+        //MenuProp.GetComponent<Rigidbody>().MoveRotation(new Quaternion());
     }
 
     public IEnumerator ChangeScene()

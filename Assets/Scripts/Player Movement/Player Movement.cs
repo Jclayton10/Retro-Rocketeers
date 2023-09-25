@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDir;
     void Update()
     {
+
         //Ground Check
 
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ground);
@@ -47,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0;
 
         MyInput();
+
+        //Need to run this after MyInput() to stop animations
+        if (InventoryManagement.inventoryManagement.on)
+            return;
+
         MovePlayer();
         SpeedControl();
     }
