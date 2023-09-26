@@ -10,6 +10,8 @@ public class MenuCommands : MonoBehaviour
     public GameObject CreditBunch;
     //public GameObject SettingsBunch;
 
+    public GameObject AudioEmmisions;
+
     #region Fade
     public CanvasGroup CanvasGroup;
     public bool fadeOut = false;
@@ -23,6 +25,7 @@ public class MenuCommands : MonoBehaviour
         {
             if (CanvasGroup.alpha < 1)
             {
+                AudioEmmisions.GetComponent<AudioSource>().volume -= TimeToFade * Time.deltaTime;
                 CanvasGroup.alpha += TimeToFade * Time.deltaTime;
                 if (CanvasGroup.alpha >= 1)
                 {
@@ -32,6 +35,10 @@ public class MenuCommands : MonoBehaviour
         }
         if (fadeOut)
         {
+            if (AudioEmmisions.GetComponent<AudioSource>().volume < 0.8)
+            {
+                AudioEmmisions.GetComponent<AudioSource>().volume += TimeToFade * Time.deltaTime;
+            }
             if (CanvasGroup.alpha >= 0)
             {
                 CanvasGroup.alpha -= TimeToFade * Time.deltaTime;
@@ -57,7 +64,6 @@ public class MenuCommands : MonoBehaviour
     private void Start()
     {
         MenuProp.GetComponent<Rigidbody>().AddForce(0, 0, -0.1f, ForceMode.Acceleration);
-        //MenuProp.GetComponent<Rigidbody>().MoveRotation(new Quaternion());
     }
 
     public IEnumerator ChangeScene()
