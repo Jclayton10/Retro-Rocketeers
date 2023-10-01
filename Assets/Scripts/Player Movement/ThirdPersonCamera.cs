@@ -35,7 +35,7 @@ public class ThirdPersonCamera : MonoBehaviour
         Cursor.visible = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (InventoryManagement.inventoryManagement.on)
             return;
@@ -95,9 +95,13 @@ public class ThirdPersonCamera : MonoBehaviour
         if (newStyle == CameraStyle.Basic)
         {
             basicCamera.SetActive(true);
+            basicCamera.transform.position = combatCamera.transform.position;
         }
         else if (newStyle == CameraStyle.Combat)
+        {
+            combatCamera.transform.position = basicCamera.transform.position;
             combatCamera.SetActive(true);
+        }
         else
             buildingCamera.SetActive(true);
 

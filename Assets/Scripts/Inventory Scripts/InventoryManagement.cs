@@ -28,9 +28,9 @@ public class InventoryManagement : MonoBehaviour
     private GameObject[] slots;
     private GameObject[] hotbarSlots;
 
-    private SlotClass movingSlot;
-    private SlotClass tempSlot;
-    private SlotClass originalSlot;
+    [SerializeField] private SlotClass movingSlot;
+    [SerializeField] private SlotClass tempSlot;
+    [SerializeField] private SlotClass originalSlot;
     bool isMovingItem;
 
     [SerializeField] private GameObject hotbarSelector;
@@ -332,9 +332,12 @@ public class InventoryManagement : MonoBehaviour
                 }
                 else
                 {
-                    tempSlot = new SlotClass(originalSlot);
-                    originalSlot.AddItem(movingSlot.GetItem(), movingSlot.GetQuantity());
-                    movingSlot.AddItem(tempSlot.GetItem(), tempSlot.GetQuantity());
+                    tempSlot = new SlotClass(movingSlot);
+
+                    BeginItemMove();
+
+                    originalSlot.AddItem(tempSlot.GetItem(), tempSlot.GetQuantity());
+
                     RefreshUI();
                     return true;
                 }
