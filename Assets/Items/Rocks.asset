@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Rocks
   m_EditorClassIdentifier: 
   itemName: Rocks
-  itemIcon: {fileID: 21300000, guid: 74bf17d418025bb4f89e4413795432b0, type: 3}
-  prefab: {fileID: 1510398954008601133, guid: 7ba7068770a21d84499db376106c1801, type: 3}
+  itemIcon: {fileID: 21300000, guid: 0bf7cb95330057e4ba953b6f9e29a8db, type: 3}
   isStackable: 1
   description: "Stones from the ground. I'm sure they prove useful in crafting! \n"

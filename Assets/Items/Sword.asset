@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   itemName: Sword
-  itemIcon: {fileID: 21300000, guid: 70f6f682824546349b68759d01d2dc21, type: 3}
-  prefab: {fileID: 6618108948007168172, guid: 74aaab425ad32e447ba4197cc3abde0d, type: 3}
+  itemIcon: {fileID: 21300000, guid: ad80b06f9bfe086408d93511e9fdbfac, type: 3}
   isStackable: 0
   description: 'This sword seems like the perfect thing to protect me from enemies! '
   toolType: 0

@@ -15906,16 +15906,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1624297284454031049, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 60
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947422249226408052, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3956638651579708303, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_Pivot.x
@@ -15997,9 +16029,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4299383975072354835, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299383975072354835, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 4482746897834317920, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150996813235958681, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150996813235958681, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5927970083209070715, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_Name
@@ -16033,9 +16081,17 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8367920639035307836, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367920639035307836, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8463308552391787533, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -120
+      value: 47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62478,6 +62534,15 @@ MonoBehaviour:
     quantity: 2
   - item: {fileID: 11400000, guid: 52af4a9d28f627249818f6539287b373, type: 2}
     quantity: 1
+  movingSlot:
+    item: {fileID: 0}
+    quantity: 0
+  tempSlot:
+    item: {fileID: 0}
+    quantity: 0
+  originalSlot:
+    item: {fileID: 0}
+    quantity: 0
   hotbarSelector: {fileID: 510108950}
   selectedSlotIndex: 0
   selectedItem: {fileID: 0}
