@@ -10,12 +10,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            //Use the item
-            if(inventory.selectedItem != null)
+            //Use the Item
+            if (inventory.selectedItem != null)
             {
                 inventory.selectedItem.Use(this);
             }
-        
-        }    
+        }
     }
 }
