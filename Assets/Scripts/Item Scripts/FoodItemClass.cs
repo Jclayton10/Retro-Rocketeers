@@ -16,8 +16,5 @@ public class FoodItemClass : ItemClass
         highquality
     }
 
-    public override ItemClass GetItem() { return this; }
-    public override ToolItemClass GetToolItem() { return null; }
-    public override DefaultItemClass GetDefaultItem() { return null; }
     public override FoodItemClass GetFoodItem() { return this; }
 }

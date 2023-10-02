@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ItemClass : ScriptableObject
+public class ItemClass : ScriptableObject
 {
     [Header("Item")] //data that every item has
     public string itemName;
@@ -12,8 +12,13 @@ public abstract class ItemClass : ScriptableObject
     [TextArea(15, 20)]
     public string description;
 
-    public abstract ItemClass GetItem();
-    public abstract DefaultItemClass GetDefaultItem();
-    public abstract ToolItemClass GetToolItem();
-    public abstract FoodItemClass GetFoodItem();
+    public virtual void Use(PlayerController caller)
+    {
+        Debug.Log("Used: Item");
+    }
+
+    public virtual ItemClass GetItem() { return this; }
+    public virtual DefaultItemClass GetDefaultItem() { return null; }
+    public virtual ToolItemClass GetToolItem() { return null; }
+    public virtual FoodItemClass GetFoodItem() { return null; }
 }

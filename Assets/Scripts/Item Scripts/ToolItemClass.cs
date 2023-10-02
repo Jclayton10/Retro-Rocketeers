@@ -17,8 +17,6 @@ public class ToolItemClass : ItemClass
         shield
     }
 
-    public override ItemClass GetItem() { return this; }
     public override ToolItemClass GetToolItem() { return this; }
-    public override DefaultItemClass GetDefaultItem() { return null; }
-    public override FoodItemClass GetFoodItem() { return null; }
+ 
 }

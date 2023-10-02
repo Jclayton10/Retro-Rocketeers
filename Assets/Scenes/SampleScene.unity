@@ -290,6 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7da447b7781a6942bc4f7d842316d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  on: 0
+  inventoryPanel: {fileID: 0}
   itemCursor: {fileID: 1637038609}
   slotHolder: {fileID: 1102861993}
   hotbarSlotHolder: {fileID: 1835960852}
@@ -306,6 +308,15 @@ MonoBehaviour:
     quantity: 2
   - item: {fileID: 11400000, guid: 52af4a9d28f627249818f6539287b373, type: 2}
     quantity: 1
+  movingSlot:
+    item: {fileID: 0}
+    quantity: 0
+  tempSlot:
+    item: {fileID: 0}
+    quantity: 0
+  originalSlot:
+    item: {fileID: 0}
+    quantity: 0
   hotbarSelector: {fileID: 1350593929}
   selectedSlotIndex: 0
   selectedItem: {fileID: 0}
@@ -1246,6 +1257,7 @@ GameObject:
   - component: {fileID: 905609490}
   - component: {fileID: 905609489}
   - component: {fileID: 905609488}
+  - component: {fileID: 905609492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1329,6 +1341,18 @@ Transform:
   - {fileID: 2098675240}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905609492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905609487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db3a113b4ec00d42a229c12fd6e3d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
