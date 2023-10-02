@@ -7,7 +7,7 @@ public class CraftingRecipeClass : ScriptableObject
 {
     [Header("Crafting Recipe")]
     public SlotClass[] inputItems;
-    public SlotClass[] outputItem;
+    public SlotClass outputItem;
 
     public bool CanCraft(InventoryManagement inventory)
     {
