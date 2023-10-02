@@ -9,6 +9,14 @@ public class FoodItemClass : ItemClass
     public FoodType foodType;
     public float healthRestored;
 
+    public override void Use(PlayerController caller)
+    {
+        base.Use(caller);
+        Debug.Log("Eat: Food");
+        caller.inventory.UseSelected();
+
+    }
+
     public enum FoodType
     {
         lowquality,

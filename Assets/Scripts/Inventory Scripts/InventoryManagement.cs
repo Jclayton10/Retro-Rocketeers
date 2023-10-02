@@ -6,6 +6,7 @@ using TMPro;
 
 public class InventoryManagement : MonoBehaviour
 {
+    [SerializeField] private List<CraftingRecipeClass> craftingRecipes = new List<CraftingRecipeClass>();
     [SerializeField] private GameObject itemCursor;
 
     [SerializeField] private GameObject slotHolder;
@@ -229,6 +230,48 @@ public class InventoryManagement : MonoBehaviour
 
     }
 
+    public bool Remove(ItemClass item, int quantity)
+    {
+        //items.Remove(item);
+        SlotClass temp = Contains(item);
+        if (temp != null)
+        {
+            if (temp.GetQuantity() > 1)
+            {
+                temp.SubQuantity(quantity);
+            }
+            else
+            {
+                int slotToRemoveIndex = 0;
+
+                for (int i = 0; i < items.Length; i++)
+                {
+                    if (items[i].GetItem() == item)
+                    {
+                        slotToRemoveIndex = i;
+                        break;
+                    }
+                }
+
+                items[slotToRemoveIndex].Clear();
+            }
+        }
+        else
+        {
+            return false;
+        }
+
+        RefreshUI();
+        return true;
+
+    }
+
+    public void UseSelected()
+    {
+        items[selectedSlotIndex + (hotbarSlots.Length * 3)].SubQuantity(1);
+        RefreshUI();
+    }
+
     public SlotClass Contains(ItemClass item)
     {
         for (int i = 0; i < items.Length; i++)
@@ -240,6 +283,19 @@ public class InventoryManagement : MonoBehaviour
         }
         return null;
     }
+
+    public SlotClass Contains(ItemClass item, int quantity)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].GetItem() == item && items[i].GetQuantity() >= quantity) 
+            {
+                return items[i];
+            }
+        }
+        return null;
+    }
+
     #endregion
 
     #region Moving Inventory Items
