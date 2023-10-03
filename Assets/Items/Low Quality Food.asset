@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Low Quality Food
   m_EditorClassIdentifier: 
   itemName: LowQualityFood
-  itemIcon: {fileID: 21300000, guid: 03c5ce94c7894a5438dca00014ee0703, type: 3}
+  itemIcon: {fileID: 21300000, guid: 87e57ceccb003a648a9c229ee0f130ed, type: 3}
   isStackable: 1
   description: 'Hmm it looks a bit odd but still is edible. This increases health! '
   foodType: 0

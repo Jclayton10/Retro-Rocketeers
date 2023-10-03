@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   itemName: Wood
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: 7d79831e9fc7f1e4b93895ada56bc502, type: 3}
   isStackable: 1
   description: 'This sure looks mighty useful for crafting! '

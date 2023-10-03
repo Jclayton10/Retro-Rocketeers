@@ -290,33 +290,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7da447b7781a6942bc4f7d842316d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on: 0
-  inventoryPanel: {fileID: 0}
+  craftingRecipes:
+  - {fileID: 11400000, guid: 8461af44942b922469d383aede958a25, type: 2}
+  - {fileID: 11400000, guid: 201ca0e8335d3f740a424f4b2faae693, type: 2}
+  - {fileID: 11400000, guid: 9c4b3f0a587fe0040ad20a15fa779eb2, type: 2}
   itemCursor: {fileID: 1637038609}
   slotHolder: {fileID: 1102861993}
   hotbarSlotHolder: {fileID: 1835960852}
-  itemToAdd: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
+  itemToAdd: {fileID: 0}
   itemToRemove: {fileID: 11400000, guid: f033a172370e3a440a43c068e406ce03, type: 2}
   startingItems:
-  - item: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
-    quantity: 2
+  - item: {fileID: 11400000, guid: 19747840051cdc843a7f7c419ad9a411, type: 2}
+    quantity: 5
   - item: {fileID: 11400000, guid: 4c3826089abfea54e8c909184fcd7541, type: 2}
     quantity: 1
   - item: {fileID: 11400000, guid: 4d91d3fe47ecd5d4092bba7c07daee20, type: 2}
-    quantity: 2
+    quantity: 3
   - item: {fileID: 11400000, guid: f033a172370e3a440a43c068e406ce03, type: 2}
     quantity: 2
   - item: {fileID: 11400000, guid: 52af4a9d28f627249818f6539287b373, type: 2}
     quantity: 1
-  movingSlot:
-    item: {fileID: 0}
-    quantity: 0
-  tempSlot:
-    item: {fileID: 0}
-    quantity: 0
-  originalSlot:
-    item: {fileID: 0}
-    quantity: 0
   hotbarSelector: {fileID: 1350593929}
   selectedSlotIndex: 0
   selectedItem: {fileID: 0}
@@ -870,7 +863,6 @@ GameObject:
   m_Component:
   - component: {fileID: 538899795}
   - component: {fileID: 538899794}
-  - component: {fileID: 538899796}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -915,18 +907,6 @@ Transform:
   - {fileID: 1749980704}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &538899796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538899793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c149d9b91e8b0c40bc253c1305184cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &557775707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1353,6 +1333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db3a113b4ec00d42a229c12fd6e3d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 156249801}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   itemName: Shield
-  itemIcon: {fileID: 21300000, guid: d0b5709219746c74789ea8c7212366ec, type: 3}
-  prefab: {fileID: 2586327843133320359, guid: 63094ac8446c92844a515a290c17e459, type: 3}
+  itemIcon: {fileID: 21300000, guid: a4b53b4713ef7784ab750a084fac5be6, type: 3}
   isStackable: 0
   description: 'I''m sure this is helpful protection from enemies! '
   toolType: 2

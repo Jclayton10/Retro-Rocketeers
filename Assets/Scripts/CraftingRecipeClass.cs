@@ -19,7 +19,7 @@ public class CraftingRecipeClass : ScriptableObject
 
         for (int i = 0; i < inputItems.Length; i++)
         {
-            if (!inventory.Contains(inputItems[i].GetItem(), inputItems[i].GetQuantity())) 
+            if (inventory.Contains(inputItems[i].GetItem(), inputItems[i].GetQuantity()) == null) 
             {
                 return false;
             }

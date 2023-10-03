@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32b626d39392be247941afab10070e44, type: 3}
+  m_Script: {fileID: 11500000, guid: 88d7b3293c59af34dbcc9f3d7e450a61, type: 3}
   m_Name: PickaxeCraftingRecipe
   m_EditorClassIdentifier: 
   inputItems:
+  - item: {fileID: 11400000, guid: 19747840051cdc843a7f7c419ad9a411, type: 2}
+    quantity: 2
   - item: {fileID: 11400000, guid: 4d91d3fe47ecd5d4092bba7c07daee20, type: 2}
     quantity: 3
-  - item: {fileID: 11400000, guid: 6ec8f95858c9305438fe9dfc703c2155, type: 2}
-    quantity: 2
-  outputItems:
-  - item: {fileID: 11400000, guid: 4c3826089abfea54e8c909184fcd7541, type: 2}
+  outputItem:
+    item: {fileID: 11400000, guid: 4c3826089abfea54e8c909184fcd7541, type: 2}
     quantity: 1
