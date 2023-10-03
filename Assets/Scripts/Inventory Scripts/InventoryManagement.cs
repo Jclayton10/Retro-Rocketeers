@@ -12,6 +12,8 @@ public class InventoryManagement : MonoBehaviour
     //Bool to see if inventory management is toggled
     public bool on;
 
+    [SerializeField] private List<CraftingRecipeClass> craftingRecipes = new List<CraftingRecipeClass>();
+
     [SerializeField] private GameObject inventoryPanel;
 
     [SerializeField] private GameObject itemCursor;
@@ -90,6 +92,10 @@ public class InventoryManagement : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Craft(craftingRecipes[0]);
+        }
 
         itemCursor.SetActive(isMovingItem);
         itemCursor.transform.position = Input.mousePosition;
@@ -138,6 +144,20 @@ public class InventoryManagement : MonoBehaviour
         hotbarSelector.transform.position = hotbarSlots[selectedSlotIndex].transform.position;
         selectedItem = items[selectedSlotIndex + (hotbarSlots.Length * 3)].GetItem();
     }
+
+    private void Craft(CraftingRecipeClass recipe)
+    {
+        if (recipe.CanCraft(this))
+        {
+            recipe.Craft(this);
+        }
+
+        else
+        {
+            Debug.Log("Cannot Craft that Item!");
+        }
+    }
+
     #region Inventory Utilities
     public void RefreshUI()
     {
@@ -256,6 +276,60 @@ public class InventoryManagement : MonoBehaviour
 
     }
 
+    public bool Remove(ItemClass item, int quantity)
+    {
+        //items.Remove(item);
+        SlotClass temp = Contains(item);
+        if (temp != null)
+        {
+            if (temp.GetQuantity() > 1)
+            {
+                temp.SubQuantity(quantity);
+            }
+            else
+            {
+                int slotToRemoveIndex = 0;
+
+                for (int i = 0; i < items.Length; i++)
+                {
+                    if (items[i].GetItem() == item)
+                    {
+                        slotToRemoveIndex = i;
+                        break;
+                    }
+                }
+
+                items[slotToRemoveIndex].Clear();
+            }
+        }
+        else
+        {
+            return false;
+        }
+
+        RefreshUI();
+        return true;
+
+    }
+
+    public void UseSelected()
+    {
+        items[selectedSlotIndex + (hotbarSlots.Length * 3)].SubQuantity(1);
+        RefreshUI();
+    }
+
+    public bool isFull()
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].GetItem() == null)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public SlotClass Contains(ItemClass item)
     {
         for (int i = 0; i < items.Length; i++)
@@ -267,6 +341,19 @@ public class InventoryManagement : MonoBehaviour
         }
         return null;
     }
+
+    public SlotClass Contains(ItemClass item, int quantity)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].GetItem() == item && items[i].GetQuantity() >= quantity)
+            {
+                return items[i];
+            }
+        }
+        return null;
+    }
+
     #endregion
 
     #region Moving Inventory Items
@@ -404,4 +491,3 @@ public class InventoryManagement : MonoBehaviour
     }
     #endregion
 }
-

@@ -9,6 +9,14 @@ public class FoodItemClass : ItemClass
     public FoodType foodType;
     public float healthRestored;
 
+    public override void Use(PlayerController caller)
+    {
+        base.Use(caller);
+        Debug.Log("Eat: Food");
+        caller.inventory.UseSelected();
+
+    }
+
     public enum FoodType
     {
         lowquality,
@@ -16,8 +24,5 @@ public class FoodItemClass : ItemClass
         highquality
     }
 
-    public override ItemClass GetItem() { return this; }
-    public override ToolItemClass GetToolItem() { return null; }
-    public override DefaultItemClass GetDefaultItem() { return null; }
     public override FoodItemClass GetFoodItem() { return this; }
 }

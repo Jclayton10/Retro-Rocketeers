@@ -290,13 +290,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7da447b7781a6942bc4f7d842316d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  on: 0
+  craftingRecipes:
+  - {fileID: 11400000, guid: a87cfa7fb4eadf540aee98573269e7a9, type: 2}
+  - {fileID: 11400000, guid: cec9b602cf6fbed43927396720519c58, type: 2}
+  - {fileID: 11400000, guid: 8fc6a9dc85608344da85bcbbf903b599, type: 2}
+  inventoryPanel: {fileID: 1071621621}
   itemCursor: {fileID: 1637038609}
   slotHolder: {fileID: 1102861993}
   hotbarSlotHolder: {fileID: 1835960852}
   itemToAdd: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
   itemToRemove: {fileID: 11400000, guid: f033a172370e3a440a43c068e406ce03, type: 2}
   startingItems:
-  - item: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
+  - item: {fileID: 11400000, guid: 6ab17c46fa4ceaf4a980369d395308c5, type: 2}
     quantity: 2
   - item: {fileID: 11400000, guid: 4c3826089abfea54e8c909184fcd7541, type: 2}
     quantity: 1
@@ -306,6 +312,15 @@ MonoBehaviour:
     quantity: 2
   - item: {fileID: 11400000, guid: 52af4a9d28f627249818f6539287b373, type: 2}
     quantity: 1
+  movingSlot:
+    item: {fileID: 0}
+    quantity: 0
+  tempSlot:
+    item: {fileID: 0}
+    quantity: 0
+  originalSlot:
+    item: {fileID: 0}
+    quantity: 0
   hotbarSelector: {fileID: 1350593929}
   selectedSlotIndex: 0
   selectedItem: {fileID: 0}
@@ -859,7 +874,6 @@ GameObject:
   m_Component:
   - component: {fileID: 538899795}
   - component: {fileID: 538899794}
-  - component: {fileID: 538899796}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -904,18 +918,6 @@ Transform:
   - {fileID: 1749980704}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &538899796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538899793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c149d9b91e8b0c40bc253c1305184cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &557775707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1494,6 +1496,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7079df09c8d02e64b97cdc6e38aca8f7, type: 3}
+--- !u!1 &1071621621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4482746897834317920, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
+  m_PrefabInstance: {fileID: 2023805150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1092575810
 PrefabInstance:
   m_ObjectHideFlags: 0
