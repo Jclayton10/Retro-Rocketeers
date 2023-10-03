@@ -308,8 +308,8 @@ MonoBehaviour:
     quantity: 1
   - item: {fileID: 11400000, guid: 4d91d3fe47ecd5d4092bba7c07daee20, type: 2}
     quantity: 2
-  - item: {fileID: 11400000, guid: f033a172370e3a440a43c068e406ce03, type: 2}
-    quantity: 2
+  - item: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
+    quantity: 3
   - item: {fileID: 11400000, guid: 52af4a9d28f627249818f6539287b373, type: 2}
     quantity: 1
   movingSlot:
@@ -1248,6 +1248,7 @@ GameObject:
   - component: {fileID: 905609490}
   - component: {fileID: 905609489}
   - component: {fileID: 905609488}
+  - component: {fileID: 905609492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1331,6 +1332,19 @@ Transform:
   - {fileID: 2098675240}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905609492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905609487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0564846897489e84db12dd927c031b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 156249801}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
