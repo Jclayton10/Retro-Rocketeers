@@ -2,8 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct BuildingUIItem
+{
+    public Vector2 loc;
+    public KeyCode buttonLinked;
+    public GameObject prefab;
+}
+
 public class BuildingSystem : MonoBehaviour
 {
+    public static BuildingSystem buildingSystem;
+
+    public GameObject inventoryUI;
+    public GameObject hotbarUI;
+    public GameObject InventorySelector;
+    public GameObject BuildingSelector;
+    public GameObject buildingUI;
+
     [SerializeField] GameObject buildingCamera;
 
     [SerializeField] GameObject buildMarker;
@@ -11,11 +27,16 @@ public class BuildingSystem : MonoBehaviour
     [SerializeField] LayerMask buildings;
     [SerializeField] float snapDistance = 2;
 
-    [SerializeField] List<GameObject> objectsThatCanBeBuilt;
+    [SerializeField] List<BuildingUIItem> objectsThatCanBeBuilt;
 
     [Header("Set Dynamically")]
     [SerializeField] GameObject objectToBeBuilt;
     [SerializeField] float activeRotationAmt = 0;
+
+    private void Start()
+    {
+        buildingSystem = this;
+    }
 
     private void Update()
     {
@@ -28,12 +49,13 @@ public class BuildingSystem : MonoBehaviour
 
         #region Select Building System
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            objectToBeBuilt = objectsThatCanBeBuilt[0];
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-            objectToBeBuilt = objectsThatCanBeBuilt[1];
-        buildMarker.GetComponent<MeshFilter>().mesh = objectToBeBuilt.GetComponent<MeshFilter>().sharedMesh;
-        buildMarker.transform.localScale = objectToBeBuilt.transform.localScale;
+        foreach(BuildingUIItem buildingItem in objectsThatCanBeBuilt)
+        {
+            if (Input.GetKey(buildingItem.buttonLinked))
+            {
+                UpdateUI(buildingItem);
+            }
+        }
 
         #endregion
 
@@ -86,5 +108,34 @@ public class BuildingSystem : MonoBehaviour
             GameObject newBuilding = Instantiate(objectToBeBuilt, hit.point, Quaternion.Euler(0, activeRotationAmt, 0));
         }
         #endregion
+    }
+
+    private void UpdateUI(BuildingUIItem item)
+    {
+        objectToBeBuilt = item.prefab;
+        buildMarker.GetComponent<MeshFilter>().mesh = item.prefab.GetComponent<MeshFilter>().sharedMesh;
+        buildMarker.transform.localScale = item.prefab.transform.localScale;
+
+
+    }
+
+    public void ToggleBuildMode()
+    {
+        if (buildingCamera.activeSelf)
+        {
+            inventoryUI.SetActive(false);
+            hotbarUI.SetActive(false);
+            buildingUI.SetActive(true);
+            InventorySelector.SetActive(false);
+            BuildingSelector.SetActive(true);
+        }
+        else
+        {
+            inventoryUI.SetActive(false);
+            hotbarUI.SetActive(true);
+            buildingUI.SetActive(false);
+            InventorySelector.SetActive(true);
+            BuildingSelector.SetActive(false);
+        }
     }
 }

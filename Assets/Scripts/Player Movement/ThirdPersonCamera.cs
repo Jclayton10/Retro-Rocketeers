@@ -103,8 +103,11 @@ public class ThirdPersonCamera : MonoBehaviour
             combatCamera.SetActive(true);
         }
         else
+        {
             buildingCamera.SetActive(true);
+        }
 
+        BuildingSystem.buildingSystem.ToggleBuildMode();
         Debug.Log(currentStyle);
     }
 }
