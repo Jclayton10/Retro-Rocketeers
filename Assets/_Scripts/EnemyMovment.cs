@@ -30,12 +30,17 @@ public class EnemyMovment : MonoBehaviour
         goal = GameObject.FindWithTag("Player");
         centrePoint = GameObject.FindWithTag("Waypoint");
     }
+    private void Start()
+    {
+        
+    }
 
     void Update()
     {
+
         HandleNavigation();
 
-        // Check if the enemy is on a platform and trigger a jump
+       
 
     }
 
