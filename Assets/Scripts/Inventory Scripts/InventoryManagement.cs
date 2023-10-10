@@ -77,19 +77,16 @@ public class InventoryManagement : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
-            on = !on;
+        {
 
-        if (on)
-        {
-            inventoryPanel.SetActive(true);
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.Confined;
-        }
-        else
-        {
-            inventoryPanel.SetActive(false);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            if (on)
+            {
+                CloseInventory();
+            }
+            else
+            {
+                OpenInventory();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -143,6 +140,23 @@ public class InventoryManagement : MonoBehaviour
 
         hotbarSelector.transform.position = hotbarSlots[selectedSlotIndex].transform.position;
         selectedItem = items[selectedSlotIndex + (hotbarSlots.Length * 3)].GetItem();
+    }
+
+
+    void OpenInventory()
+    {
+        on = true;
+        inventoryPanel.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    void CloseInventory()
+    {
+        on = false;
+        inventoryPanel.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Craft(CraftingRecipeClass recipe)
