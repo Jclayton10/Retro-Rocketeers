@@ -6,28 +6,45 @@ using UnityEngine.AI;
 using Unity.AI.Navigation;
 public class NavmeshBuilder : MonoBehaviour
 {
-    public NavMeshSurface[] surfaces;
-    public Transform[] objectsToRotate;
-    // Start is called before the first frame update
-    void Start()
+    public NavMeshSurface navMeshSurface;
+    private bool isBakingInProgress = false;
+
+    // Call this method whenever the player places a prefab with NavMeshObstacle component.
+    public void BakeNavMeshOnPrefabPlacement()
     {
-        
+        if (!isBakingInProgress)
+        {
+            StartCoroutine(BuildNavMeshAsync());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator BuildNavMeshAsync()
     {
-       
+        isBakingInProgress = true;
 
-        for (int j = 0; j < objectsToRotate.Length; j++)
+        // Disable the NavMeshSurface component temporarily to prevent automatic baking
+        navMeshSurface.enabled = false;
+
+        // Yield a frame to ensure that the previous bake request is canceled
+        yield return null;
+
+        // Re-enable the NavMeshSurface component
+        navMeshSurface.enabled = true;
+
+        // Bake the NavMesh using the NavMesh Surface component in the background
+        navMeshSurface.BuildNavMesh();
+
+        // Wait for a short time before checking if the baking is complete
+        yield return new WaitForSeconds(0.1f); // Adjust the delay as needed
+
+        while (!NavMesh.SamplePosition(Vector3.zero, out _, 0.1f, NavMesh.AllAreas))
         {
-            objectsToRotate[j].localRotation = Quaternion.
-                Euler(new Vector3(0, 50 * Time.deltaTime, 0) +
-                objectsToRotate[j].localRotation.eulerAngles);
+            // Continue checking until a valid NavMesh position is sampled
+            yield return null;
         }
-        for (int i = 0; i < surfaces.Length; i++)
-        {
-            surfaces[i].BuildNavMesh();
-        }
+
+        isBakingInProgress = false;
+
+        Debug.Log("NavMesh baking completed.");
     }
 }

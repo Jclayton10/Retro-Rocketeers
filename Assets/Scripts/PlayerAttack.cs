@@ -35,7 +35,7 @@ public class PlayerAttack : MonoBehaviour
             if (collider.CompareTag("Enemy"))
             {
                 // Deal damage to the enemy
-                EnemyMovment enemy = collider.GetComponent<EnemyMovment>();
+                Enemy enemy = collider.GetComponent<Enemy>();
                 if (enemy != null)
                 {
                     enemy.TakeDamage(attackDamage);

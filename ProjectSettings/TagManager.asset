@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Terrain
   - Camera
+  - Waypoint
   layers:
   - Default
   - TransparentFX
