@@ -89,10 +89,13 @@ public class PlayerMovement : MonoBehaviour
         //calculates move dir
         moveDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        if(grounded)
-            rb.AddForce(moveDir.normalized * currentMovingSpeed, ForceMode.Force);
-        else if(!grounded)
-            rb.AddForce(moveDir.normalized * currentMovingSpeed * airMultiplier, ForceMode.Force);
+        if (grounded)
+            rb.velocity = (moveDir.normalized * currentMovingSpeed);
+        else if (!grounded)
+        {
+            Vector3 movement = (moveDir.normalized * currentMovingSpeed * airMultiplier);
+            rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.z);
+        }
     }
 
     private void SpeedControl()

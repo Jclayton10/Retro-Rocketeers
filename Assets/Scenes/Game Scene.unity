@@ -1865,7 +1865,7 @@ MonoBehaviour:
     m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
-    m_Wrap: 1
+    m_Wrap: 0
     m_Recentering:
       m_enabled: 0
       m_WaitTime: 1
@@ -3416,13 +3416,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: cbf1471e9965f704dad6e4408f6ca5c8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3267fe4b65cf9cb44a8767b74ec2e65a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1367837911}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3267fe4b65cf9cb44a8767b74ec2e65a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1623035716}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3267fe4b65cf9cb44a8767b74ec2e65a, type: 3}
       insertIndex: -1
@@ -4410,11 +4404,11 @@ Transform:
   m_GameObject: {fileID: 1367837910}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.024999999, z: 0.0025}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 0, y: 2.4999998, z: 0.25000006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1188010528}
+  m_Father: {fileID: 1625567836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380165713
 GameObject:
@@ -4797,11 +4791,11 @@ Transform:
   m_GameObject: {fileID: 1623035715}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.015000004, y: 0.02, z: -0.015000004}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: -1.500001, y: 2, z: -1.500001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1188010528}
+  m_Father: {fileID: 1625567836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625567834
 GameObject:
@@ -4867,6 +4861,8 @@ Transform:
   - {fileID: 1890736851}
   - {fileID: 1288086028}
   - {fileID: 567797039}
+  - {fileID: 1367837911}
+  - {fileID: 1623035716}
   - {fileID: 1188010528}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -4882,8 +4878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022fc1f3433e9834a9528a6b1fa8a548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 20
-  runSpeed: 40
+  walkSpeed: 10
+  runSpeed: 15
   goalMoveSpeed: 0
   currentMovingSpeed: 0
   groundDrag: 2
