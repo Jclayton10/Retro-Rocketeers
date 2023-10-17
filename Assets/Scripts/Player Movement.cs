@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKey(jumpKey) && canJump && grounded)
         {
+            Debug.Log("Jumping");
             canJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
@@ -106,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-        playerAnimator.SetTrigger("Jump");
+        playerAnimator.Play("Jumping");
     }
 
     private void ResetJump()
@@ -133,8 +134,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimations()
     {
-        Debug.Log(Input.GetAxis("Horizontal"));
-        Debug.Log(currentMovingSpeed);
+        //Debug.Log(Input.GetAxis("Horizontal"));
+        //Debug.Log(currentMovingSpeed);
         playerAnimator.SetFloat("XVel", currentMovingSpeed * Input.GetAxis("Horizontal") / 8);
         playerAnimator.SetFloat("YVel", currentMovingSpeed * Input.GetAxis("Vertical") / 8);
     }
