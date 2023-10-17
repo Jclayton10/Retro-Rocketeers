@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4034436614558927760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4853977610014829089}
+  - component: {fileID: 7391743402804558335}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4853977610014829089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4034436614558927760}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.087500274, y: 2.1625, z: -0.037500054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7391743402804558335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4034436614558927760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7da447b7781a6942bc4f7d842316d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 0
+  craftingRecipes: []
+  inventoryPanel: {fileID: 0}
+  itemCursor: {fileID: 0}
+  slotHolder: {fileID: 0}
+  hotbarSlotHolder: {fileID: 0}
+  itemToAdd: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
+  itemToRemove: {fileID: 11400000, guid: f033a172370e3a440a43c068e406ce03, type: 2}
+  startingItems:
+  - item: {fileID: 11400000, guid: 4462fc26567fc4b4a8f48e33d08ddc0c, type: 2}
+    quantity: 2
+  - item: {fileID: 11400000, guid: 4c3826089abfea54e8c909184fcd7541, type: 2}
+    quantity: 1
+  - item: {fileID: 11400000, guid: 4d91d3fe47ecd5d4092bba7c07daee20, type: 2}
+    quantity: 2
+  - item: {fileID: 11400000, guid: f033a172370e3a440a43c068e406ce03, type: 2}
+    quantity: 2
+  - item: {fileID: 11400000, guid: 52af4a9d28f627249818f6539287b373, type: 2}
+    quantity: 1
+  movingSlot:
+    item: {fileID: 0}
+    quantity: 0
+  tempSlot:
+    item: {fileID: 0}
+    quantity: 0
+  originalSlot:
+    item: {fileID: 0}
+    quantity: 0
+  hotbarSelector: {fileID: 0}
+  selectedSlotIndex: 0
+  selectedItem: {fileID: 0}

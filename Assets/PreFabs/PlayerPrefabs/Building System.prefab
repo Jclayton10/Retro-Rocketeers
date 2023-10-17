@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7399687324464621103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4602279093224880723}
+  - component: {fileID: 7922658633653792322}
+  m_Layer: 0
+  m_Name: Building System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4602279093224880723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399687324464621103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7922658633653792322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399687324464621103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87074206c25cba4298a44e79d3ece91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 0}
+  hotbarUI: {fileID: 0}
+  InventorySelector: {fileID: 0}
+  BuildingSelector: {fileID: 0}
+  buildingUI: {fileID: 0}
+  buildingCamera: {fileID: 0}
+  buildMarker: {fileID: 0}
+  layersToBeBuiltOn:
+    serializedVersion: 2
+    m_Bits: 64
+  buildings:
+    serializedVersion: 2
+    m_Bits: 128
+  snapDistance: 2
+  objectsThatCanBeBuilt:
+  - loc: {x: 0, y: 0}
+    buttonLinked: 49
+    prefab: {fileID: 1641372111306420007, guid: 4db4498b3b1ca4c4a8aa6ec6fd7f44e3, type: 3}
+  - loc: {x: 0, y: 0}
+    buttonLinked: 50
+    prefab: {fileID: 7195307176856561994, guid: 3a66b7357ef607c47b129f21bf38bc2a, type: 3}
+  - loc: {x: 0, y: 0}
+    buttonLinked: 51
+    prefab: {fileID: 5586944581074239198, guid: cc6eeb9ed837dfe4083b196664982149, type: 3}
+  objectToBeBuilt: {fileID: 4245213812514978779, guid: 4db4498b3b1ca4c4a8aa6ec6fd7f44e3, type: 3}
+  activeRotationAmt: 0
