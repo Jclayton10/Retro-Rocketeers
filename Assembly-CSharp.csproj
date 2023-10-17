@@ -66,9 +66,9 @@
     <Compile Include="Assets\_Scripts\Item Scripts\DefaultItemClass.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\Player Movement.cs" />
     <Compile Include="Assets\_Scripts\Player Attack Scripts\PlayerAttack.cs" />
-    <Compile Include="Assets\_Scripts\CraftingRecipeClass.cs" />
     <Compile Include="Assets\_Scripts\Menu\PlayerMenuCommands.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\zOLDSTUFF\CraftingRecipeClass.cs" />
     <Compile Include="Assets\_Scripts\Menu\MenuCommands.cs" />
     <Compile Include="Assets\_Scripts\Item Scripts\SlotClass.cs" />
     <Compile Include="Assets\_Scripts\Navmesh Scripts\NavmeshBuilder.cs" />

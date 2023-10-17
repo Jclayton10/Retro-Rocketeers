@@ -18,10 +18,13 @@ public class EnemyMovment : MonoBehaviour
 
     public float speed;
     public float maxRangeToPlayer;
-    public float range;
+    public float attackRange;
+    public float rangeOfRandomPointRadius;
 
     private bool isMovingTowardsGoal = false;
     private Vector3 currentDestination;
+
+    
 
     private void Awake()
     {
@@ -39,7 +42,7 @@ public class EnemyMovment : MonoBehaviour
 
     void Update()
     {
-      
+        StopMovment();
         HandleNavigation();
         
        
@@ -57,6 +60,7 @@ public class EnemyMovment : MonoBehaviour
                 // Set the enemy's destination to the player's position
                 agent.SetDestination(goal.transform.position);
                 isMovingTowardsGoal = true;
+                anim.SetBool("isMoving", true);
                 currentDestination = goal.transform.position;
             }
             else if (isMovingTowardsGoal && agent.remainingDistance <= agent.stoppingDistance)
@@ -77,7 +81,7 @@ public class EnemyMovment : MonoBehaviour
             {
                 // Only generate a new random point if the agent has reached the current one
                 Vector3 point;
-                if (RandomPoint(centrePoint.transform.position, range, out point))
+                if (RandomPoint(centrePoint.transform.position, rangeOfRandomPointRadius, out point))
                 {
                     Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f);
                     agent.SetDestination(point);
@@ -100,5 +104,31 @@ public class EnemyMovment : MonoBehaviour
 
         result = Vector3.zero;
         return false;
+    }
+    public void StopMovment()
+    {
+        if (Vector3.Distance(transform.position, goal.transform.position) <= attackRange)
+        {
+            // Stop the enemy's movement.
+            agent.isStopped = true;
+            anim.SetBool("isMoving", false);
+
+            // Call the method to perform the attack (you should define this method).
+            Attack();
+        }
+        else
+        {
+            agent.isStopped = false;
+            anim.SetBool("isMoving", true);
+        }
+
+    }
+    public void Attack()
+    {
+        anim.SetTrigger("Attack");
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        
     }
 }
