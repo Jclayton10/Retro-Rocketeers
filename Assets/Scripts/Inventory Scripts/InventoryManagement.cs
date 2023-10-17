@@ -89,10 +89,10 @@ public class InventoryManagement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Craft(craftingRecipes[0]);
-        }
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    Craft(craftingRecipes[0]);
+        //}
 
         itemCursor.SetActive(isMovingItem);
         itemCursor.transform.position = Input.mousePosition;
@@ -141,7 +141,6 @@ public class InventoryManagement : MonoBehaviour
         hotbarSelector.transform.position = hotbarSlots[selectedSlotIndex].transform.position;
         selectedItem = items[selectedSlotIndex + (hotbarSlots.Length * 3)].GetItem();
     }
-
 
     void OpenInventory()
     {
