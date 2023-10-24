@@ -12,6 +12,9 @@ public struct BuildingUIItem
 
 public class BuildingSystem : MonoBehaviour
 {
+    public GameMaster GM;
+    
+
     public static BuildingSystem buildingSystem;
 
     public GameObject inventoryUI;
@@ -33,9 +36,17 @@ public class BuildingSystem : MonoBehaviour
     [SerializeField] GameObject objectToBeBuilt;
     [SerializeField] float activeRotationAmt = 0;
 
+    [Header("Audio")]
+    public List<AudioClip> BuildSounds;
+    public AudioSource Kit;
+
     private void Start()
     {
         buildingSystem = this;
+
+        GameObject gm = GameObject.Find("Game Master");
+        GM = gm.GetComponent<GameMaster>();
+        Kit.volume = GM.AudioMaster * GM.AudioSFX;
     }
 
     private void Update()
@@ -105,6 +116,10 @@ public class BuildingSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1) && hit.point != null)
         {
             Debug.Log(objectToBeBuilt.name);
+
+            Kit.clip = BuildSounds[Random.Range(0, BuildSounds.Count)];
+            Kit.Play();
+
             GameObject newBuilding = Instantiate(objectToBeBuilt, hit.point, Quaternion.Euler(0, activeRotationAmt, 0));
         }
         #endregion

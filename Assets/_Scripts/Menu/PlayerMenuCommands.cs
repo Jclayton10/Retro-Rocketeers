@@ -62,7 +62,6 @@ public class PlayerMenuCommands : MonoBehaviour
     #region Pause/Resume
     public void Resume()
     {
-        Debug.Log("Off");
         PauseOverlay.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -72,7 +71,6 @@ public class PlayerMenuCommands : MonoBehaviour
 
     void Pause()
     {
-        Debug.Log("ON!");
         PauseOverlay.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameMaster GM;
     [Header("Health")]
     public int health;
     private int currentHealth;
@@ -36,6 +37,19 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Animations")]
     public Animator playerAnimator;
+
+    [Header("Sounds")]
+    public AudioSource PlayerSounds;
+    public float Footstepcount = 1.0f;
+
+    void Awake()
+    {
+        GameObject gm = GameObject.Find("Game Master");
+        GM = gm.GetComponent<GameMaster>();
+        PlayerSounds.volume = GM.AudioMaster * GM.AudioSFX;
+        jumpKey = GM.jumpKey;
+        runKey = GM.runKey;
+    }
 
     Vector3 moveDir;
     private void Start()
@@ -97,7 +111,15 @@ public class PlayerMovement : MonoBehaviour
         moveDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         if (grounded)
+        {
             rb.velocity = (moveDir.normalized * currentMovingSpeed);
+            Footstepcount -= Time.deltaTime;
+            if (Footstepcount <= 0)
+            {
+                Footstepcount = 0.25f;
+                PlayerSounds.Play();
+            }
+        }
         else if (!grounded)
         {
             Vector3 movement = (moveDir.normalized * currentMovingSpeed * airMultiplier);

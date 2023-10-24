@@ -6,6 +6,8 @@ using TMPro;
 
 public class InventoryManagement : MonoBehaviour
 {
+    GameMaster GM;
+
     //Singleton
     public static InventoryManagement inventoryManagement;
 
@@ -38,6 +40,12 @@ public class InventoryManagement : MonoBehaviour
     [SerializeField] private GameObject hotbarSelector;
     [SerializeField] private int selectedSlotIndex = 0;
     public ItemClass selectedItem;
+
+    [Header("Audio")]
+    public List<AudioClip> BagRussles;
+    public AudioClip BagOpen;
+    public AudioClip BagClose;
+    public AudioSource Bag;
 
     private void Start()
     {
@@ -72,6 +80,10 @@ public class InventoryManagement : MonoBehaviour
 
         Add(itemToAdd, 1);
         Remove(itemToRemove);
+
+        GameObject gm = GameObject.Find("Game Master");
+        GM = gm.GetComponent<GameMaster>();
+        Bag.volume = GM.AudioMaster * GM.AudioSFX;
     }
 
     private void Update()
@@ -148,6 +160,8 @@ public class InventoryManagement : MonoBehaviour
         inventoryPanel.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+        Bag.clip = BagOpen;
+        Bag.Play();
     }
 
     void CloseInventory()
@@ -156,6 +170,8 @@ public class InventoryManagement : MonoBehaviour
         inventoryPanel.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Bag.clip = BagClose;
+        Bag.Play();
     }
 
     private void Craft(CraftingRecipeClass recipe)
@@ -382,6 +398,11 @@ public class InventoryManagement : MonoBehaviour
         originalSlot.Clear();
         isMovingItem = true;
         RefreshUI();
+
+        Bag.clip = BagRussles[Random.Range(0, BagRussles.Count)];
+        Bag.Play();
+
+
         return true;
 
     }
@@ -449,6 +470,10 @@ public class InventoryManagement : MonoBehaviour
                 movingSlot.Clear();
             }
         }
+        Bag.clip = BagRussles[Random.Range(0, BagRussles.Count)];
+        Bag.Play();
+
+
         RefreshUI();
         return true;
     }
