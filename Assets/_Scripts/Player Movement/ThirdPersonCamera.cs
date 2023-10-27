@@ -62,7 +62,7 @@ public class ThirdPersonCamera : MonoBehaviour
             playerObj.forward = dirToCombatLookAt.normalized;
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(GameMaster.Instance.buildModeKey))
         {
             //Want to stay in Combat if applicable
             if(currentStyle != CameraStyle.Combat)

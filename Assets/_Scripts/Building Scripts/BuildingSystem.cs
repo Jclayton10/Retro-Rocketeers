@@ -71,7 +71,7 @@ public class BuildingSystem : MonoBehaviour
         #endregion
 
         #region Rotation Of Buildings
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(GameMaster.Instance.rotateKey))
         {
             activeRotationAmt += 90f;
         }
@@ -113,7 +113,7 @@ public class BuildingSystem : MonoBehaviour
             }
             buildMarker.transform.position = hit.point;
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1) && hit.point != null)
+        if (Input.GetKeyDown(GameMaster.Instance.buildingKey) && hit.point != null)
         {
             Debug.Log(objectToBeBuilt.name);
 
@@ -130,8 +130,6 @@ public class BuildingSystem : MonoBehaviour
         objectToBeBuilt = item.prefab;
         buildMarker.GetComponent<MeshFilter>().mesh = item.prefab.GetComponent<MeshFilter>().sharedMesh;
         buildMarker.transform.localScale = item.prefab.transform.localScale;
-
-
     }
 
     public void ToggleBuildMode()

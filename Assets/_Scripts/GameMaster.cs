@@ -35,7 +35,11 @@ public class GameMaster : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode runKey = KeyCode.LeftShift;
 
-    public KeyCode buildKey = KeyCode.B;
+    public KeyCode buildModeKey = KeyCode.B;
     public KeyCode invKey = KeyCode.Tab;
+    public KeyCode sheathKey = KeyCode.F;
+    public KeyCode rotateKey = KeyCode.R;
+    public KeyCode buildingKey = KeyCode.Mouse1;
 
+    public KeyCode attackKey = KeyCode.Mouse0;
 }

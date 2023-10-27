@@ -17,6 +17,9 @@ public class ConveyerBelt : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player")
+            return;
+
         if(other.GetComponent<Rigidbody>() != null)
         {
             objectsOnConveyer.Add(other.GetComponent<Rigidbody>());
@@ -25,6 +28,9 @@ public class ConveyerBelt : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.tag == "Player")
+            return;
+
         if (other.GetComponent<Rigidbody>() != null)
         {
             objectsOnConveyer.Remove(other.GetComponent<Rigidbody>());

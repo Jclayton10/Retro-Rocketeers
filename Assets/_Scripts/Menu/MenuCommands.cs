@@ -212,7 +212,6 @@ public class MenuCommands : MonoBehaviour
         SFXSlider.value = 80;
         AudioEmmisions.GetComponent<AudioSource>().volume = GM.AudioMaster * GM.AudioMusic;
 
-
         GM.MouseSensitiviy = 1.0f;
 
         GM.rightKey = KeyCode.D;
@@ -220,9 +219,15 @@ public class MenuCommands : MonoBehaviour
         GM.forwardKey = KeyCode.W;
         GM.backKey = KeyCode.S;
         GM.jumpKey = KeyCode.Space;
+        GM.runKey = KeyCode.LeftShift;
 
-        GM.buildKey = KeyCode.B;
+        GM.buildModeKey = KeyCode.B;
         GM.invKey = KeyCode.Tab;
+        GM.sheathKey = KeyCode.F;
+        GM.rotateKey = KeyCode.R;
+        GM.buildingKey = KeyCode.Mouse1;
+
+        GM.attackKey = KeyCode.Mouse0;
 
     }
 

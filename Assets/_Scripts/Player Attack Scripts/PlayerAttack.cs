@@ -34,7 +34,7 @@ public class PlayerAttack : MonoBehaviour
     }
     void PlayAnimations()
     {
-        if (isWeaponShethed==true &&Input.GetKeyDown(KeyCode.R)) // Change the input key as needed
+        if (isWeaponShethed==true &&Input.GetKeyDown(GameMaster.Instance.sheathKey)) // Change the input key as needed
         {
             isWeapomDrawn = true;
             isWeaponShethed = false;
@@ -45,7 +45,7 @@ public class PlayerAttack : MonoBehaviour
             playerAttack.SetTrigger("Withdraw");
 
         }
-        if (isWeapomDrawn == true && Input.GetKeyDown(KeyCode.E ))
+        if (isWeapomDrawn == true && Input.GetKeyDown(GameMaster.Instance.sheathKey))
         {
             isWeapomDrawn = false;
             isWeaponShethed = true;
@@ -55,7 +55,7 @@ public class PlayerAttack : MonoBehaviour
 
             playerAttack.SetTrigger("Sheathing");
         }
-        if (isWeapomDrawn == true && Input.GetKeyDown(KeyCode.Mouse0))
+        if (isWeapomDrawn == true && Input.GetKeyDown(GameMaster.Instance.attackKey))
         {
             playerAttack.SetTrigger("Attack");
             Attack();
