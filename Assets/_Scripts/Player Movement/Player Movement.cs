@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
             Enemy enemy = other.gameObject.GetComponent<Enemy>();
             currentHealth -= enemy.damadge; 
             GameObject activeCamera = GameObject.FindGameObjectWithTag("Camera");
-            activeCamera.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Combat);
+            Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Combat);
         }
     }
 
@@ -168,7 +168,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "Enemy")
         {
             GameObject activeCamera = GameObject.FindGameObjectWithTag("Camera");
-            activeCamera.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Basic);
+            Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Basic);
         }
     }
 

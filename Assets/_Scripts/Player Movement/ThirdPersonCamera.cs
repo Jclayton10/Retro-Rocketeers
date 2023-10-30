@@ -85,6 +85,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     public void SwitchCameraStyle(CameraStyle newStyle)
     {
+        currentStyle = newStyle;
+
         Debug.Log(newStyle);
         //Turns off all cameras
         combatCamera.SetActive(false);

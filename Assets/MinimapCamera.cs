@@ -7,12 +7,10 @@ public class MinimapCamera : MonoBehaviour
 {
     [SerializeField] Transform playerPos;
     [SerializeField] RenderTexture rendTexture;
-    [SerializeField] RawImage minimapImage;
 
     // Update is called once per frame
     void Update()
     {
         transform.position = new Vector3(playerPos.position.x, transform.position.y, playerPos.position.z);
-        minimapImage.texture = rendTexture;
     }
 }
