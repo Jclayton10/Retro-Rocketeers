@@ -41,8 +41,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 7220867941693721102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1450f21b2e7416d4faaeddb703368046, type: 3}
+  m_Script: {fileID: 11500000, guid: d7da447b7781a6942bc4f7d842316d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   on: 0
-  CraftingInventoryBackground: {fileID: 0}
+  craftingRecipes: []
+  inventoryPanel: {fileID: 0}
+  itemCursor: {fileID: 0}
+  slotHolder: {fileID: 0}
+  hotbarSlotHolder: {fileID: 0}
+  itemToAdd: {fileID: 0}
+  itemToRemove: {fileID: 0}
+  startingItems: []
+  movingSlot:
+    item: {fileID: 0}
+    quantity: 0
+  tempSlot:
+    item: {fileID: 0}
+    quantity: 0
+  originalSlot:
+    item: {fileID: 0}
+    quantity: 0
+  hotbarSelector: {fileID: 0}
+  selectedSlotIndex: 0
+  selectedItem: {fileID: 0}
+  BagRussles: []
+  BagOpen: {fileID: 0}
+  BagClose: {fileID: 0}
+  Bag: {fileID: 0}
