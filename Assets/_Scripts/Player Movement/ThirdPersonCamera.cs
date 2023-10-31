@@ -67,12 +67,7 @@ public class ThirdPersonCamera : MonoBehaviour
             }
 
             // Check for the aim input condition (e.g., right mouse button)
-            if (Input.GetMouseButtonDown(0))
-            {
-                // If the aim input condition is met, switch to Aim style
-                SwitchCameraStyle(CameraStyle.Aim);
-                currentStyle = CameraStyle.Aim;
-            }
+            
         }
         else if (currentStyle == CameraStyle.Combat)
         {
@@ -81,6 +76,18 @@ public class ThirdPersonCamera : MonoBehaviour
 
             playerObj.forward = dirToCombatLookAt.normalized;
         }
+        else if(currentStyle == CameraStyle.Building)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                // If the aim input condition is met, switch to Aim style
+                SwitchCameraStyle(CameraStyle.Aim);
+                currentStyle = CameraStyle.Aim;
+            }
+        }
+
+        if(currentStyle == CameraStyle.Aim)
+            Aim();
 
         // Check for the build mode input condition
         if (Input.GetKeyDown(GameMaster.Instance.buildModeKey))
@@ -131,9 +138,6 @@ public class ThirdPersonCamera : MonoBehaviour
         {
             aimCamera.transform.position = basicCamera.transform.position;
             aimCamera.SetActive(true);
-            Aim();
-            
-            
         }
         else
         {
