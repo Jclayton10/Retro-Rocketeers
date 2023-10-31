@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class PlayerMenuCommands : MonoBehaviour
 {
@@ -21,15 +19,15 @@ public class PlayerMenuCommands : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
-            
+
             }
             else
             {
-                
+
                 Pause();
             }
         }
-        
+
         #endregion
 
 

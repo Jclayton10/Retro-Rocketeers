@@ -1,7 +1,5 @@
 //Adapted from this video: https://www.youtube.com/watch?v=UCwwn2q4Vys
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum CameraStyle
@@ -33,12 +31,12 @@ public class ThirdPersonCamera : MonoBehaviour
 
     [HideInInspector]
     private bool isAiming;
-    public BowAttack bow;
-    
+    private BowAttack bow;
+
 
     private void Awake()
     {
-        bow=FindFirstObjectByType<BowAttack>();
+        bow = FindFirstObjectByType<BowAttack>();
     }
     private void Start()
     {
@@ -67,7 +65,7 @@ public class ThirdPersonCamera : MonoBehaviour
             }
 
             // Check for the aim input condition (e.g., right mouse button)
-            
+
         }
         else if (currentStyle == CameraStyle.Combat)
         {
@@ -76,18 +74,21 @@ public class ThirdPersonCamera : MonoBehaviour
 
             playerObj.forward = dirToCombatLookAt.normalized;
         }
-        else if(currentStyle == CameraStyle.Building)
+        if (currentStyle != CameraStyle.Building)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 // If the aim input condition is met, switch to Aim style
                 SwitchCameraStyle(CameraStyle.Aim);
-                currentStyle = CameraStyle.Aim;
             }
         }
 
-        if(currentStyle == CameraStyle.Aim)
+        if (currentStyle == CameraStyle.Aim)
+        {
             Aim();
+            if (!Input.GetMouseButtonDown(0))
+                SwitchCameraStyle(CameraStyle.Basic);
+        }
 
         // Check for the build mode input condition
         if (Input.GetKeyDown(GameMaster.Instance.buildModeKey))
@@ -121,7 +122,7 @@ public class ThirdPersonCamera : MonoBehaviour
         basicCamera.SetActive(false);
         buildingCamera.SetActive(false);
         aimCamera.SetActive(false);
-        
+
 
         //Sets the chosen camera to active
         if (newStyle == CameraStyle.Basic)
@@ -149,6 +150,13 @@ public class ThirdPersonCamera : MonoBehaviour
     }
     public void Aim()
     {
+        // Make sure you have a reference to the BowAttack script to access the fire point
+        if (bow != null)
+        {
+            // Set the aimCamera's position to match the fire point's position
+            aimCamera.transform.position = bow.firePoint.position;
+        }
+
         float mouseY = Input.GetAxis("Mouse Y"); // Get the vertical mouse input
 
         // Get the current rotation of the aimCamera
@@ -163,6 +171,7 @@ public class ThirdPersonCamera : MonoBehaviour
         // Set the new rotation
         aimCamera.transform.localEulerAngles = new Vector3(newPitch, currentRotation.y, currentRotation.z);
 
+        /*
         // Check if aiming is still active
         if (Mathf.Abs(mouseY) > 0.01f)
         {
@@ -176,5 +185,6 @@ public class ThirdPersonCamera : MonoBehaviour
             SwitchCameraStyle(CameraStyle.Basic);
             currentStyle = CameraStyle.Basic;
         }
+        */
     }
 }

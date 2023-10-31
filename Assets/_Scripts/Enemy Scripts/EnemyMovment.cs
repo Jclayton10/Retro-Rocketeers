@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,7 +11,7 @@ public class EnemyMovment : MonoBehaviour
 
     private NavMeshAgent agent;
     private Rigidbody rb;
- 
+
 
     public float speed;
     public float maxRangeToPlayer;
@@ -24,7 +21,7 @@ public class EnemyMovment : MonoBehaviour
     private bool isMovingTowardsGoal = false;
     private Vector3 currentDestination;
 
-    
+
 
     private void Awake()
     {
@@ -37,15 +34,15 @@ public class EnemyMovment : MonoBehaviour
     }
     private void Start()
     {
-        
+
     }
 
     void Update()
     {
         //StopMovment();
         HandleNavigation();
-        
-       
+
+
 
     }
 
@@ -105,28 +102,28 @@ public class EnemyMovment : MonoBehaviour
         result = Vector3.zero;
         return false;
     }
-   /* public void StopMovment()
-    {
-        if (Vector3.Distance(transform.position, goal.transform.position) <= attackRange)
-        {
-            // Stop the enemy's movement.
-            agent.isStopped = true;
-            anim.SetBool("isMoving", false);
+    /* public void StopMovment()
+     {
+         if (Vector3.Distance(transform.position, goal.transform.position) <= attackRange)
+         {
+             // Stop the enemy's movement.
+             agent.isStopped = true;
+             anim.SetBool("isMoving", false);
 
-            // Call the method to perform the attack (you should define this method).
-            Attack();
-        }
-        else
-        {
-            agent.isStopped = false;
-            anim.SetBool("isMoving", true);
-        }
+             // Call the method to perform the attack (you should define this method).
+             Attack();
+         }
+         else
+         {
+             agent.isStopped = false;
+             anim.SetBool("isMoving", true);
+         }
 
-    }
-   */
+     }
+    */
     public void Attack()
     {
         anim.SetTrigger("Attack");
     }
-    
+
 }

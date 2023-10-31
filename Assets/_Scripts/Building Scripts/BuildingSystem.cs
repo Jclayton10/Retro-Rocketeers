@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +12,7 @@ public struct BuildingUIItem
 public class BuildingSystem : MonoBehaviour
 {
     public GameMaster GM;
-    
+
 
     public static BuildingSystem buildingSystem;
 
@@ -60,7 +59,7 @@ public class BuildingSystem : MonoBehaviour
 
         #region Select Building System
 
-        foreach(BuildingUIItem buildingItem in objectsThatCanBeBuilt)
+        foreach (BuildingUIItem buildingItem in objectsThatCanBeBuilt)
         {
             if (Input.GetKey(buildingItem.buttonLinked))
             {
@@ -90,12 +89,12 @@ public class BuildingSystem : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 50, layersToBeBuiltOn))
         {
             Collider[] objectsInSphere = Physics.OverlapSphere(hit.point, snapDistance, buildings);
-            
-            if(objectsInSphere.Length > 0)
+
+            if (objectsInSphere.Length > 0)
             {
                 float closestDistance = Mathf.Infinity;
 
-                foreach(Collider collider in objectsInSphere)
+                foreach (Collider collider in objectsInSphere)
                 {
                     foreach (Transform buildOffPoint in collider.GetComponent<BuildingInfo>().buildOffPoints)
                     {

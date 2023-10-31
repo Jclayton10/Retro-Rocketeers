@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +19,7 @@ public class ConveyerBelt : MonoBehaviour
         if (other.tag == "Player")
             return;
 
-        if(other.GetComponent<Rigidbody>() != null)
+        if (other.GetComponent<Rigidbody>() != null)
         {
             objectsOnConveyer.Add(other.GetComponent<Rigidbody>());
         }

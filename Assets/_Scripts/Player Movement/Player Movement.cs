@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -78,16 +75,16 @@ public class PlayerMovement : MonoBehaviour
 
         //Need to run this after MyInput() to stop animations
         //if (InventoryManagement.inventoryManagement.on)
-           // return;
+        // return;
 
         MovePlayer();
         SpeedControl();
 
-        if(bow.isAiming)
-        {
-           
-            Aim();
-        }
+        //if(bow.isAiming)
+        // {
+
+        //  Aim();
+        //  }
 
     }
 
@@ -116,8 +113,8 @@ public class PlayerMovement : MonoBehaviour
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
-        
-        
+
+
     }
 
     private void MovePlayer()
@@ -201,11 +198,11 @@ public class PlayerMovement : MonoBehaviour
             Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Basic);
         }
     }
-   public void Aim()
-    { 
+    public void Aim()
+    {
         GameObject activateCamera = GameObject.FindGameObjectWithTag("Camera");
         Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Aim);
-       
+
     }
 
     private void UpdateAnimations()

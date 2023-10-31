@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class InventoryManagement : MonoBehaviour
 {
@@ -105,7 +104,7 @@ public class InventoryManagement : MonoBehaviour
             if (on)
             {
                 CraftingRecipeCheatSheetPanel.SetActive(false);
-            }  
+            }
 
             else
             {
