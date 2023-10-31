@@ -42,7 +42,7 @@ public class EnemyMovment : MonoBehaviour
 
     void Update()
     {
-        StopMovment();
+        //StopMovment();
         HandleNavigation();
         
        
@@ -105,7 +105,7 @@ public class EnemyMovment : MonoBehaviour
         result = Vector3.zero;
         return false;
     }
-    public void StopMovment()
+   /* public void StopMovment()
     {
         if (Vector3.Distance(transform.position, goal.transform.position) <= attackRange)
         {
@@ -123,12 +123,10 @@ public class EnemyMovment : MonoBehaviour
         }
 
     }
+   */
     public void Attack()
     {
         anim.SetTrigger("Attack");
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
+    
 }

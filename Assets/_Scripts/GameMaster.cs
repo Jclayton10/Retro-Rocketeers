@@ -42,4 +42,5 @@ public class GameMaster : MonoBehaviour
     public KeyCode buildingKey = KeyCode.Mouse1;
 
     public KeyCode attackKey = KeyCode.Mouse0;
+    public KeyCode aimKey = KeyCode.Mouse0;
 }

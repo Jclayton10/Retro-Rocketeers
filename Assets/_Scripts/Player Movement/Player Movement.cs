@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     public GameMaster GM;
     [Header("Health")]
-    public int health;
-    private int currentHealth;
+    public int playerHealth;
+    private int currentPlayerHealth;
     [Header("Movement")]
+    public bool canMove = false;
     public float walkSpeed;
     public float runSpeed;
     public float goalMoveSpeed;
@@ -42,8 +44,12 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource PlayerSounds;
     public float Footstepcount = 1.0f;
 
+    [Header("BowAttack")]
+    public BowAttack bow;
+
     void Awake()
     {
+        bow = FindFirstObjectByType<BowAttack>();
         GameObject gm = GameObject.Find("Game Master");
         GM = gm.GetComponent<GameMaster>();
         PlayerSounds.volume = GM.AudioMaster * GM.AudioSFX;
@@ -54,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDir;
     private void Start()
     {
-        currentHealth = health;
+        currentPlayerHealth = playerHealth;
     }
     void Update()
     {
@@ -71,11 +77,18 @@ public class PlayerMovement : MonoBehaviour
         MyInput();
 
         //Need to run this after MyInput() to stop animations
-        if (InventoryManagement.inventoryManagement.on)
-            return;
+        //if (InventoryManagement.inventoryManagement.on)
+           // return;
 
         MovePlayer();
         SpeedControl();
+
+        if(bow.isAiming)
+        {
+           
+            Aim();
+        }
+
     }
 
     private void MyInput()
@@ -97,12 +110,14 @@ public class PlayerMovement : MonoBehaviour
 
         UpdateAnimations();
 
-        if(Input.GetKey(jumpKey) && canJump && grounded)
+        if (Input.GetKey(jumpKey) && canJump && grounded)
         {
             canJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+        
+        
     }
 
     private void MovePlayer()
@@ -156,10 +171,25 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "Enemy")
         {
             other.gameObject.GetComponent<BoxCollider>();
-            Enemy enemy = other.gameObject.GetComponent<Enemy>();
-            currentHealth -= enemy.damadge; 
             GameObject activeCamera = GameObject.FindGameObjectWithTag("Camera");
             Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Combat);
+        }
+    }
+    private void OnCollisionEnter(Collision collider)
+    {
+        if (collider.gameObject.CompareTag("Enemy"))
+        {
+            // Get the Enemy script component from the collided enemy object
+            Enemy enemy = collider.gameObject.GetComponent<Enemy>();
+
+            if (enemy != null)
+            {
+                // Apply damage to the player based on the enemy's damage amount
+                playerHealth -= enemy.damageAmount;
+                Debug.Log("PlayerMovment/PlayerHealth:" + playerHealth);
+                // Call a function to handle the player's health and death logic
+                //HandleHealthAndDeath();
+            }
         }
     }
 
@@ -170,6 +200,12 @@ public class PlayerMovement : MonoBehaviour
             GameObject activeCamera = GameObject.FindGameObjectWithTag("Camera");
             Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Basic);
         }
+    }
+   public void Aim()
+    { 
+        GameObject activateCamera = GameObject.FindGameObjectWithTag("Camera");
+        Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Aim);
+       
     }
 
     private void UpdateAnimations()
