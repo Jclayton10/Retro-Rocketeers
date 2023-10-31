@@ -14,9 +14,8 @@ public class InventoryManagement : MonoBehaviour
     //Bool to see if inventory management is toggled
     public bool on;
 
-    [SerializeField] private List<CraftingRecipeClass> craftingRecipes = new List<CraftingRecipeClass>();
-
     [SerializeField] private GameObject inventoryPanel;
+    [SerializeField] private GameObject CraftingRecipeCheatSheetPanel;
 
     [SerializeField] private GameObject itemCursor;
 
@@ -101,10 +100,18 @@ public class InventoryManagement : MonoBehaviour
             }
         }
 
-        //if (Input.GetKeyDown(KeyCode.C))
-        //{
-        //    Craft(craftingRecipes[0]);
-        //}
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (on)
+            {
+                CraftingRecipeCheatSheetPanel.SetActive(false);
+            }  
+
+            else
+            {
+                CraftingRecipeCheatSheetPanel.SetActive(true);
+            }
+        }
 
         itemCursor.SetActive(isMovingItem);
         itemCursor.transform.position = Input.mousePosition;
