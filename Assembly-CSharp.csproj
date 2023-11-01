@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Scripts\Player Movement.cs" />
 =======
@@ -84,6 +85,41 @@
     <Compile Include="Assets\_Scripts\NavmeshBuilder.cs" />
     <Compile Include="Assets\Scripts\Minimap.cs" />
     <Compile Include="Assets\Scripts\Player Movement\ThirdPersonCamera.cs" />
+=======
+    <Compile Include="Assets\_Scripts\Item Scripts\ToolItemClass.cs" />
+    <Compile Include="Assets\_Scripts\Building Scripts\BuildingInfo.cs" />
+    <Compile Include="Assets\_Scripts\RangedAttackScrpits\Arrow.cs" />
+    <Compile Include="Assets\_Scripts\PlayerContorller.cs" />
+    <Compile Include="Assets\_Scripts\Crafting Scripts\RecipeManager.cs" />
+    <Compile Include="Assets\_Scripts\Item Scripts\FoodItemClass.cs" />
+    <Compile Include="Assets\_Scripts\Building Scripts\BuildingSystem.cs" />
+    <Compile Include="Assets\_Scripts\Crafting Scripts\CraftingRecipe.cs" />
+    <Compile Include="Assets\StorageHandler.cs" />
+    <Compile Include="Assets\_Scripts\Navmesh Scripts\AgentLinkMover.cs" />
+    <Compile Include="Assets\_Scripts\Item Scripts\DefaultItemClass.cs" />
+    <Compile Include="Assets\_Scripts\Player Movement\Player Movement.cs" />
+    <Compile Include="Assets\_Scripts\Player Attack Scripts\PlayerAttack.cs" />
+    <Compile Include="Assets\_Scripts\GameMaster.cs" />
+    <Compile Include="Assets\_Scripts\Menu\PlayerMenuCommands.cs" />
+    <Compile Include="Assets\_Scripts\Player Movement\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\zOLDSTUFF\CraftingRecipeClass.cs" />
+    <Compile Include="Assets\_Scripts\Menu\MenuCommands.cs" />
+    <Compile Include="Assets\_Scripts\RangedAttackScrpits\BowAttack.cs" />
+    <Compile Include="Assets\_Scripts\Item Scripts\SlotClass.cs" />
+    <Compile Include="Assets\_Scripts\Navmesh Scripts\NavmeshBuilder.cs" />
+    <Compile Include="Assets\MinimapCamera.cs" />
+    <Compile Include="Assets\_Scripts\Player.cs" />
+    <Compile Include="Assets\_Scripts\PlayerController.cs" />
+    <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyMovment.cs" />
+    <Compile Include="Assets\ConveyerBelt.cs" />
+    <Compile Include="Assets\_Scripts\Item Scripts\ItemClass.cs" />
+    <Compile Include="Assets\MoveAimLook.cs" />
+    <Compile Include="Assets\_Scripts\Enemy Scripts\EnemySpawn.cs" />
+    <Compile Include="Assets\_Scripts\Inventory Scripts\InventoryManagement.cs" />
+    <Compile Include="Assets\_Scripts\Crafting Scripts\ItemSlot.cs" />
+    <Compile Include="Assets\_Scripts\Enemy Scripts\Enemy.cs" />
+    <Compile Include="Assets\PlayerLocationFix.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

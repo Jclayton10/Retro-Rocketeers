@@ -78,7 +78,6 @@ public class InventoryManagement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-
             if (on)
             {
                 CloseInventory();
