@@ -25,7 +25,7 @@ public class InventoryManagement : MonoBehaviour
 
     [SerializeField] private SlotClass[] startingItems;
 
-    private SlotClass[] items;
+    public SlotClass[] items;
 
     private GameObject[] slots;
     private GameObject[] hotbarSlots;
@@ -96,6 +96,7 @@ public class InventoryManagement : MonoBehaviour
             else
             {
                 OpenInventory();
+                RefreshUI();
             }
         }
 
