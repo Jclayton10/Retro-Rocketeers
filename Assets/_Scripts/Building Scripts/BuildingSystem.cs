@@ -70,10 +70,10 @@ public class BuildingSystem : MonoBehaviour
         #endregion
 
         #region Rotation Of Buildings
-        if (Input.GetKeyDown(GameMaster.Instance.rotateKey))
+        /*if (Input.GetKeyDown(GameMaster.Instance.rotateKey))
         {
             activeRotationAmt += 90f;
-        }
+        }*/
         buildMarker.transform.rotation = Quaternion.Euler(0, activeRotationAmt, 0);
         #endregion
 
@@ -112,7 +112,7 @@ public class BuildingSystem : MonoBehaviour
             }
             buildMarker.transform.position = hit.point;
         }
-        if (Input.GetKeyDown(GameMaster.Instance.buildingKey) && hit.point != null)
+        /*if (Input.GetKeyDown(GameMaster.Instance.buildingKey) && hit.point != null)
         {
             Debug.Log(objectToBeBuilt.name);
 
@@ -120,7 +120,7 @@ public class BuildingSystem : MonoBehaviour
             Kit.Play();
 
             GameObject newBuilding = Instantiate(objectToBeBuilt, hit.point, Quaternion.Euler(0, activeRotationAmt, 0));
-        }
+        }*/
         #endregion
     }
 

@@ -33,7 +33,7 @@ public class StorageItem : MonoBehaviour
         else
             buttonPopup.SetActive(false);
 
-        if(playerInDistance && Input.GetKeyDown(GameMaster.Instance.interact))
+        if(playerInDistance && GameMaster.Instance.InteractPressed)
         {
             StorageHandler.storageHandler.itemsInStorage = items;
             StorageHandler.storageHandler.ToggleUI();

@@ -41,7 +41,7 @@ public class BowAttack : MonoBehaviour
         if (isAiming)
         {
             // Fire when the left mouse button is released
-            if (Input.GetMouseButtonUp(0))
+            if (GameMaster.Instance.AttackJustPressed)
             {
                 Fire();
             }

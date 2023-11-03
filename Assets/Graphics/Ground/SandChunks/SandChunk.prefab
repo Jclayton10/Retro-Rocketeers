@@ -66,6 +66,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sandblock Big
       objectReference: {fileID: 0}
+    - target: {fileID: 2460040453891309730, guid: eb8905ce0a0118646ad53c3a57223f31, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2983636328613681688, guid: eb8905ce0a0118646ad53c3a57223f31, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.0625

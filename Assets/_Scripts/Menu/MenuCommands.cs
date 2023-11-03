@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class MenuCommands : MonoBehaviour
 {
@@ -40,6 +41,10 @@ public class MenuCommands : MonoBehaviour
     public Slider MasterSlider;
     public Slider MusicSlider;
     public Slider SFXSlider;
+    public Slider MouseSlider;
+    [SerializeField] private InputActionAsset _inputAction;
+    
+
 
     [Header(" ")]
     public GameObject AudioEmmisions;
@@ -175,10 +180,9 @@ public class MenuCommands : MonoBehaviour
 
     public void ButtonSettings()
     {
-        //pull over to credit page, and maybe a new background prop
-
         StartCoroutine(CameraPan("Settings"));
     }
+
 
     public void ButtonApply()
     {
@@ -188,45 +192,26 @@ public class MenuCommands : MonoBehaviour
         GM.AudioSFX = SFXSlider.value / 100;
         AudioEmmisions.GetComponent<AudioSource>().volume = GM.AudioMaster * GM.AudioMusic;
 
-        /*GM.MouseSensitiviy = 1.0f;
-
-        GM.rightKey = KeyCode.D;
-        GM.leftKey = KeyCode.A;
-        GM.forwardKey = KeyCode.W;
-        GM.backKey = KeyCode.S;
-        GM.jumpKey = KeyCode.Space;
-
-        GM.buildKey = KeyCode.B;
-        GM.invKey = KeyCode.Tab;*/
+        GM.MouseSensitiviy = MouseSlider.value;
     }
 
     public void ButtonReset()
     {
         //update visuals as well
-        GM.AudioMaster = MasterSlider.value = 0.8f;
-        GM.AudioMusic = MusicSlider.value = 0.8f;
-        GM.AudioSFX = SFXSlider.value = 0.8f;
+        GM.AudioMaster = 0.8f;
+        GM.AudioMusic = 0.8f;
+        GM.AudioSFX = 0.8f;
         MasterSlider.value = 80;
         MusicSlider.value = 80;
         SFXSlider.value = 80;
         AudioEmmisions.GetComponent<AudioSource>().volume = GM.AudioMaster * GM.AudioMusic;
 
-        GM.MouseSensitiviy = 1.0f;
+        GM.MouseSensitiviy = MouseSlider.value = 1.0f;
 
-        GM.rightKey = KeyCode.D;
-        GM.leftKey = KeyCode.A;
-        GM.forwardKey = KeyCode.W;
-        GM.backKey = KeyCode.S;
-        GM.jumpKey = KeyCode.Space;
-        GM.runKey = KeyCode.LeftShift;
-
-        GM.buildModeKey = KeyCode.B;
-        GM.invKey = KeyCode.Tab;
-        GM.sheathKey = KeyCode.F;
-        GM.rotateKey = KeyCode.R;
-        GM.buildingKey = KeyCode.Mouse1;
-
-        GM.attackKey = KeyCode.Mouse0;
+        foreach (InputActionMap map in _inputAction.actionMaps)
+        {
+            map.RemoveAllBindingOverrides();
+        }
 
     }
 

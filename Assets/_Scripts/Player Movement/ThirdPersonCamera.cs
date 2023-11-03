@@ -91,7 +91,7 @@ public class ThirdPersonCamera : MonoBehaviour
         }
 
         // Check for the build mode input condition
-        if (Input.GetKeyDown(GameMaster.Instance.buildModeKey))
+        if (GameMaster.Instance.BuildModePressed)
         {
             // Want to stay in Combat if applicable
             if (currentStyle != CameraStyle.Combat)

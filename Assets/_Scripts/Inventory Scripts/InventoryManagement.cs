@@ -86,7 +86,7 @@ public class InventoryManagement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (GameMaster.Instance.InvPressed)
         {
 
             if (on)

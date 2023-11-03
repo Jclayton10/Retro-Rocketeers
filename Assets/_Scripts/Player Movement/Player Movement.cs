@@ -25,10 +25,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask ground;
     bool grounded;
 
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode runKey = KeyCode.LeftShift;
-
     public Transform orientation;
 
     float horizontalInput;
@@ -50,8 +46,6 @@ public class PlayerMovement : MonoBehaviour
         GameObject gm = GameObject.Find("Game Master");
         GM = gm.GetComponent<GameMaster>();
         PlayerSounds.volume = GM.AudioMaster * GM.AudioSFX;
-        jumpKey = GM.jumpKey;
-        runKey = GM.runKey;
     }
 
     Vector3 moveDir;
@@ -95,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput != 0 || verticalInput != 0)
         {
-            if (Input.GetKey(runKey))
+            if (GameMaster.Instance.SprintBeingPressed)
                 goalMoveSpeed = runSpeed;
             else
                 goalMoveSpeed = walkSpeed;
@@ -107,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
 
         UpdateAnimations();
 
-        if (Input.GetKey(jumpKey) && canJump && grounded)
+        if (GameMaster.Instance.JumpJustPressed && canJump && grounded)
         {
             canJump = false;
             Jump();
@@ -126,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = (moveDir.normalized * currentMovingSpeed);
             Footstepcount -= Time.deltaTime;
-            if (Footstepcount <= 0)
+            if (Footstepcount <= 0 && (rb.velocity.x > 0.25f || rb.velocity.z > 0.25f))
             {
                 Footstepcount = 0.25f;
                 PlayerSounds.Play();
