@@ -10,7 +10,7 @@ public class ConveyerBelt : MonoBehaviour
     {
         foreach (Rigidbody rb in objectsOnConveyer)
         {
-            rb.velocity = -transform.forward * moveSpeed;
+            rb.velocity = new Vector3(-transform.forward.x * moveSpeed, rb.velocity.y, -transform.forward.z * moveSpeed);
         }
     }
 

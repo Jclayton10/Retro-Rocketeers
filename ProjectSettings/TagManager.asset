@@ -9,6 +9,7 @@ TagManager:
   - Camera
   - Waypoint
   - StorageObject
+  - Conveyor
   layers:
   - Default
   - TransparentFX
