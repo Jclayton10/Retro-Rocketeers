@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Pickaxe
   itemIcon: {fileID: 21300000, guid: 506f6730af6a70946bb5fe36ed5a41b2, type: 3}
   prefab: {fileID: 919132149155446097, guid: d5b3094b5fdfd48409f70f0730afa22c, type: 3}
-  isStackable: 0
+  isStackable: 1
   description: 'This could come in handy as a weapon! '
   toolType: 1
   attackDamage: 5
