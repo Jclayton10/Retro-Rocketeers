@@ -14,6 +14,8 @@ public class StorageHandler : MonoBehaviour
     [SerializeField] GameObject storagePanel;
     [SerializeField] GameObject itemCursor;
 
+    [SerializeField] GameObject inventoryCraftingPanel;
+
     public SlotClass[] itemsInStorage;
 
     [SerializeField] private GameObject[] inventorySlots;
@@ -78,6 +80,8 @@ public class StorageHandler : MonoBehaviour
             Time.timeScale = 0;
             hotbar.SetActive(false);
             selector.SetActive(false);
+
+            inventoryCraftingPanel.SetActive(false);
         }
         else
         {
