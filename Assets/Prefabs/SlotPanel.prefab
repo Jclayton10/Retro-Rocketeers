@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 833826752937796734}
   - component: {fileID: 2192814927532125947}
   - component: {fileID: 7276385497726194235}
+  - component: {fileID: 1347043535348680629}
   m_Layer: 5
   m_Name: SlotPanel
   m_TagString: Untagged
@@ -286,3 +287,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1347043535348680629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7078859698273794176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0bf544b0a69aa747bc7bf63e92045bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currItem: {fileID: 0}
+  itemImage: {fileID: 7788161228346033372}
+  itemTransform: {fileID: 336682189379059662}
+  canvas: {fileID: 0}
