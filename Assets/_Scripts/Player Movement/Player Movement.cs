@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
-        bow = FindFirstObjectByType<BowAttack>();
+        //bow = FindFirstObjectByType<BowAttack>();
         GameObject gm = GameObject.Find("Game Master");
         GM = gm.GetComponent<GameMaster>();
         PlayerSounds.volume = GM.AudioMaster * GM.AudioSFX;
@@ -78,17 +78,17 @@ public class PlayerMovement : MonoBehaviour
             else
             {
 
-             MovePlayer();
-                SpeedControl();
-                MyInput();
+        MyInput();
+        MovePlayer();
+        SpeedControl();
             }       
         }
         */
 
+        MyInput();
         MovePlayer();
         SpeedControl();
-        MyInput();
-    
+
         //Need to run this after MyInput() to stop animations
         if (InventoryManagement.inventoryManagement.on)
             return;
