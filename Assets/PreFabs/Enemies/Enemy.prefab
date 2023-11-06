@@ -117,8 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cff36eff8d0aa4ea7cf68317d1b4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   damageAmount: 1
+  currentHealth: 100
 --- !u!114 &3265475680044526560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,9 +135,9 @@ MonoBehaviour:
   goal: {fileID: 0}
   centrePoint: {fileID: 8174888187116309286}
   speed: 5
-  maxRangeToPlayer: 15
+  maxRangeToPlayer: 20
   attackRange: 6
-  rangeOfRandomPointRadius: 5
+  rangeOfRandomPointRadius: 10
 --- !u!195 &6773565378133513791
 NavMeshAgent:
   m_ObjectHideFlags: 0

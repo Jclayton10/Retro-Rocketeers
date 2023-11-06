@@ -82,7 +82,7 @@ public class EnemyMovment : MonoBehaviour
                 {
                     Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f);
                     agent.SetDestination(point);
-                    currentDestination = point;
+                    //currentDestination = point;
                 }
             }
         }
