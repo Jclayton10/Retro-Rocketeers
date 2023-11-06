@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 7042000969428809181}
   - component: {fileID: 7152748856088728880}
   - component: {fileID: 2633826181052981810}
+  - component: {fileID: -3627205694091924979}
   m_Layer: 0
   m_Name: GreenHouse
   m_TagString: Untagged
@@ -153,6 +154,14 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 6.25, z: 4}
   m_Center: {x: 0, y: 3.125, z: 0}
+--- !u!33 &-3627205694091924979
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974090904833335530}
+  m_Mesh: {fileID: 0}
 --- !u!1001 &589498985259321142
 PrefabInstance:
   m_ObjectHideFlags: 0

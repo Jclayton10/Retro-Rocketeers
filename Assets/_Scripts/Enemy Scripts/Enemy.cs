@@ -2,33 +2,38 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int damageAmount;
-    private int currentHealth;
+    public int damageAmount = 10;
+    public int currentHealth = 100;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        currentHealth = maxHealth;
-    }
+        if (other.CompareTag("Player"))
+        {
+            PlayerHelthAndRespawn playerScript = other.GetComponent<PlayerHelthAndRespawn>();
 
-    // Update is called once per frame
-    void Update()
-    {
+            if (playerScript != null)
+            {
+                // Access the player's CapsuleCollider and set it as a trigger
+                CapsuleCollider playerCollider = playerScript.GetComponent<CapsuleCollider>();
+                if (playerCollider != null)
+                {
+                    playerCollider.isTrigger = true;
+                }
 
-
+                // Apply damage to the player
+                playerScript.TakeDamge(damageAmount);
+            }
+        }
     }
 
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
-
         if (currentHealth <= 0)
         {
             Die();
         }
     }
-
     void Die()
     {
         // Handle enemy death logic here

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    public int damageAmount; // Adjust the spelling of "damageAmount" for consistency
+    public int damageAmount; 
 
     private void OnTriggerEnter(Collider other)
     {

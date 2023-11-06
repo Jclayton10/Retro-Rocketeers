@@ -27,17 +27,12 @@ public class PlayerAttack : MonoBehaviour
     {
         if (isWeapomDrawn && other.CompareTag("Enemy"))
         {
-            // Calculate the damage (using your attackDamage variable)
-            int damage = attackDamage;
-
-            // Get the enemy's script that handles taking damage
             Enemy enemyHealth = other.GetComponent<Enemy>();
 
-            // Check if the enemy has a script to take damage
             if (enemyHealth != null)
             {
                 // Apply the damage to the enemy
-                enemyHealth.TakeDamage(damage);
+                enemyHealth.TakeDamage(attackDamage);
                 Debug.Log("EnemyHealth: " + enemyHealth.ToString());
             }
         }
@@ -71,9 +66,7 @@ public class PlayerAttack : MonoBehaviour
 
 
         }
-
-        //Attack();
-
     }
+    
 
 }

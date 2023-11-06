@@ -29,8 +29,9 @@ public class ThirdPersonCamera : MonoBehaviour
     public GameObject buildingCamera;
     public GameObject aimCamera;
 
+    [Header("BowAttack")]
+    public float bowRotationSpeed;
     [HideInInspector]
-    private bool isAiming;
     private BowAttack bow;
 
 
@@ -46,8 +47,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // if (InventoryManagement.inventoryManagement.on)
-        //  return;
+        if (InventoryManagement.inventoryManagement.on)
+         return;
 
         // Rotate orientation based on player's position
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
@@ -82,13 +83,15 @@ public class ThirdPersonCamera : MonoBehaviour
                 SwitchCameraStyle(CameraStyle.Aim);
             }
         }
+        
 
         if (currentStyle == CameraStyle.Aim)
         {
-            Aim();
+            //Aim();
             if (!Input.GetMouseButtonDown(0))
                 SwitchCameraStyle(CameraStyle.Basic);
         }
+        
 
         // Check for the build mode input condition
         if (GameMaster.Instance.BuildModePressed)
@@ -137,7 +140,7 @@ public class ThirdPersonCamera : MonoBehaviour
         }
         else if (newStyle == CameraStyle.Aim)
         {
-            aimCamera.transform.position = basicCamera.transform.position;
+            aimCamera.transform.position = aimCamera.transform.position;
             aimCamera.SetActive(true);
         }
         else
@@ -150,41 +153,42 @@ public class ThirdPersonCamera : MonoBehaviour
     }
     public void Aim()
     {
-        // Make sure you have a reference to the BowAttack script to access the fire point
         if (bow != null)
         {
-            // Set the aimCamera's position to match the fire point's position
-            aimCamera.transform.position = bow.firePoint.position;
+        
+         // Set the aimCamera's position to match the fire point's position
+         //aimCamera.transform.position = bow.firePoint.position;
+
+         float mouseY = Input.GetAxis("Mouse Y"); // Get the vertical mouse input
+         float mouseX = Input.GetAxis("Mouse X"); // Get the horizontal mouse input
+
+         // Get the current rotation of the aimCamera
+         Vector3 currentRotation = aimCamera.transform.localEulerAngles;
+
+         // Calculate the new pitch (vertical rotation)
+         float newPitch = currentRotation.x - mouseY * bowRotationSpeed * Time.deltaTime;
+         float newYaw = currentRotation.y + mouseX * bowRotationSpeed * Time.deltaTime;
+
+         // Clamp the pitch and yaw to prevent flipping and over-rotating
+         newPitch = Mathf.Clamp(newPitch, -90f, 90f); // Adjust the angle limits as needed
+         newYaw = Mathf.Clamp(newYaw, -90f, 90f);
+
+         // Set the new rotation
+         aimCamera.transform.localEulerAngles = new Vector3(newPitch, newYaw, currentRotation.z);
+            
         }
 
-        float mouseY = Input.GetAxis("Mouse Y"); // Get the vertical mouse input
 
-        // Get the current rotation of the aimCamera
-        Vector3 currentRotation = aimCamera.transform.localEulerAngles;
-
-        // Calculate the new pitch (vertical rotation)
-        float newPitch = currentRotation.x - mouseY * rotationSpeed * Time.deltaTime;
-
-        // Clamp the pitch to prevent flipping
-        newPitch = Mathf.Clamp(newPitch, 0, -90f);
-
-        // Set the new rotation
-        aimCamera.transform.localEulerAngles = new Vector3(newPitch, currentRotation.y, currentRotation.z);
-
-        /*
-        // Check if aiming is still active
-        if (Mathf.Abs(mouseY) > 0.01f)
-        {
-            // Player is actively aiming
-            isAiming = true;
-        }
-        else
-        {
-            // Player is not aiming anymore, switch to "Basic" camera
-            isAiming = false;
-            SwitchCameraStyle(CameraStyle.Basic);
-            currentStyle = CameraStyle.Basic;
-        }
-        */
     }
+   
+
+
+    public Ray GetRayFromMousePosition(Vector3 mousePosition)
+    {
+        // Use ScreenPointToRay or other logic to create the ray from the mouse position
+        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
+        return ray;
+    } 
+   
+    
 }

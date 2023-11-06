@@ -10,6 +10,7 @@ TagManager:
   - Waypoint
   - StorageObject
   - Conveyor
+  - OxyegenSystem
   layers:
   - Default
   - TransparentFX

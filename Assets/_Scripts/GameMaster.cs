@@ -33,7 +33,7 @@ public class GameMaster : MonoBehaviour
     private InputAction _invAction;
     private InputAction _interactAction;
     private InputAction _sprintAction;
-    private InputAction _sheathAction;
+    private InputAction _sheathSwordAction;
     private InputAction _rotateAction;
     private InputAction _buildAction;
     private InputAction _attackAction;
@@ -70,7 +70,7 @@ public class GameMaster : MonoBehaviour
         _invAction = _playerInput.actions["Inventory"];
         _interactAction = _playerInput.actions["Interact"];
         _sprintAction = _playerInput.actions["Sprint"];
-        _sheathAction = _playerInput.actions["Sheath"];
+        _sheathSwordAction = _playerInput.actions["Sheath"];
         _rotateAction = _playerInput.actions["Rotate"];
         _buildAction = _playerInput.actions["Build"];
         _attackAction = _playerInput.actions["Attack"];
@@ -85,7 +85,7 @@ public class GameMaster : MonoBehaviour
         InvPressed = _invAction.WasPressedThisFrame();
         InteractPressed = _interactAction.WasPressedThisFrame();
         SprintBeingPressed = _sprintAction.WasPressedThisFrame();
-        SheathJustPressed = _sheathAction.WasPressedThisFrame();
+        SheathJustPressed = _sheathSwordAction.WasPressedThisFrame();
         RotateJustPressed = _rotateAction.WasPressedThisFrame();
         BuildJustPressed = _buildAction.WasPressedThisFrame();
         AttackJustPressed = _attackAction.WasPressedThisFrame();

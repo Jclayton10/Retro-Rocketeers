@@ -3,9 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public GameMaster GM;
-    [Header("Health")]
-    public int playerHealth;
-    private int currentPlayerHealth;
+  
     [Header("Movement")]
     public bool canMove = false;
     public float walkSpeed;
@@ -39,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("BowAttack")]
     public BowAttack bow;
+    public float rotationSpeed;
 
     void Awake()
     {
@@ -51,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDir;
     private void Start()
     {
-        currentPlayerHealth = playerHealth;
+        
     }
     void Update()
     {
@@ -65,20 +64,34 @@ public class PlayerMovement : MonoBehaviour
         else
             rb.drag = 0;
 
-        MyInput();
 
-        //Need to run this after MyInput() to stop animations
-        //if (InventoryManagement.inventoryManagement.on)
-        // return;
+
+
+        /*if (bow == null)
+        {
+            if (bow.isAiming)
+            {
+                // RotatePlayerInPlace();
+                Aim();
+
+            }
+            else
+            {
+
+             MovePlayer();
+                SpeedControl();
+                MyInput();
+            }       
+        }
+        */
 
         MovePlayer();
         SpeedControl();
-
-        //if(bow.isAiming)
-        // {
-
-        //  Aim();
-        //  }
+        MyInput();
+    
+        //Need to run this after MyInput() to stop animations
+        if (InventoryManagement.inventoryManagement.on)
+            return;
 
     }
 
@@ -159,29 +172,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            other.gameObject.GetComponent<BoxCollider>();
+           
             GameObject activeCamera = GameObject.FindGameObjectWithTag("Camera");
             Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Combat);
         }
     }
-    private void OnCollisionEnter(Collision collider)
-    {
-        if (collider.gameObject.CompareTag("Enemy"))
-        {
-            // Get the Enemy script component from the collided enemy object
-            Enemy enemy = collider.gameObject.GetComponent<Enemy>();
-
-            if (enemy != null)
-            {
-                // Apply damage to the player based on the enemy's damage amount
-                playerHealth -= enemy.damageAmount;
-                Debug.Log("PlayerMovment/PlayerHealth:" + playerHealth);
-                // Call a function to handle the player's health and death logic
-                //HandleHealthAndDeath();
-            }
-        }
-    }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Enemy")
@@ -194,6 +189,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameObject activateCamera = GameObject.FindGameObjectWithTag("Camera");
         Camera.main.GetComponent<ThirdPersonCamera>().SwitchCameraStyle(CameraStyle.Aim);
+        
 
     }
 
@@ -204,4 +200,14 @@ public class PlayerMovement : MonoBehaviour
         playerAnimator.SetFloat("XVel", currentMovingSpeed * Input.GetAxis("Horizontal") / 8);
         playerAnimator.SetFloat("YVel", currentMovingSpeed * Input.GetAxis("Vertical") / 8);
     }
+     private void RotatePlayerInPlace()
+    {
+        // Calculate the rotation based on mouse input
+        float mouseX = Input.GetAxis("Mouse X");
+        Vector3 rotation = new Vector3(0f, mouseX * rotationSpeed * Time.deltaTime, 0f);
+
+        // Apply rotation to the player's orientation
+        orientation.Rotate(rotation);
+    }
+    
 }
