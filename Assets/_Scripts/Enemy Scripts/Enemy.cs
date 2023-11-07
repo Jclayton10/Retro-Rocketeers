@@ -5,26 +5,72 @@ public class Enemy : MonoBehaviour
     public int damageAmount = 10;
     public int currentHealth = 100;
 
-    private void OnTriggerEnter(Collider other)
+    public CapsuleCollider playerCollider;
+    public SphereCollider sphereCollider;
+
+    private EnemyMovment enemyMovement; // Reference to the EnemyMovment script
+
+    [HideInInspector]
+    public PlayerHelthAndRespawn healthSpript;
+    private void Awake()
     {
-        if (other.CompareTag("Player"))
+        // Get a reference to the EnemyMovment script attached to the same game object
+        enemyMovement = GetComponent<EnemyMovment>();
+        GameObject gm = GameObject.Find("PlayerObj");
+        healthSpript = gm.GetComponent<PlayerHelthAndRespawn>();
+
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider == playerCollider) 
         {
-            PlayerHelthAndRespawn playerScript = other.GetComponent<PlayerHelthAndRespawn>();
-
-            if (playerScript != null)
+            if (playerCollider != null)
             {
-                // Access the player's CapsuleCollider and set it as a trigger
-                CapsuleCollider playerCollider = playerScript.GetComponent<CapsuleCollider>();
-                if (playerCollider != null)
+               
+                if (healthSpript != null)
                 {
+                    healthSpript.TakeDamge(damageAmount);
                     playerCollider.isTrigger = true;
+                    
                 }
-
-                // Apply damage to the player
-                playerScript.TakeDamge(damageAmount);
             }
         }
+
+        if (collision.collider == sphereCollider) 
+        {
+            sphereCollider.isTrigger=true;
+            enemyMovement.anim.SetBool("isMoving", false);
+            enemyMovement.anim.speed = 0;
+            enemyMovement.agent.isStopped = true;
+             
+        }
     }
+    private void OnCollisionExit(Collision collision)
+    {
+
+        if (collision.collider == playerCollider)
+        {
+            if (playerCollider != null)
+            {
+               
+                if (healthSpript != null)
+                {
+                    healthSpript.TakeDamge(damageAmount);
+                    playerCollider.isTrigger = false;
+                }
+            }
+        }
+        if(collision.collider == sphereCollider)
+        {
+            sphereCollider.isTrigger = false;
+            enemyMovement.anim.SetBool("isMoving", true);
+            enemyMovement.anim.speed = 0;
+            enemyMovement.agent.isStopped = false;
+        }
+    }
+
+   
 
     public void TakeDamage(int damageAmount)
     {
@@ -34,6 +80,7 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+
     void Die()
     {
         // Handle enemy death logic here

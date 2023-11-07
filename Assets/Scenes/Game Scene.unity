@@ -2899,6 +2899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 2
   currentHealth: 100
+  playerCollider: {fileID: 0}
+  sphereCollider: {fileID: 0}
+  healthSpript: {fileID: 0}
 --- !u!135 &123555601
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6408,6 +6411,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 1573444092}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
@@ -9386,6 +9405,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 1445144959}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (9)
@@ -16919,6 +16954,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 1930238765}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (7)
@@ -22065,6 +22116,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 2139759660}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -24634,9 +24701,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8807028571536789916, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
   m_PrefabInstance: {fileID: 1475045156}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &906311969 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 1475045156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &906641084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8807028571536789916, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 1361453213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &906641092 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
   m_PrefabInstance: {fileID: 1361453213}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &908425948
@@ -24946,12 +25023,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
     - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: maxRangeToPlayer
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: rangeOfRandomPointRadius
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 1665030989}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
@@ -29397,9 +29490,6 @@ PrefabInstance:
       addedObject: {fileID: 1188010529}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3267fe4b65cf9cb44a8767b74ec2e65a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1188010533}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3267fe4b65cf9cb44a8767b74ec2e65a, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1188010531}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3267fe4b65cf9cb44a8767b74ec2e65a, type: 3}
       insertIndex: -1
@@ -31140,29 +31230,6 @@ MonoBehaviour:
   playersCurrentOxygenLevel: 100
   oxygenRegenRate: 5
   oxygenDepleteRate: 5
---- !u!136 &1188010533
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188010527}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.007
-  m_Height: 0.03
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!114 &1188010534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31992,6 +32059,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06860ddae829010419270f18de946c9f, type: 3}
+--- !u!135 &1250207828 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 2099749955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1250922270
 GameObject:
   m_ObjectHideFlags: 0
@@ -34188,6 +34260,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 1779449502}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (5)
@@ -35724,6 +35812,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 906641092}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
@@ -38118,6 +38222,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8807028571536789916, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
   m_PrefabInstance: {fileID: 332480488}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1445144959 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 332480488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445249068
 GameObject:
   m_ObjectHideFlags: 3
@@ -39068,6 +39177,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 906311969}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (6)
@@ -41535,6 +41660,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 2097608507}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -41587,6 +41728,11 @@ PrefabInstance:
 --- !u!4 &1573444084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8807028571536789916, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 219847706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1573444092 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
   m_PrefabInstance: {fileID: 219847706}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1577930012
@@ -43932,6 +44078,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &1665030989 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 932743653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666014388
 GameObject:
   m_ObjectHideFlags: 0
@@ -47035,6 +47186,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 2139759660}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -47179,6 +47346,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &1779449502 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 1298082894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1780583978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7078859698273794176, guid: 06860ddae829010419270f18de946c9f, type: 3}
@@ -51570,6 +51742,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8807028571536789916, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
   m_PrefabInstance: {fileID: 617551353}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1930238765 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 617551353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1932151180
 GameObject:
   m_ObjectHideFlags: 0
@@ -55852,6 +56029,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8807028571536789916, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
   m_PrefabInstance: {fileID: 1568194522}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &2097608507 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 1568194522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2099378377
 GameObject:
   m_ObjectHideFlags: 0
@@ -55955,6 +56137,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1188010529}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: sphereCollider
+      value: 
+      objectReference: {fileID: 1250207828}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8174888187116309286, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_Name
       value: Enemy (8)
@@ -56910,6 +57108,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &2139759660 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2035769275182579255, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+  m_PrefabInstance: {fileID: 819101199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &520987690919941382
 PrefabInstance:
   m_ObjectHideFlags: 0
