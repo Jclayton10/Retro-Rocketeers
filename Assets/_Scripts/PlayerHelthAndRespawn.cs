@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class PlayerHelthAndRespawn : MonoBehaviour
 {
+    public static PlayerHelthAndRespawn playerHealth;
+    public int maxHealth = 100;
     public int currentHealth = 100;
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-       
-    }
+    [SerializeField] Transform playerLocation;
 
     public void TakeDamge(int amount)
     {
@@ -29,6 +21,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
     // Method to handle player death (you can implement your own logic)
     private void Die()
     {
-      
+        currentHealth = maxHealth;
+        transform.parent.transform.position = playerLocation.position;
     }
 }

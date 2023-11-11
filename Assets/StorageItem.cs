@@ -19,6 +19,7 @@ public class StorageItem : MonoBehaviour
         {
             items[i] = startingItems[i];
         }
+        playerObj = GameObject.Find("PlayerObj").transform;
     }
 
     private void Update()
@@ -42,32 +43,39 @@ public class StorageItem : MonoBehaviour
 
     public bool hasSpace(SlotClass inputItem)
     {
-        foreach(SlotClass item in items)
+        for(int i = 0; i < items.Length; i++)
         {
-            if (item.GetItem() == null)
+            Debug.Log(items[i]);
+            if (items[i] == null)
                 return true;
-            if(item.GetItem() == inputItem.GetItem() && item.GetQuantity() < 999) {
+
+            if (items[i].GetItem() == inputItem.GetItem() && items[i].GetQuantity() < 999)
+            {
                 return true;
             }
         }
+
         return false;
     }
 
     public void AddItem(SlotClass inputItem)
     {
-        foreach (SlotClass item in items)
+        for (int i = 0; i < items.Length; i++)
         {
-            if (item.GetItem() == inputItem.GetItem() && item.GetQuantity() < 999)
+            if (items[i] == null)
+                continue;
+
+            if (items[i].GetItem() == inputItem.GetItem() && items[i].GetQuantity() < 999)
             {
-                item.AddQuantity(1);
+                items[i].AddQuantity(1);
                 return;
             }
         }
-        foreach (SlotClass item in items)
+        for (int i = 0; i < items.Length; i++)
         {
-            if (item.GetItem() == null)
+            if (items[i] == null)
             {
-                item.AddItem(inputItem.GetItem(), 1);
+                items[i] = new SlotClass(inputItem.GetItem(), 1);
                 return;
             }
         }

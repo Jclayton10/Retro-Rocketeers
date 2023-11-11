@@ -31,6 +31,8 @@ public class BuildingSystem : MonoBehaviour
 
     [SerializeField] List<BuildingUIItem> objectsThatCanBeBuilt;
 
+    [SerializeField] GameObject emptyObject; //Object to be shown if the object being built won't work
+
     [Header("Set Dynamically")]
     [SerializeField] GameObject objectToBeBuilt;
     [SerializeField] float activeRotationAmt = 0;
@@ -70,10 +72,10 @@ public class BuildingSystem : MonoBehaviour
         #endregion
 
         #region Rotation Of Buildings
-        /*if (Input.GetKeyDown(GameMaster.Instance.rotateKey))
+        if (GameMaster.Instance.RotateJustPressed)
         {
             activeRotationAmt += 90f;
-        }*/
+        }
         buildMarker.transform.rotation = Quaternion.Euler(0, activeRotationAmt, 0);
         #endregion
 
@@ -112,7 +114,7 @@ public class BuildingSystem : MonoBehaviour
             }
             buildMarker.transform.position = hit.point;
         }
-        /*if (Input.GetKeyDown(GameMaster.Instance.buildingKey) && hit.point != null)
+        if (GameMaster.Instance.BuildJustPressed && hit.point != null)
         {
             Debug.Log(objectToBeBuilt.name);
 
@@ -120,14 +122,17 @@ public class BuildingSystem : MonoBehaviour
             Kit.Play();
 
             GameObject newBuilding = Instantiate(objectToBeBuilt, hit.point, Quaternion.Euler(0, activeRotationAmt, 0));
-        }*/
+        }
         #endregion
     }
 
     private void UpdateUI(BuildingUIItem item)
     {
         objectToBeBuilt = item.prefab;
-        buildMarker.GetComponent<MeshFilter>().mesh = item.prefab.GetComponent<MeshFilter>().sharedMesh;
+        if (item.prefab.GetComponent<MeshFilter>())
+            buildMarker.GetComponent<MeshFilter>().mesh = item.prefab.GetComponent<MeshFilter>().sharedMesh;
+        else
+            buildMarker.GetComponent<MeshFilter>().mesh = emptyObject.GetComponent<MeshFilter>().sharedMesh;
         buildMarker.transform.localScale = item.prefab.transform.localScale;
     }
 

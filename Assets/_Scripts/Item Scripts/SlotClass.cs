@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 [System.Serializable]
-public class SlotClass
+public class SlotClass 
 {
     [SerializeField] private ItemClass item;
     [SerializeField] private int quantity;
@@ -17,6 +19,13 @@ public class SlotClass
     {
         item = _item;
         quantity = _quantity;
+    }
+
+    public bool isEmpty()
+    {
+        if (item == null)
+            return true;
+        return false;
     }
 
     public ItemClass GetItem()

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemSlot : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
+public class ItemSlot : MonoBehaviour//, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     public ItemClass currItem;
     //public int quantity;
@@ -23,18 +23,17 @@ public class ItemSlot : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
     {
         if (currItem != null)
         {
+            itemImage.enabled = true;
             itemImage.sprite = currItem.itemIcon;
-            //quantity = currItem.quantity;
         }
         else
         {
-            itemImage.sprite = null;
-            //quantity = 0;
+            itemImage.enabled = false;
         }
 
         itemTransform.anchoredPosition = Vector3.zero;
     }
-
+    /*
     public void OnPointerDown(PointerEventData eventData)
     {
         cg.blocksRaycasts = false;
@@ -82,5 +81,5 @@ public class ItemSlot : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
             itemTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         }
     }
-
+    */
 }

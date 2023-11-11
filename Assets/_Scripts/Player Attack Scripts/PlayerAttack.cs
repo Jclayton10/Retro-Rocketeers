@@ -41,6 +41,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (isWeaponShethed == true && GameMaster.Instance.SheathJustPressed) // Change the input key as needed
         {
+            Debug.Log("Unsheating!");
             isWeapomDrawn = true;
             isWeaponShethed = false;
 

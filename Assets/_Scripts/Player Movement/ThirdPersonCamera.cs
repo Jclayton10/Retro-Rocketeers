@@ -47,7 +47,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (InventoryManagement.inventoryManagement.on)
+        if (InventoryManagementver2.inventoryManagementver2.on)
          return;
 
         // Rotate orientation based on player's position

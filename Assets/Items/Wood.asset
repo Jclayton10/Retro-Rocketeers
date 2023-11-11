@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   itemName: Wood
-  itemIcon: {fileID: 21300000, guid: 7cd290b3009940841a79b238a28b51ef, type: 3}
+  itemIcon: {fileID: 21300000, guid: 0237fb06ca6007c4c91a732980ee7096, type: 3}
   prefab: {fileID: 7203087256436779069, guid: 241e67b7052dd5e4ea6803baa95db5d5, type: 3}
   isStackable: 1
   description: This item looks useful for crafting!
