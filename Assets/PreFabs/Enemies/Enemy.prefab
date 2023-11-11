@@ -94,10 +94,7 @@ PrefabInstance:
       addedObject: {fileID: 9201312234330959145}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7717726003346853037}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 993961524243861316}
+      addedObject: {fileID: 2035769275182579255}
   m_SourcePrefab: {fileID: 100100000, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
 --- !u!95 &3231602140775926758 stripped
 Animator:
@@ -123,6 +120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 1
   currentHealth: 100
+  playerCollider: {fileID: 0}
+  sphereCollider: {fileID: 0}
+  healthSpript: {fileID: 0}
 --- !u!114 &3265475680044526560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   maxRangeToPlayer: 20
   attackRange: 6
   rangeOfRandomPointRadius: 10
+  agent: {fileID: 0}
 --- !u!195 &6773565378133513791
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -191,31 +192,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &7717726003346853037
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8174888187116309286}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.01794213
-  m_Height: 0.065738
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.023734743, z: -0.004544744}
---- !u!136 &993961524243861316
-CapsuleCollider:
+--- !u!135 &2035769275182579255
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -232,8 +210,6 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.01794213
-  m_Height: 0.065738
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.023734743, z: -0.004544744}
+  serializedVersion: 3
+  m_Radius: 0.038581282
+  m_Center: {x: 0.0000541836, y: 0.026828755, z: -0.000000017881394}
