@@ -5311,7 +5311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965070684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2689692, y: 0.7203156, z: -0.3731748, w: 0.5191741}
+  m_LocalRotation: {x: 0.26896912, y: 0.72031564, z: -0.37317488, w: 0.519174}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9682,6 +9682,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 833826752937796734, guid: 06860ddae829010419270f18de946c9f, type: 3}
   m_PrefabInstance: {fileID: 2051507715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1689947302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4989313095649820766, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_Name
+      value: OxgenArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.851447
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.608293
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115672755003992377, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01450ff5131868a499f94cd0c22c1335, type: 3}
 --- !u!1 &1691438008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5884345612391550636, guid: b4655acdb44f0f344995d572c9e13b75, type: 3}
@@ -9731,7 +9788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playersCurrentOxygenLevel: 100
   oxygenRegenRate: 5
-  oxygenDepleteRate: 5
+  oxygenDepleteRate: 1
+  oxeygenBarUI: {fileID: 826462399}
 --- !u!114 &1707053420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12455,3 +12513,4 @@ SceneRoots:
   - {fileID: 538124501}
   - {fileID: 656575304}
   - {fileID: 1397420466}
+  - {fileID: 1689947302}

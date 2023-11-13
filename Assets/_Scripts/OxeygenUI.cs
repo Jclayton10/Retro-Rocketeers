@@ -7,12 +7,12 @@ public class OxeygenUI : MonoBehaviour
 {
     public Slider oxeygenSlider;
 
-    public void SetMaxOxeygen(int  oxeygen)
+    public void SetMaxOxyegen(float oxeygen)
     {
         oxeygenSlider.maxValue = oxeygen;
         oxeygenSlider.value = oxeygen;
     }
-    public void SetHealth(int oxeygen)
+    public void SetOxyegen(float oxeygen)
     {
         oxeygenSlider.value = oxeygen;
     }
