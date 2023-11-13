@@ -90,8 +90,8 @@ public class PlayerMovement : MonoBehaviour
         SpeedControl();
 
         //Need to run this after MyInput() to stop animations
-        if (InventoryManagementver2.inventoryManagementver2.on)
-            return;
+        //if (InventoryManagementver2.inventoryManagementver2.on)
+          //  return;
 
     }
 

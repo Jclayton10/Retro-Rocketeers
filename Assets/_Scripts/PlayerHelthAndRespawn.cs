@@ -6,12 +6,21 @@ public class PlayerHelthAndRespawn : MonoBehaviour
 {
     public static PlayerHelthAndRespawn playerHealth;
     public int maxHealth = 100;
-    public int currentHealth = 100;
+    private int currentHealth;
+
+    public HealthBarUI healthBarUI;
+
     [SerializeField] Transform playerLocation;
 
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        healthBarUI.SetMaxHealth(maxHealth);
+    }
     public void TakeDamge(int amount)
     {
         currentHealth -= amount;
+        healthBarUI.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
             Die();

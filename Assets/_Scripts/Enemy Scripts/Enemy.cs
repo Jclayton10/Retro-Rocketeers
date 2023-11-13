@@ -6,8 +6,6 @@ public class Enemy : MonoBehaviour
     public int currentHealth = 100;
 
     public CapsuleCollider playerCollider;
-    public SphereCollider sphereCollider;
-
     private EnemyMovment enemyMovement; // Reference to the EnemyMovment script
 
     [HideInInspector]
@@ -37,14 +35,7 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        if (collision.collider == sphereCollider) 
-        {
-            sphereCollider.isTrigger=true;
-            enemyMovement.anim.SetBool("isMoving", false);
-            enemyMovement.anim.speed = 0;
-            enemyMovement.agent.isStopped = true;
-             
-        }
+       
     }
     private void OnCollisionExit(Collision collision)
     {
@@ -61,13 +52,7 @@ public class Enemy : MonoBehaviour
                 }
             }
         }
-        if(collision.collider == sphereCollider)
-        {
-            sphereCollider.isTrigger = false;
-            enemyMovement.anim.SetBool("isMoving", true);
-            enemyMovement.anim.speed = 0;
-            enemyMovement.agent.isStopped = false;
-        }
+       
     }
 
    

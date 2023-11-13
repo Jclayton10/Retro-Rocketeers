@@ -47,8 +47,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (InventoryManagementver2.inventoryManagementver2.on)
-         return;
+        //if (InventoryManagementver2.inventoryManagementver2.on)
+         //return;
 
         // Rotate orientation based on player's position
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
