@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
 
     public Animator playerAttack;
     public GameObject weaponHoslter;
-    public GameObject weaponDraw;
+
 
     public int attackDamage = 10;
     public int knockbackForce = 5;
@@ -15,14 +15,19 @@ public class PlayerAttack : MonoBehaviour
     private bool isWeapomDrawn;
     private bool isWeaponShethed;
 
+    private MeshRenderer swordGripRenderer;
+    private MeshCollider swordGripMeshCollider;
   
     
 
     private void Awake()
     {
-        weaponDraw.SetActive(false);
         isWeapomDrawn = false;
         isWeaponShethed = true;
+        swordGripRenderer = gameObject.GetComponentInChildren<MeshRenderer>();
+        swordGripRenderer.enabled = false;
+        swordGripMeshCollider = gameObject.GetComponent<MeshCollider>();
+        swordGripMeshCollider.enabled = false;
     }
 
     private void Update()
@@ -57,19 +62,29 @@ public class PlayerAttack : MonoBehaviour
             isWeaponShethed = false;
 
             weaponHoslter.SetActive(false);
-            weaponDraw.SetActive(true);
+           
+
+            swordGripRenderer = gameObject.GetComponentInChildren<MeshRenderer>();
+            swordGripRenderer.enabled = true;
+            swordGripMeshCollider = gameObject.GetComponent<MeshCollider>();
+            swordGripMeshCollider.enabled = true;
 
             playerAttack.SetTrigger("Withdraw");
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.SheathJustPressed)
         {
+            playerAttack.SetTrigger("Sheathing");
+
             isWeapomDrawn = false;
             isWeaponShethed = true;
 
             weaponHoslter.SetActive(true);
-            weaponDraw.SetActive(false);
+          
 
-            playerAttack.SetTrigger("Sheathing");
+            swordGripRenderer = gameObject.GetComponentInChildren<MeshRenderer>();
+            swordGripRenderer.enabled = false;
+            swordGripMeshCollider = gameObject.GetComponent<MeshCollider>();
+            swordGripMeshCollider.enabled = false;
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.AttackJustPressed)
         {

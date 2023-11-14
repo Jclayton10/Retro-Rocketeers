@@ -1092,7 +1092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAttack: {fileID: 1707053417}
   weaponHoslter: {fileID: 1572042859}
-  weaponDraw: {fileID: 652596949}
   attackDamage: 1
   knockbackForce: 100
 --- !u!64 &256740115
@@ -1843,10 +1842,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword_Grip
       objectReference: {fileID: 0}
-    - target: {fileID: 7245731754719193429, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8054074443300762607, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00304
@@ -1887,13 +1882,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 62.427
       objectReference: {fileID: 0}
+    - target: {fileID: 8737235862094554315, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
+      propertyPath: playerAttack
+      value: 
+      objectReference: {fileID: 1707053417}
+    - target: {fileID: 8737235862094554315, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
+      propertyPath: weaponHoslter
+      value: 
+      objectReference: {fileID: 1572042859}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7245731754719193429, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 652596951}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
 --- !u!1001 &383171980
 PrefabInstance:
@@ -3867,33 +3867,11 @@ MonoBehaviour:
   - {fileID: 1993481445}
   - {fileID: 277151602}
   - {fileID: 1560512970}
---- !u!1 &652596949 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7245731754719193429, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
-  m_PrefabInstance: {fileID: 361616362}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &652596950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8054074443300762607, guid: 1aad73518aa273b4183fa2503a4c1e6a, type: 3}
   m_PrefabInstance: {fileID: 361616362}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &652596951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652596949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf8359b20227a4846a6c86e0b50cc164, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAttack: {fileID: 1707053417}
-  weaponHoslter: {fileID: 1572042859}
-  weaponDraw: {fileID: 652596949}
-  attackDamage: 10
-  knockbackForce: 5
 --- !u!1001 &656575304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5322,7 +5300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965070684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26896918, y: 0.7203156, z: -0.3731748, w: 0.5191741}
+  m_LocalRotation: {x: 0.2689692, y: 0.7203156, z: -0.37317488, w: 0.51917404}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
