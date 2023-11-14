@@ -4,9 +4,12 @@ public class Enemy : MonoBehaviour
 {
     public int damageAmount = 10;
     public int currentHealth = 100;
+    private int maxHealth;
 
     public CapsuleCollider playerCollider;
     private EnemyMovment enemyMovement; // Reference to the EnemyMovment script
+
+    public HealthBarUI healthBarUI;
 
     [HideInInspector]
     public PlayerHelthAndRespawn healthSpript;
@@ -18,6 +21,15 @@ public class Enemy : MonoBehaviour
         healthSpript = gm.GetComponent<PlayerHelthAndRespawn>();
 
 
+    }
+    private void Start()
+    {
+        maxHealth = currentHealth;
+        healthBarUI.SetMaxHealth(maxHealth);
+    }
+    private void Update()
+    {
+        healthBarUI.SetHealth(currentHealth);
     }
     private void OnCollisionEnter(Collision collision)
     {
