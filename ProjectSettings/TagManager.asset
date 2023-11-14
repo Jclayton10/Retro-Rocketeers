@@ -12,6 +12,7 @@ TagManager:
   - Conveyor
   - OxyegenSystem
   - Sword
+  - IgnoreConveyerBelt
   layers:
   - Default
   - TransparentFX

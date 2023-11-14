@@ -6,6 +6,12 @@ using UnityEngine.UI;
 public class HealthBarUI : MonoBehaviour
 {
     public Slider healthSlider;
+    public static HealthBarUI healthBarUI;
+
+    private void Awake()
+    {
+        healthBarUI = this;
+    }
 
     public void SetMaxHealth(int health)
     {

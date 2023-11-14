@@ -4,35 +4,20 @@ using UnityEngine;
 public class ConveyerBelt : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5;
-    [SerializeField] List<Rigidbody> objectsOnConveyer = new List<Rigidbody>();
-
-    private void Update()
+    private void OnTriggerStay(Collider other)
     {
-        foreach (Rigidbody rb in objectsOnConveyer)
+        if(other.tag != "IgnoreConveyer")
         {
-            rb.velocity = new Vector3(-transform.forward.x * moveSpeed, rb.velocity.y, -transform.forward.z * moveSpeed);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-            return;
-
-        if (other.GetComponent<Rigidbody>() != null)
-        {
-            objectsOnConveyer.Add(other.GetComponent<Rigidbody>());
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-            return;
-
-        if (other.GetComponent<Rigidbody>() != null)
-        {
-            objectsOnConveyer.Remove(other.GetComponent<Rigidbody>());
+            if (other.transform.parent != null)
+            {
+                if (other.transform.parent.GetComponent<Rigidbody>() != null)
+                    other.transform.parent.GetComponent<Rigidbody>().velocity = Vector3.Lerp(other.transform.parent.GetComponent<Rigidbody>().velocity, moveSpeed * transform.forward, Time.deltaTime);
+            }
+            else
+            {
+                if(other.GetComponent<Rigidbody>() != null)
+                    other.GetComponent<Rigidbody>().velocity = Vector3.Lerp(other.GetComponent<Rigidbody>().velocity, moveSpeed * transform.forward, Time.deltaTime);
+            }
         }
     }
 }
