@@ -13,7 +13,6 @@ TagManager:
   - OxyegenSystem
   - Sword
   - IgnoreConveyerBelt
-  - PlayerObj
   layers:
   - Default
   - TransparentFX
