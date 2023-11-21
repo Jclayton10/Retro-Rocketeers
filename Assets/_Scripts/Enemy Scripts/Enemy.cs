@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     {
        
         enemyMovement = GetComponent<EnemyMovment>();
-        enemyHealthBar = GetComponentInChildren<HealthBarUI>();
+        //enemyHealthBar = GetComponentInChildren<HealthBarUI>();
         GameObject playerObj = GameObject.Find("PlayerObj");
 
         // Ensure that the player object and its components are found before using them
