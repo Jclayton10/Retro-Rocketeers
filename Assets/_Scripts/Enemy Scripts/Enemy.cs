@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -7,57 +6,67 @@ public class Enemy : MonoBehaviour
     public int currentHealth = 100;
     private int maxHealth;
 
+    public CapsuleCollider playerCollider;
     private EnemyMovment enemyMovement; // Reference to the EnemyMovment script
-    public PlayerHelthAndRespawn healthScript;
 
-    private CapsuleCollider playerCollider;
-    public HealthBarUI enemyHealthBar;
+
+    [HideInInspector]
+    public PlayerHelthAndRespawn healthSpript;
     private void Awake()
     {
-       
+        // Get a reference to the EnemyMovment script attached to the same game object
         enemyMovement = GetComponent<EnemyMovment>();
-        //enemyHealthBar = GetComponentInChildren<HealthBarUI>();
-        GameObject playerObj = GameObject.Find("PlayerObj");
+        GameObject gm = GameObject.Find("PlayerObj");
+        healthSpript = gm.GetComponent<PlayerHelthAndRespawn>();
 
-        // Ensure that the player object and its components are found before using them
-        if (playerObj != null)
-        {
-            healthScript = playerObj.GetComponent<PlayerHelthAndRespawn>();
-            playerCollider = playerObj.GetComponent<CapsuleCollider>();
-        }
-        else
-        {
-            Debug.LogError("Player object not found!");
-        }
+
     }
-
     private void Start()
     {
         maxHealth = currentHealth;
-        enemyHealthBar.SetMaxHealth(maxHealth);
+        HealthBarUI.healthBarUI.SetMaxHealth(maxHealth);
     }
-
     private void Update()
     {
-        enemyHealthBar.SetHealth(currentHealth);
+        HealthBarUI.healthBarUI.SetHealth(currentHealth);
     }
-
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.collider == playerCollider) 
+        {
+            if (playerCollider != null)
+            {
+               
+                if (healthSpript != null)
+                {
+                    healthSpript.TakeDamge(damageAmount);
+                    playerCollider.isTrigger = true;
+                    
+                }
+            }
+        }
+
+       
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+
         if (collision.collider == playerCollider)
         {
-            Debug.Log("Enemy collided with the player!");
-            healthScript.TakeDamge(damageAmount);
+            if (playerCollider != null)
+            {
+               
+                if (healthSpript != null)
+                {
+                    healthSpript.TakeDamge(damageAmount);
+                    playerCollider.isTrigger = false;
+                }
+            }
         }
+       
     }
 
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.collider == playerCollider)
-        {
-            healthScript.TakeDamge(damageAmount);
-        }
-    }
+   
 
     public void TakeDamage(int damageAmount)
     {
@@ -70,6 +79,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        // Handle enemy death logic here
+        // For example, you can play death animations, give rewards, or destroy the game object
         Destroy(gameObject);
     }
 }

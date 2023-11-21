@@ -6,7 +6,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
 {
     public static PlayerHelthAndRespawn playerHealth;
     public int maxHealth = 100;
-    public int currentHealth;
+    private int currentHealth;
 
     public HealthBarUI healthBarUI;
 
@@ -27,7 +27,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
         }
     }
 
- 
+    // Method to handle player death (you can implement your own logic)
     private void Die()
     {
         currentHealth = maxHealth;

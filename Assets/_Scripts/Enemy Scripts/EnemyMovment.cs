@@ -35,7 +35,7 @@ public class EnemyMovment : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         agent.speed = speed;
-        goal = GameObject.FindWithTag("Player");
+        //goal = GameObject.FindWithTag("Player");
         //centrePoint = GameObject.FindWithTag("Waypoint");
     }
     private void Start()
@@ -64,7 +64,6 @@ public class EnemyMovment : MonoBehaviour
 
             if (distanceToGoal <= maxRangeToPlayer)
             {
-                anim.SetBool("isMoving", true);
                 // Set the enemy's destination to the player's position
                 agent.SetDestination(goal.transform.position);
                 isMovingTowardsGoal = true;
@@ -73,7 +72,6 @@ public class EnemyMovment : MonoBehaviour
             }
             else if (isMovingTowardsGoal && agent.remainingDistance <= agent.stoppingDistance)
             {
-                anim.SetBool("isMoving", true);
                 // Reset the path if the enemy was previously moving towards the goal and reached it
                 agent.ResetPath();
                 isMovingTowardsGoal = false;
@@ -92,10 +90,9 @@ public class EnemyMovment : MonoBehaviour
                 Vector3 point;
                 if (RandomPoint(centrePoint.transform.position, rangeOfRandomPointRadius, out point))
                 {
-                    anim.SetBool("isMoving", true);
                     Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f);
                     agent.SetDestination(point);
-                    currentDestination = point;
+                    //currentDestination = point;
                 }
             }
         }
@@ -129,17 +126,19 @@ public class EnemyMovment : MonoBehaviour
          else
          {
              agent.isStopped = false;
-             anim.SetBool("isMoving", true);
+             //anim.SetBool("isMoving", true);
          }
 
      }
     
-   
+    public void Attack()
+    {
+        anim.SetTrigger("Attack");
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Sword"))
         {
-           anim.SetBool("isMoving", false);
            agent.enabled = false;
         }
     }
@@ -147,7 +146,6 @@ public class EnemyMovment : MonoBehaviour
     {
         if (other.CompareTag("Sword"))
         {
-            anim.SetBool("isMoving", false);
             agent.enabled = false;
         }
     }
@@ -155,7 +153,6 @@ public class EnemyMovment : MonoBehaviour
     {
         if (other.CompareTag("Sword"))
         {
-            anim.SetBool("isMoving", true);
             FlashEnemy(gameObject);
             StartCoroutine(WaitAndEnableAgent(3f));
             agent.enabled = true;
