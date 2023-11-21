@@ -63,11 +63,12 @@
     <Compile Include="Assets\_Scripts\Crafting Scripts\RecipeManager.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionUpdater.cs" />
     <Compile Include="Assets\_Scripts\Item Scripts\FoodItemClass.cs" />
+    <Compile Include="Assets\_Scripts\AchivmentScripts\GlobalAchivments.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_TextComplex.cs" />
-    <Compile Include="Assets\_Scripts\AchievementManager.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\CraftingRecipe.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\Player Movement.cs" />
+    <Compile Include="Assets\_Scripts\AchivmentScripts\CollectCube.cs" />
     <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
     <Compile Include="Assets\_Scripts\GameMaster.cs" />
     <Compile Include="Assets\_Scripts\PlayerOxeygenHandler.cs" />

@@ -86,7 +86,7 @@ public class EnemyMovment : MonoBehaviour
 
         if (!isMovingTowardsGoal && !agent.pathPending)
         {
-            if (agent.remainingDistance <= agent.stoppingDistance)
+            if (agent.remainingDistance <= agent.stoppingDistance&&agent.isOnNavMesh == true)
             {
                 // Only generate a new random point if the agent has reached the current one
                 Vector3 point;

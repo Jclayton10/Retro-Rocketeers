@@ -51,13 +51,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.collider == playerCollider)
-        {
-            healthScript.TakeDamge(damageAmount);
-        }
-    }
+
 
     public void TakeDamage(int damageAmount)
     {
