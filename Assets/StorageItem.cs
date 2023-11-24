@@ -25,7 +25,7 @@ public class StorageItem : MonoBehaviour
     private void Update()
     {
         playerInDistance = false;
-        Debug.Log(Vector3.Distance(playerObj.position, transform.position));
+        //Debug.Log(Vector3.Distance(playerObj.position, transform.position));
         if (Vector3.Distance(playerObj.position, transform.position) < interactionDistance)
         {
             playerInDistance = true;

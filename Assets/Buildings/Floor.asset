@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91c7ac0b09b50b4e9b5ff96da7fe21c, type: 3}
+  m_Name: Floor
+  m_EditorClassIdentifier: 
+  buildOffset: {x: 0, y: 1, z: 0}
+  loc: {x: 0, y: 0}
+  keyLink: 49
+  placedPrefab: {fileID: 1641372111306420007, guid: 4db4498b3b1ca4c4a8aa6ec6fd7f44e3, type: 3}
+  renderPrefab: {fileID: 1641372111306420007, guid: 4db4498b3b1ca4c4a8aa6ec6fd7f44e3, type: 3}
+  itemsThatCanBeBuiltInSlot:
+  - {fileID: 11400000, guid: dca8116df327f1e42aa0049435a2b927, type: 2}
+  - {fileID: 11400000, guid: 93bb60a7b461f794db0388df86fdbc7f, type: 2}

@@ -148,7 +148,7 @@ public class ThirdPersonCamera : MonoBehaviour
             buildingCamera.SetActive(true);
         }
 
-        BuildingSystem.buildingSystem.ToggleBuildMode();
+        //BuildingSystem.buildingSystem.ToggleBuildMode();
         Debug.Log(currentStyle);
     }
     public void Aim()

@@ -51,7 +51,7 @@ public class EnemyMovment : MonoBehaviour
     {
         //StopMovment();
         HandleNavigation();
-        Debug.Log("AgentEnabled: "+agent.enabled);
+        //Debug.Log("AgentEnabled: "+agent.enabled);
 
 
     }
