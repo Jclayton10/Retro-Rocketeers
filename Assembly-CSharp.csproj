@@ -62,6 +62,7 @@
     <Compile Include="Assets\_Scripts\RangedAttackScrpits\Arrow.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\RecipeManager.cs" />
     <Compile Include="Assets\_Scripts\Item Scripts\FoodItemClass.cs" />
+    <Compile Include="Assets\_Scripts\AchievementManager.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\CraftingRecipe.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\Player Movement.cs" />
     <Compile Include="Assets\_Scripts\GameMaster.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\_Scripts\Inventory Scripts\InventoryManagementver2.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\ItemSlot.cs" />
     <Compile Include="Assets\_Scripts\Enemy Scripts\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\CollectCube.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

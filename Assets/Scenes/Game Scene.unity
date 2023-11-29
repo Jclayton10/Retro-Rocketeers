@@ -976,8 +976,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 2
   currentHealth: 100
-  playerCollider: {fileID: 0}
-  healthSpript: {fileID: 0}
 --- !u!135 &123555601
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6854,9 +6852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8359b20227a4846a6c86e0b50cc164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAttackScript: {fileID: 0}
   playerAttack: {fileID: 1188010530}
   weaponHoslter: {fileID: 127939348}
-  weaponDraw: {fileID: 605650466}
+  weaponGrip: {fileID: 0}
   attackDamage: 10
   knockbackForce: 5
 --- !u!1001 &805034481
@@ -10071,6 +10070,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611872851}
     m_Modifications:
+    - target: {fileID: 2197061107794107667, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2839285940327110141, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10080,8 +10083,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: attackRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411805002564095517, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: playerCollider
@@ -10090,6 +10105,10 @@ PrefabInstance:
     - target: {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: sphereCollider
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
       propertyPath: m_StoppingDistance
@@ -10139,8 +10158,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 4411805002564095517, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+    - {fileID: 2197061107794107667, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+    - {fileID: 9201312234330959145, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+    - {fileID: 6773565378133513791, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+    - {fileID: 4533784289983134999, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+    - {fileID: 3265475680044526560, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 8958648124987144494, guid: 15a3366dd58150040b412e6c3d716268, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a3366dd58150040b412e6c3d716268, type: 3}

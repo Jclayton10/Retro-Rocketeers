@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public PlayerAttack playerAttackScript;
 
     public Animator playerAttack;
     public GameObject weaponHoslter;
-    public GameObject weaponDraw;
+    public GameObject weaponGrip;
+
 
     public int attackDamage = 10;
     public int knockbackForce = 5;
@@ -15,14 +17,17 @@ public class PlayerAttack : MonoBehaviour
     private bool isWeapomDrawn;
     private bool isWeaponShethed;
 
-  
-    
+
+
+
 
     private void Awake()
     {
-        weaponDraw.SetActive(false);
+        playerAttackScript = FindFirstObjectByType<PlayerAttack>();  
+        weaponGrip.SetActive(false);
         isWeapomDrawn = false;
         isWeaponShethed = true;
+        
     }
 
     private void Update()
@@ -43,7 +48,8 @@ public class PlayerAttack : MonoBehaviour
                 Debug.Log("EnemyHealth: " + enemyHealth.ToString());
                 // Apply combined forces only if force hasn't been applied yet
 
-                rb.AddForce((-other.transform.forward * knockbackForce), ForceMode.VelocityChange);
+                Vector3 knockbackDirection = (other.transform.position - transform.position).normalized;
+                rb.AddForce(knockbackDirection * knockbackForce, ForceMode.Impulse);
             }
         }
     }
@@ -57,19 +63,24 @@ public class PlayerAttack : MonoBehaviour
             isWeaponShethed = false;
 
             weaponHoslter.SetActive(false);
-            weaponDraw.SetActive(true);
+
+
+            
+            
 
             playerAttack.SetTrigger("Withdraw");
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.SheathJustPressed)
         {
+            playerAttack.SetTrigger("Sheathing");
+
             isWeapomDrawn = false;
             isWeaponShethed = true;
 
             weaponHoslter.SetActive(true);
-            weaponDraw.SetActive(false);
 
-            playerAttack.SetTrigger("Sheathing");
+
+            
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.AttackJustPressed)
         {

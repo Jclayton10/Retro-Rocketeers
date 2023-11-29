@@ -187,7 +187,7 @@ public class EnemyMovment : MonoBehaviour
                 enemyRenderer.material = flashMaterial;
 
                 // Use a coroutine to reset the color after a short duration
-               // StartCoroutine(ResetMaterial(enemyRenderer, originalMaterial, flashMaterial, flashDuration));
+                StartCoroutine(ResetMaterial(enemyRenderer, originalMaterial, flashMaterial, flashDuration));
             }
             else
             {
@@ -197,7 +197,7 @@ public class EnemyMovment : MonoBehaviour
 
     }
 
-    /*IEnumerator ResetMaterial(Renderer renderer, Material originalMaterial, Material flashMaterial, float duration)
+    IEnumerator ResetMaterial(Renderer renderer, Material originalMaterial, Material flashMaterial, float duration)
     {
         // Wait for the specified duration
         yield return new WaitForSeconds(duration);
@@ -205,6 +205,6 @@ public class EnemyMovment : MonoBehaviour
         // Reset the material
         renderer.material = originalMaterial;
     }
-    */
+    
 
 }
