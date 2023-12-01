@@ -1,5 +1,6 @@
 //Adapted from this video: https://www.youtube.com/watch?v=UCwwn2q4Vys
 
+using Cinemachine;
 using UnityEngine;
 
 public enum CameraStyle
@@ -43,6 +44,12 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        basicCamera.GetComponent<CinemachineFreeLook>().m_XAxis.m_MaxSpeed = 300 * GameMaster.Instance.MouseSensitiviy;
+        basicCamera.GetComponent<CinemachineFreeLook>().m_YAxis.m_MaxSpeed = 2 * GameMaster.Instance.MouseSensitiviy;
+        combatCamera.GetComponent<CinemachineFreeLook>().m_XAxis.m_MaxSpeed = 300 * GameMaster.Instance.MouseSensitiviy;
+        combatCamera.GetComponent<CinemachineFreeLook>().m_YAxis.m_MaxSpeed = 2 * GameMaster.Instance.MouseSensitiviy;
+        buildingCamera.GetComponent<CinemachineFreeLook>().m_XAxis.m_MaxSpeed = 300 * GameMaster.Instance.MouseSensitiviy;
+        buildingCamera.GetComponent<CinemachineFreeLook>().m_YAxis.m_MaxSpeed = 2 * GameMaster.Instance.MouseSensitiviy;
     }
 
     private void FixedUpdate()
@@ -56,8 +63,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
         if (currentStyle == CameraStyle.Basic || currentStyle == CameraStyle.Building)
         {
-            float horizontalInput = -Input.GetAxis("Horizontal");
-            float verticalInput = -Input.GetAxis("Vertical");
+            float horizontalInput = -GameMaster.Instance.MoveInput.x;
+            float verticalInput = -GameMaster.Instance.MoveInput.y;
             Vector3 inputDir = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
             if (inputDir != Vector3.zero)

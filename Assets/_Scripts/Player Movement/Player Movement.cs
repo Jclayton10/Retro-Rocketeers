@@ -97,8 +97,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        horizontalInput = GameMaster.Instance.MoveInput.x;
+        verticalInput = GameMaster.Instance.MoveInput.y;
 
         if (horizontalInput != 0 || verticalInput != 0)
         {
@@ -132,11 +132,14 @@ public class PlayerMovement : MonoBehaviour
         if (grounded)
         {
             rb.velocity = (moveDir.normalized * currentMovingSpeed);
-            Footstepcount -= Time.deltaTime;
-            if (Footstepcount <= 0 && (rb.velocity.x > 0.25f || rb.velocity.z > 0.25f))
+            if (rb.velocity.magnitude > 0.1)
             {
-                Footstepcount = 0.25f;
-                PlayerSounds.Play();
+                Footstepcount -= Time.deltaTime;
+                if (Footstepcount <= 0 && (rb.velocity.x > 0.25f || rb.velocity.z > 0.25f))
+                {
+                    Footstepcount = 0.25f;
+                    PlayerSounds.Play();
+                }
             }
         }
         else if (!grounded)
@@ -204,7 +207,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Calculate the rotation based on mouse input
         float mouseX = Input.GetAxis("Mouse X");
-        Vector3 rotation = new Vector3(0f, mouseX * rotationSpeed * Time.deltaTime, 0f);
+        Vector3 rotation = new Vector3(0f, mouseX * rotationSpeed * Time.deltaTime * GameMaster.Instance.MouseSensitiviy, 0f);
 
         // Apply rotation to the player's orientation
         orientation.Rotate(rotation);
