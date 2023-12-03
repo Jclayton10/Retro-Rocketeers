@@ -6,7 +6,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
 {
     public static PlayerHelthAndRespawn playerHealth;
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     public HealthBarUI healthBarUI;
 
@@ -17,20 +17,40 @@ public class PlayerHelthAndRespawn : MonoBehaviour
         currentHealth = maxHealth;
         healthBarUI.SetMaxHealth(maxHealth);
     }
-    public void TakeDamge(int amount)
+
+    public void TakeDamage(int amount)
     {
         currentHealth -= amount;
         healthBarUI.SetHealth(currentHealth);
+
         if (currentHealth <= 0)
         {
             Die();
         }
     }
 
-    // Method to handle player death (you can implement your own logic)
     private void Die()
     {
         currentHealth = maxHealth;
+
+        // Deactivate the player or perform other death-related logic
+        gameObject.SetActive(false);
+
+        // Reset the player position after a short delay (you can adjust the delay)
+        StartCoroutine(RespawnAfterDelay());
+    }
+
+    private IEnumerator RespawnAfterDelay()
+    {
+        yield return new WaitForSeconds(2f); // Adjust the delay as needed
+
+        // Reactivate the player
+        gameObject.SetActive(true);
+
+        // Reset the player position
         transform.parent.transform.position = playerLocation.position;
+
+        // Reset the health bar
+        healthBarUI.SetHealth(maxHealth);
     }
 }

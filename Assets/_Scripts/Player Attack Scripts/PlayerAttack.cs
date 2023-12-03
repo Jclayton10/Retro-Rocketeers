@@ -4,26 +4,18 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public PlayerAttack playerAttackScript;
-
     public Animator playerAttack;
     public GameObject weaponHoslter;
     public GameObject weaponGrip;
 
 
-    public int attackDamage = 10;
-    public int knockbackForce = 5;
+   
 
     private bool isWeapomDrawn;
     private bool isWeaponShethed;
 
-
-
-
-
     private void Awake()
-    {
-        playerAttackScript = FindFirstObjectByType<PlayerAttack>();  
+    { 
         weaponGrip.SetActive(false);
         isWeapomDrawn = false;
         isWeaponShethed = true;
@@ -35,39 +27,18 @@ public class PlayerAttack : MonoBehaviour
         PlayAnimations();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            Enemy enemyHealth = other.GetComponent<Enemy>();
-            Rigidbody rb = other.GetComponent<Rigidbody>();
-            if (enemyHealth != null && rb != null)
-            {
-                // Apply the damage to the enemy
-                enemyHealth.TakeDamage(attackDamage);
-                Debug.Log("EnemyHealth: " + enemyHealth.ToString());
-                // Apply combined forces only if force hasn't been applied yet
-
-                Vector3 knockbackDirection = (other.transform.position - transform.position).normalized;
-                rb.AddForce(knockbackDirection * knockbackForce, ForceMode.Impulse);
-            }
-        }
-    }
+    
 
     void PlayAnimations()
     {
-        if (isWeaponShethed == true && GameMaster.Instance.SheathJustPressed) // Change the input key as needed
+        if (isWeaponShethed == true && GameMaster.Instance.SheathJustPressed) 
         {
             Debug.Log("Unsheating!");
             isWeapomDrawn = true;
             isWeaponShethed = false;
 
             weaponHoslter.SetActive(false);
-
-
-            
-            
-
+            weaponGrip.SetActive(true);
             playerAttack.SetTrigger("Withdraw");
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.SheathJustPressed)
@@ -78,13 +49,15 @@ public class PlayerAttack : MonoBehaviour
             isWeaponShethed = true;
 
             weaponHoslter.SetActive(true);
-
-
-            
+            weaponGrip.SetActive(false);
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.AttackJustPressed)
         {
+            isWeapomDrawn = true;
+            weaponGrip.SetActive(true);
+            weaponHoslter.SetActive(false);
             playerAttack.SetTrigger("Attack");
+            
         }
     }
 

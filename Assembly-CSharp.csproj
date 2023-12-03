@@ -64,6 +64,7 @@
     <Compile Include="Assets\_Scripts\Item Scripts\FoodItemClass.cs" />
     <Compile Include="Assets\_Scripts\AchievementManager.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\CraftingRecipe.cs" />
+    <Compile Include="Assets\_Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\Player Movement.cs" />
     <Compile Include="Assets\_Scripts\GameMaster.cs" />
     <Compile Include="Assets\_Scripts\PlayerOxeygenHandler.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\_Scripts\PlayerLocationFix.cs" />
     <Compile Include="Assets\_Scripts\Navmesh Scripts\NavmeshBuilder.cs" />
     <Compile Include="Assets\_Scripts\Player.cs" />
+    <Compile Include="Assets\_Scripts\SwordAttack.cs" />
     <Compile Include="Assets\_Scripts\PlayerUI\PlayerHealthAndOxyegenUI\HealthBarUI.cs" />
     <Compile Include="Assets\_Scripts\Enemy Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\_Scripts\Inventory Scripts\InventoryManagement.cs" />
