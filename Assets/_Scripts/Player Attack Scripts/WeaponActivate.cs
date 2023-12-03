@@ -2,11 +2,15 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class WeaponActivate : MonoBehaviour
 {
     public Animator playerAttack;
     public GameObject weaponHoslter;
     public GameObject weaponGrip;
+
+    public AudioSource weaponSoundSource;
+    public AudioClip weaponShealthSound;
+    public AudioClip weaponDrawSound;
 
 
    

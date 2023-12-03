@@ -23,12 +23,22 @@ public class EnemyAttack : MonoBehaviour
                 hasDealtDamage = true; // Set the flag to true to prevent further damage
             }
         }
-        ResetDamageFlag();
+        
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("PlayerObj"))
+        {
+            hasDealtDamage = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("PlayerObj"))
+        {
+            hasDealtDamage = false;
+        }
     }
 
-    // You can reset the hasDealtDamage flag if needed (e.g., if the enemy's arm retracts)
-    public void ResetDamageFlag()
-    {
-        hasDealtDamage = false;
-    }
+
 }

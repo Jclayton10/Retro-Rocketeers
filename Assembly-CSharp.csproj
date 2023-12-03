@@ -62,9 +62,10 @@
     <Compile Include="Assets\_Scripts\RangedAttackScrpits\Arrow.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\RecipeManager.cs" />
     <Compile Include="Assets\_Scripts\Item Scripts\FoodItemClass.cs" />
+    <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\_Scripts\AchievementManager.cs" />
     <Compile Include="Assets\_Scripts\Crafting Scripts\CraftingRecipe.cs" />
-    <Compile Include="Assets\_Scripts\EnemyAttack.cs" />
+    <Compile Include="Assets\_Scripts\Player Attack Scripts\SwordAttack.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\Player Movement.cs" />
     <Compile Include="Assets\_Scripts\GameMaster.cs" />
     <Compile Include="Assets\_Scripts\PlayerOxeygenHandler.cs" />
@@ -81,13 +82,14 @@
     <Compile Include="Assets\_Scripts\StorageHandler.cs" />
     <Compile Include="Assets\_Scripts\PlayerUI\AchimentsUI\AchivmentSystem\AchivmentManger.cs" />
     <Compile Include="Assets\_Scripts\Item Scripts\ToolItemClass.cs" />
+    <Compile Include="Assets\_Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\_Scripts\Greenhouse.cs" />
     <Compile Include="Assets\_Scripts\Building Scripts\BuildingSystem.cs" />
     <Compile Include="Assets\_Scripts\PlayerHelthAndRespawn.cs" />
     <Compile Include="Assets\ItemProducer.cs" />
+    <Compile Include="Assets\_Scripts\Player Attack Scripts\WeaponActivate.cs" />
     <Compile Include="Assets\_Scripts\Navmesh Scripts\AgentLinkMover.cs" />
     <Compile Include="Assets\_Scripts\Item Scripts\DefaultItemClass.cs" />
-    <Compile Include="Assets\_Scripts\Player Attack Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\_Scripts\Menu\PlayerMenuCommands.cs" />
     <Compile Include="Assets\_Scripts\Player Movement\ThirdPersonCamera.cs" />
     <Compile Include="Assets\zOLDSTUFF\CraftingRecipeClass.cs" />
@@ -95,7 +97,6 @@
     <Compile Include="Assets\_Scripts\PlayerLocationFix.cs" />
     <Compile Include="Assets\_Scripts\Navmesh Scripts\NavmeshBuilder.cs" />
     <Compile Include="Assets\_Scripts\Player.cs" />
-    <Compile Include="Assets\_Scripts\SwordAttack.cs" />
     <Compile Include="Assets\_Scripts\PlayerUI\PlayerHealthAndOxyegenUI\HealthBarUI.cs" />
     <Compile Include="Assets\_Scripts\Enemy Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\_Scripts\Inventory Scripts\InventoryManagement.cs" />

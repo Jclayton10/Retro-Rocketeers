@@ -33,8 +33,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        // Deactivate the player or perform other death-related logic
-        gameObject.SetActive(false);
+       
 
         // Reset the player position after a short delay (you can adjust the delay)
         StartCoroutine(RespawnAfterDelay());

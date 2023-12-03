@@ -5,25 +5,35 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
- 
     public int damageAmount = 10;
     public int currentHealth = 100;
     private int maxHealth;
+    public AudioSource enemyHitSound;
 
     private PlayerHelthAndRespawn healthScript;
-    
+    private WaveSpawner waveSpawner;
+
+    private void Awake()
+    {
+        waveSpawner = FindFirstObjectByType<WaveSpawner>();
+    }
     private void Start()
     {
+        
         maxHealth = currentHealth;
-        HealthBarUI.healthBarUI.SetMaxHealth(maxHealth);
+        if (HealthBarUI.healthBarUI != null)
+        {
+            HealthBarUI.healthBarUI.SetMaxHealth(maxHealth);
+        }
     }
 
     private void Update()
     {
-        HealthBarUI.healthBarUI.SetHealth(currentHealth);
+        if (HealthBarUI.healthBarUI != null)
+        {
+            HealthBarUI.healthBarUI.SetHealth(currentHealth);
+        }
     }
-
-   
 
     public void TakeDamage(int damageAmount)
     {
@@ -36,6 +46,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        AchievementManager.enemyAchCount += 1;
+        waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
         Destroy(gameObject);
     }
 }
