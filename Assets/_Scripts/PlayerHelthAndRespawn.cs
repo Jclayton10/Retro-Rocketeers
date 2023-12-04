@@ -6,7 +6,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
 {
     public static PlayerHelthAndRespawn playerHealth;
     public int maxHealth = 100;
-    public int currentHealth;
+    private int currentHealth;
 
     
 

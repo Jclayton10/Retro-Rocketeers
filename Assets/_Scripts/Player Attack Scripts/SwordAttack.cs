@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SwordAttack : MonoBehaviour
 {
     public int attackDamage = 10;
@@ -12,12 +13,11 @@ public class SwordAttack : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Enemy enemy = other.GetComponent<Enemy>();
+            EnemyContoller enemy = other.GetComponent<EnemyContoller>();
             Rigidbody rb = other.GetComponentInParent<Rigidbody>();
 
             if (rb != null && enemy != null && !didHit)
-            {
-                Enemy.enemyScript.TakeDamage(attackDamage);
+            { 
                 enemy.TakeDamage(attackDamage);
                 enemy.enemyHitSound.Play();
 

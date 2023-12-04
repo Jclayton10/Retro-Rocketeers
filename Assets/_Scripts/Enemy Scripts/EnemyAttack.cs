@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
-{   private bool hasDealtDamage = false;
-    
-    private void OnTriggerEnter(Collider other)
+
+    public class EnemyAttack : MonoBehaviour
     {
-        if (other.CompareTag("PlayerObj") && !hasDealtDamage)
+        private bool hasDealtDamage = false;
+
+        private void OnTriggerEnter(Collider other)
         {
-          
-            PlayerHelthAndRespawn.playerHealth.TakeDamage(Enemy.enemyScript.damageAmount);
+            if (other.CompareTag("PlayerObj") && !hasDealtDamage)
+            {
+
+                PlayerHelthAndRespawn.playerHealth.TakeDamage(EnemyContoller.enemyContoller.damageAmount);
+            }
+
         }
-        
-    }
- 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("PlayerObj"))
+
+        private void OnTriggerExit(Collider other)
         {
-            hasDealtDamage = false;
+            if (other.CompareTag("PlayerObj"))
+            {
+                hasDealtDamage = false;
+            }
         }
-    }
 
 
-}
+    }
+
