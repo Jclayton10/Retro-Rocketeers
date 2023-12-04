@@ -7,19 +7,19 @@ public class SwordAttack : MonoBehaviour
     public int attackDamage = 10;
     public int knockbackForce = 5;
     private bool didHit = false;
-   
-   
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))
         {
-            Enemy enemyHealth = other.GetComponent<Enemy>();
-            Rigidbody rb = other.GetComponent<Rigidbody>();
-            if (enemyHealth != null && rb != null&& didHit== false)
+            Enemy enemy = other.GetComponent<Enemy>();
+            Rigidbody rb = other.GetComponentInParent<Rigidbody>();
+
+            if (rb != null && enemy != null && !didHit)
             {
-                enemyHealth.enemyHitSound.Play();
-                enemyHealth.TakeDamage(attackDamage);
+                Enemy.enemyScript.TakeDamage(attackDamage);
+                enemy.TakeDamage(attackDamage);
+                enemy.enemyHitSound.Play();
 
                 Vector3 knockbackDirection = (other.transform.position - transform.position).normalized;
                 rb.AddForce(knockbackDirection * knockbackForce, ForceMode.Impulse);
@@ -27,6 +27,7 @@ public class SwordAttack : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Enemy"))
@@ -34,6 +35,7 @@ public class SwordAttack : MonoBehaviour
             didHit = true;
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Enemy"))

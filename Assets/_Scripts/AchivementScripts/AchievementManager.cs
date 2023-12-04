@@ -40,14 +40,14 @@ public class AchievementManager : MonoBehaviour
         achievements.Add(new Achievement("Do you have enough wood yet?", "You cut 20 wood!", (object o) => woodAchCount >= 20, new List<Image> { woodImage }));
         achievements.Add(new Achievement("How much wood do you need?", "You cut 40 wood!", (object o) => woodAchCount >= 40, new List<Image> { woodImage }));
         achievements.Add(new Achievement("Ok that's enough wood", "You cut 60 wood!", (object o) => woodAchCount >= 60, new List<Image> { woodImage }));
-        achievements.Add(new Achievement("THE GOD OF DEFORESTATION", "You cut 100 wood!", (object o) => woodAchCount >= 100, new List<Image> { woodImage }));
+        achievements.Add(new Achievement("THE GOD OF DEFORESTATION!", "You cut 100 wood!", (object o) => woodAchCount >= 100, new List<Image> { woodImage }));
 
         // Stone Achievements
         achievements.Add(new Achievement("Mining your first rocks!", "You mined 5 rocks!", (object o) => rockAchCount >= 5, new List<Image> { rockImage }));
         achievements.Add(new Achievement("Need more rocks!", "You mined 20 rocks!", (object o) => rockAchCount >= 20, new List<Image> { rockImage }));
         achievements.Add(new Achievement("The Miner", "You mined 40 rocks!", (object o) => rockAchCount >= 40, new List<Image> { rockImage }));
         achievements.Add(new Achievement("The Operation", "You mined 60 rocks!", (object o) => rockAchCount >= 60, new List<Image> { rockImage }));
-        achievements.Add(new Achievement("GOD OF ROCK COLLECTING", "You mined 100 rocks!", (object o) => rockAchCount >= 100, new List<Image> { rockImage }));
+        achievements.Add(new Achievement("GOD OF ROCK COLLECTING!", "You mined 100 rocks!", (object o) => rockAchCount >= 100, new List<Image> { rockImage }));
 
         // Enemy Achievements
         achievements.Add(new Achievement("Youngling", "You killed your first enemy!", (object o) => enemyAchCount >= 1, new List<Image> { enemyImage }));

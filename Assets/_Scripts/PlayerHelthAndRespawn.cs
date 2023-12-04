@@ -8,20 +8,23 @@ public class PlayerHelthAndRespawn : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
-    public HealthBarUI healthBarUI;
+    
 
     [SerializeField] Transform playerLocation;
-
+    private void Awake()
+    {
+        playerHealth = this;
+    }
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBarUI.SetMaxHealth(maxHealth);
+        HealthBarUI.healthBarUI.SetMaxHealth(maxHealth);
     }
 
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-        healthBarUI.SetHealth(currentHealth);
+        HealthBarUI.healthBarUI.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -50,6 +53,6 @@ public class PlayerHelthAndRespawn : MonoBehaviour
         transform.parent.transform.position = playerLocation.position;
 
         // Reset the health bar
-        healthBarUI.SetHealth(maxHealth);
+        HealthBarUI.healthBarUI.SetHealth(maxHealth);
     }
 }

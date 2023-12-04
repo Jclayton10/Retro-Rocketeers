@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6084550710474120474}
   - component: {fileID: 4532728378652352019}
   - component: {fileID: 4112732139418146786}
-  - component: {fileID: 4024002741546870402}
+  - component: {fileID: 2591367831765251976}
   m_Layer: 0
   m_Name: EnemyHealthBar
   m_TagString: Untagged
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4024002741546870402
+--- !u!114 &2591367831765251976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8508005065914866501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc8f33b8b5f5ad5449339c923766c034, type: 3}
+  m_Script: {fileID: 11500000, guid: 6279eda204c3bda4ea1a840e417b9189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 4112732139418146786}
+  enemyHealthBar: {fileID: 4112732139418146786}
 --- !u!1 &8822299861682768341
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.85263
+      value: 38.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.74482
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755eaf31ef91b5c419f442c7e4b7a69f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -743,8 +743,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.019086925, y: 0.03479549, z: 0.005468946}
-  m_Center: {x: -0.0013201226, y: 0.014861795, z: -0.00034287677}
+  m_Size: {x: 0.0161219, y: 0.02361354, z: 0.005468946}
+  m_Center: {x: -0.0056751138, y: 0.009270818, z: -0.0003428779}
 --- !u!114 &1588874682987501967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,5 +757,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad170008a8b35442accacd50557b558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyScript: {fileID: 4533784289983134999}
   enemyRightArm: {fileID: 3145046969782019128}

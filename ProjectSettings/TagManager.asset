@@ -14,8 +14,6 @@ TagManager:
   - Sword
   - IgnoreConveyerBelt
   - PlayerObj
-  - EnemyObj
-  - EnemyRightArm
   layers:
   - Default
   - TransparentFX

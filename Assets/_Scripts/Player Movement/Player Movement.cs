@@ -35,13 +35,10 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource PlayerSounds;
     public float Footstepcount = 1.0f;
 
-    [Header("BowAttack")]
-    public BowAttack bow;
-    public float rotationSpeed;
+    
 
     void Awake()
     {
-        //bow = FindFirstObjectByType<BowAttack>();
         GameObject gm = GameObject.Find("Game Master");
         GM = gm.GetComponent<GameMaster>();
         PlayerSounds.volume = GM.AudioMaster * GM.AudioSFX;
@@ -200,14 +197,6 @@ public class PlayerMovement : MonoBehaviour
         playerAnimator.SetFloat("XVel", currentMovingSpeed * Input.GetAxis("Horizontal") / 8);
         playerAnimator.SetFloat("YVel", currentMovingSpeed * Input.GetAxis("Vertical") / 8);
     }
-     private void RotatePlayerInPlace()
-    {
-        // Calculate the rotation based on mouse input
-        float mouseX = Input.GetAxis("Mouse X");
-        Vector3 rotation = new Vector3(0f, mouseX * rotationSpeed * Time.deltaTime, 0f);
-
-        // Apply rotation to the player's orientation
-        orientation.Rotate(rotation);
-    }
+     
     
 }
