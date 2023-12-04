@@ -14,6 +14,7 @@ public class InventoryManagement : MonoBehaviour
     public bool on;
 
     [SerializeField] private GameObject inventoryPanel;
+    [SerializeField] private GameObject craftingPanel;
     [SerializeField] private GameObject CraftingRecipeCheatSheetPanel;
 
     [SerializeField] private GameObject itemCursor;
@@ -74,10 +75,10 @@ public class InventoryManagement : MonoBehaviour
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
         }
 
-        RefreshUI();
 
         Add(itemToAdd, 1);
         Remove(itemToRemove);
+        RefreshUI();
 
         GameObject gm = GameObject.Find("Game Master");
         GM = gm.GetComponent<GameMaster>();
@@ -165,16 +166,21 @@ public class InventoryManagement : MonoBehaviour
     {
         on = true;
         inventoryPanel.SetActive(true);
+        craftingPanel.SetActive(true);
+        CraftingRecipeCheatSheetPanel.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         Bag.clip = BagOpen;
         Bag.Play();
+        RefreshUI();
     }
 
     void CloseInventory()
     {
         on = false;
         inventoryPanel.SetActive(false);
+        craftingPanel.SetActive(false);
+        CraftingRecipeCheatSheetPanel.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Bag.clip = BagClose;
