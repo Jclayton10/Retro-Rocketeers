@@ -27,6 +27,14 @@ public class PlayerHelthAndRespawn : MonoBehaviour
         }
     }
 
+    public void Heal(int healthRestored)
+    {
+        currentHealth += healthRestored;
+        healthBarUI.SetHealth(currentHealth);
+
+        //must add something to make not go over max?
+    }
+
     // Method to handle player death (you can implement your own logic)
     private void Die()
     {

@@ -10,8 +10,9 @@ public class FoodItemClass : ItemClass
     public override void Use(PlayerController caller)
     {
         base.Use(caller);
-        Debug.Log("Eat: Food");
+        //Debug.Log("Eat: Food");
         caller.inventory.UseSelected();
+        //PlayerHealth.Heal();
 
     }
 

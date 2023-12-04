@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            //Use the Item
             if (inventory.selectedItem != null)
             {
                 inventory.selectedItem.Use(this);

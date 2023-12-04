@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: MediumQualityFood
   m_EditorClassIdentifier: 
   itemName: MediumQualityFood
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: ee901523b1222fa41b4bd3620c638849, type: 3}
+  prefab: {fileID: 0}
   isStackable: 1
   description: 
   foodType: 1

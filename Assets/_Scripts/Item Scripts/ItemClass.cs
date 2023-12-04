@@ -7,8 +7,8 @@ public class ItemClass : ScriptableObject
     public Sprite itemIcon;
     public GameObject prefab;
     public bool isStackable = true;
-    [TextArea(15, 20)]
-    public string description;
+    //[TextArea(15, 20)]
+    //public string description;
     //public int quantity;
 
     public virtual void Use(PlayerController caller)
