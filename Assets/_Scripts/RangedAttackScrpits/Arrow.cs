@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Enemy enemy = other.GetComponent<Enemy>();
+            EnemyContoller enemy = other.GetComponent<EnemyContoller>();
 
             if (enemy != null)
             {
