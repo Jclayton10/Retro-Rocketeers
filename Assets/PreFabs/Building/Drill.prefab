@@ -118,7 +118,7 @@ MonoBehaviour:
     quantity: 0
   - item: {fileID: 0}
     quantity: 0
-  buttonPopup: {fileID: 0}
+  buttonPopup: {fileID: 8338146955562998146}
   playerObj: {fileID: 0}
   interactionDistance: 6
   playerInDistance: 0

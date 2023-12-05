@@ -178,7 +178,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingItems: []
-  items: []
+  items:
+  - item: {fileID: 0}
+    quantity: 0
+  - item: {fileID: 0}
+    quantity: 0
+  - item: {fileID: 0}
+    quantity: 0
+  - item: {fileID: 0}
+    quantity: 0
+  - item: {fileID: 0}
+    quantity: 0
+  - item: {fileID: 0}
+    quantity: 0
   buttonPopup: {fileID: 2494177489964338519}
   playerObj: {fileID: 0}
   interactionDistance: 6
@@ -198,7 +210,7 @@ MonoBehaviour:
   itemRef: {fileID: 1544353084834742621}
   item:
     item: {fileID: 11400000, guid: d4c608900c660f24382c85172f1901fb, type: 2}
-    quantity: 0
+    quantity: 1
   delay: 5
   objectPrefab: {fileID: 919132149155446097, guid: fcc98137fcd8e7e488fb1a825fbb2383, type: 3}
   productionRadius: 6
@@ -369,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fcc98137fcd8e7e488fb1a825fbb2383, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.25
+      value: 1.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fcc98137fcd8e7e488fb1a825fbb2383, type: 3}
       propertyPath: m_LocalRotation.w

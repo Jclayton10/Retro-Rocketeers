@@ -30,6 +30,7 @@ public class InventoryManagement : MonoBehaviour
 
     private GameObject[] slots;
     private GameObject[] hotbarSlots;
+    [SerializeField] private GameObject[] craftingSlots;
 
     [SerializeField] private SlotClass movingSlot;
     [SerializeField] private SlotClass tempSlot;
@@ -51,7 +52,7 @@ public class InventoryManagement : MonoBehaviour
         inventoryManagement = this;
 
         slots = new GameObject[slotHolder.transform.childCount];
-        items = new SlotClass[slots.Length];
+        items = new SlotClass[slots.Length + craftingSlots.Length];
 
         hotbarSlots = new GameObject[hotbarSlotHolder.transform.childCount];
         for (int i = 0; i < hotbarSlots.Length; i++)
@@ -254,6 +255,36 @@ public class InventoryManagement : MonoBehaviour
                 hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = null;
                 hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
                 hotbarSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+            }
+        }
+
+        RefreshCraftingMenu();
+    }
+
+    public void RefreshCraftingMenu()
+    {
+        for (int i = 0; i < craftingSlots.Length; i++)
+        {
+            try
+            {
+                craftingSlots[i].transform.GetChild(0).GetComponent<Image>().enabled = true;
+                craftingSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = items[i + slots.Length].GetItem().itemIcon;
+
+                if (items[i + slots.Length].GetItem().isStackable)
+                {
+                    craftingSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = items[i + slots.Length].GetQuantity() + "";
+                }
+                else
+                {
+                    craftingSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+                }
+            }
+
+            catch
+            {
+                craftingSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                craftingSlots[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                craftingSlots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
             }
         }
     }
@@ -536,6 +567,13 @@ public class InventoryManagement : MonoBehaviour
             if (Vector2.Distance(slots[i].transform.position, Input.mousePosition) <= 32)
             {
                 return items[i];
+            }
+        }
+        for (int i = 0; i < craftingSlots.Length; i++)
+        {
+            if (Vector2.Distance(craftingSlots[i].transform.position, Input.mousePosition) <= 32)
+            {
+                return items[i + slots.Length];
             }
         }
         return null;
