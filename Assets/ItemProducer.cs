@@ -25,7 +25,7 @@ public class ItemProducer : MonoBehaviour
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, productionRadius);
         foreach (var hitCollider in hitColliders)
         {
-            if(hitCollider.tag == "Conveyor")
+            if(hitCollider.CompareTag("Conveyor"))
             {
                 Instantiate(objectPrefab, hitCollider.transform.position + conveyorBeltOffset, Quaternion.identity);
                 return;

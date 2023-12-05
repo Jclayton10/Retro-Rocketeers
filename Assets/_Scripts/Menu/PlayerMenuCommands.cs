@@ -14,6 +14,10 @@ public class PlayerMenuCommands : MonoBehaviour
     [SerializeField] private GameObject LeaveGroup;
     [SerializeField] private GameObject AudioGroup;
     [SerializeField] private GameObject ControlGroup;
+    [SerializeField] private GameObject InvPrompt;
+    [SerializeField] private GameObject BuildPrompt;
+    [SerializeField] private Sprite InvDefault;
+    [SerializeField] private Sprite BuildDefault;
 
     [SerializeField] private GameObject basiccam;
     [SerializeField] private GameObject attackcam;
@@ -150,6 +154,9 @@ public class PlayerMenuCommands : MonoBehaviour
 
     public void SaveControls()
     {
+        InvPrompt.GetComponent<Image>().sprite = InvDefault;
+        BuildPrompt.GetComponent<Image>().sprite = BuildDefault;
+
         GameMaster.Instance.MouseSensitiviy = MouseSlider.value;
 
         basiccam.GetComponent<CinemachineFreeLook>().m_XAxis.m_MaxSpeed = 300 * GameMaster.Instance.MouseSensitiviy;
@@ -169,6 +176,9 @@ public class PlayerMenuCommands : MonoBehaviour
 
     public void ResetAudio()
     {
+        InvPrompt.GetComponent<Image>().sprite = InvDefault;
+        BuildPrompt.GetComponent<Image>().sprite = BuildDefault;
+
         GameMaster.Instance.AudioMaster = 0.8f;
         GameMaster.Instance.AudioMusic = 0.8f;
         GameMaster.Instance.AudioSFX = 0.8f;

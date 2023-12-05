@@ -21,8 +21,6 @@ public class AchievementManager : MonoBehaviour
     public static int rockAchCount;
     public static int enemyAchCount;
 
-    private bool isActive;
-
     private void Start()
     {
         InitializeAchievements();
@@ -86,7 +84,6 @@ public class AchievementManager : MonoBehaviour
 
     IEnumerator ShowAchievement(Achievement achievement)
     {
-        isActive = true;
         achTitle.GetComponent<Text>().text = achievement.title;
         achDesc.GetComponent<Text>().text = achievement.description;
 
@@ -111,7 +108,6 @@ public class AchievementManager : MonoBehaviour
         }
         achTitle.GetComponent<Text>().text = "";
         achDesc.GetComponent<Text>().text = "";
-        isActive = false;
         achievement.displayed = true;
     }
 }

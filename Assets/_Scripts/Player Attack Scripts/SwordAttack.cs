@@ -18,6 +18,7 @@ public class SwordAttack : MonoBehaviour
             if (rb != null && enemy != null && !didHit)
             {
                 enemy.TakeDamage(attackDamage);
+                enemy.enemyHitSound.volume = GameMaster.Instance.AudioMaster * GameMaster.Instance.AudioSFX;
                 enemy.enemyHitSound.Play();
 
                 Vector3 knockbackDirection = (other.transform.position - transform.position).normalized;
@@ -25,11 +26,24 @@ public class SwordAttack : MonoBehaviour
                 didHit = true;
             }
         }
+        else if (other.CompareTag("Resource"))
+        {
+            ResourceBrain enemy = other.GetComponent<ResourceBrain>();
+
+            if (enemy != null && !didHit)
+            {
+                enemy.TakeDamage(attackDamage);
+                enemy.enemyHitSound.volume = GameMaster.Instance.AudioMaster * GameMaster.Instance.AudioSFX;
+                enemy.enemyHitSound.Play();
+
+                didHit = true;
+            }
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") || other.CompareTag("Resource"))
         {
             didHit = true;
         }
@@ -37,7 +51,7 @@ public class SwordAttack : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") || other.CompareTag("Resource"))
         {
             didHit = false;
         }

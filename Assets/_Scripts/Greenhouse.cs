@@ -41,15 +41,16 @@ public class Greenhouse : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && Current > 0)
+        if (other.CompareTag("Player") && Current > 0)
         {
             inv.Add(generated, Current);
             Current = 0;
         }
     }
+
     void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && Current > 0)
+        if (other.CompareTag("Player") && Current > 0)
         {
             inv.Add(generated, Current);
             Current = 0;

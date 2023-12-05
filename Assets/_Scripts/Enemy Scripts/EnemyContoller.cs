@@ -95,7 +95,7 @@ public class EnemyContoller : MonoBehaviour
             // Access the waveSpawner object
             waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
         }
-
+        enemyHitSound.Stop();
         Destroy(gameObject);
 
     }

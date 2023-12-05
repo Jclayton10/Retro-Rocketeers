@@ -14,6 +14,7 @@ TagManager:
   - Sword
   - IgnoreConveyerBelt
   - PlayerObj
+  - Resource
   layers:
   - Default
   - TransparentFX
