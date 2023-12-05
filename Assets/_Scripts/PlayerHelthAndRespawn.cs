@@ -14,6 +14,7 @@ public class PlayerHelthAndRespawn : MonoBehaviour
 
     private void Start()
     {
+        playerHealth = this;
         currentHealth = maxHealth;
         healthBarUI.SetMaxHealth(maxHealth);
     }

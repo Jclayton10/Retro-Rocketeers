@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         {
             if (inventory.selectedItem != null)
             {
-                inventory.selectedItem.Use(this);
+                inventory.selectedItem.Use();
 
                 //Heal();
             }

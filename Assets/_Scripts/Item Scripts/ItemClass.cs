@@ -7,11 +7,12 @@ public class ItemClass : ScriptableObject
     public Sprite itemIcon;
     public GameObject prefab;
     public bool isStackable = true;
+    public bool healer = false;
     //[TextArea(15, 20)]
     //public string description;
     //public int quantity;
 
-    public virtual void Use(PlayerController caller)
+    public virtual void Use()
     {
         Debug.Log("Used: Item");
     }

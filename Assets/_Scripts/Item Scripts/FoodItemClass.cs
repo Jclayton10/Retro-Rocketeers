@@ -7,13 +7,10 @@ public class FoodItemClass : ItemClass
     public FoodType foodType;
     public float healthRestored;
 
-    public override void Use(PlayerController caller)
+    public override void Use()
     {
-        base.Use(caller);
-        //Debug.Log("Eat: Food");
-        caller.inventory.UseSelected();
-        //PlayerHealth.Heal();
-
+        InventoryManagement.inventoryManagement.UseSelected();
+        PlayerHelthAndRespawn.playerHealth.Heal(Mathf.FloorToInt(healthRestored));
     }
 
     public enum FoodType
