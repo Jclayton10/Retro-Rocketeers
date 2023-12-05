@@ -138,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
                 if (Footstepcount <= 0 && (rb.velocity.x > 0.25f || rb.velocity.z > 0.25f))
                 {
                     Footstepcount = 0.25f;
+                    PlayerSounds.volume = GM.AudioMaster * GM.AudioSFX;
                     PlayerSounds.Play();
                 }
             }

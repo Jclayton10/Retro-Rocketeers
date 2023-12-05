@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 8940501807446909129}
   - component: {fileID: 1544353084834742621}
   - component: {fileID: 2447119033467035412}
+  - component: {fileID: 7738610798399847500}
   m_Layer: 0
   m_Name: GardenBuilding
   m_TagString: Untagged
@@ -203,6 +204,14 @@ MonoBehaviour:
   objectPrefab: {fileID: 919132149155446097, guid: fcc98137fcd8e7e488fb1a825fbb2383, type: 3}
   productionRadius: 6
   conveyorBeltOffset: {x: 0, y: 2.8, z: 0}
+--- !u!33 &7738610798399847500
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3536253759079854810}
+  m_Mesh: {fileID: 0}
 --- !u!1001 &6215389293712021893
 PrefabInstance:
   m_ObjectHideFlags: 0

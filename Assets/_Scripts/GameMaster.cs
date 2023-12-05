@@ -84,7 +84,7 @@ public class GameMaster : MonoBehaviour
         BuildModePressed = _buildmodeAction.WasPressedThisFrame();
         InvPressed = _invAction.WasPressedThisFrame();
         InteractPressed = _interactAction.WasPressedThisFrame();
-        SprintBeingPressed = _sprintAction.WasPressedThisFrame();
+        SprintBeingPressed = _sprintAction.IsPressed();
         SheathJustPressed = _sheathSwordAction.WasPressedThisFrame();
         RotateJustPressed = _rotateAction.WasPressedThisFrame();
         BuildJustPressed = _buildAction.WasPressedThisFrame();
