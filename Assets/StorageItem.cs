@@ -45,7 +45,6 @@ public class StorageItem : MonoBehaviour
     {
         for(int i = 0; i < items.Length; i++)
         {
-            Debug.Log(items[i]);
             if (items[i] == null)
                 return true;
 
@@ -71,6 +70,7 @@ public class StorageItem : MonoBehaviour
                 return;
             }
         }
+
         for (int i = 0; i < items.Length; i++)
         {
             if (items[i] == null)

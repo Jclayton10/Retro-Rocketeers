@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91c7ac0b09b50b4e9b5ff96da7fe21c, type: 3}
+  m_Name: Drill
+  m_EditorClassIdentifier: 
+  buildOffset: {x: 0, y: 1, z: 0}
+  loc: {x: 0, y: 0}
+  keyLink: 53
+  placedPrefab: {fileID: 3309483179871580010, guid: d9e4e1749fa8f304a887ebb5870b1192, type: 3}
+  renderPrefab: {fileID: 1113926664928437132, guid: 5bc9a1a1d2a6fd04db89ddc91c14d1df, type: 3}
+  itemsThatCanBeBuiltInSlot: []
