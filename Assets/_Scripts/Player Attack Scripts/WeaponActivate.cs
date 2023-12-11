@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class WeaponActivate : MonoBehaviour
 {
-    public Animator playerAttack;
+    public static WeaponActivate weaponController;
+    public Animator playerAttackAim;
     public GameObject weaponHoslter;
     public GameObject weaponGrip;
 
-    public AudioSource weaponSoundSource;
-    public AudioClip weaponShealthSound;
-    public AudioClip weaponDrawSound;
-
-
-
-
+   
     private bool isWeapomDrawn;
     private bool isWeaponShethed;
+    public bool isAttacking;
 
     private void Awake()
     {
+        weaponController = this;
         weaponGrip.SetActive(false);
         isWeapomDrawn = false;
         isWeaponShethed = true;
@@ -43,25 +40,32 @@ public class WeaponActivate : MonoBehaviour
 
             weaponHoslter.SetActive(false);
             weaponGrip.SetActive(true);
-            playerAttack.SetTrigger("Withdraw");
+            playerAttackAim.SetTrigger("Withdraw");
+            isAttacking = false;
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.SheathJustPressed)
         {
-            playerAttack.SetTrigger("Sheathing");
+            playerAttackAim.SetTrigger("Sheathing");
 
             isWeapomDrawn = false;
             isWeaponShethed = true;
 
             weaponHoslter.SetActive(true);
             weaponGrip.SetActive(false);
+            isAttacking = false;
+            
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.AttackJustPressed)
         {
-            isWeapomDrawn = true;
-            weaponGrip.SetActive(true);
-            weaponHoslter.SetActive(false);
-            playerAttack.SetTrigger("Attack");
-
+           isAttacking = true;
+           playerAttackAim.SetTrigger("Attack");
         }
+        
+       
+     
     }
+   
+    
+   
+    
 }

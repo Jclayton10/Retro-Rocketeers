@@ -395,7 +395,9 @@ public class StorageHandler : MonoBehaviour
             if (Vector2.Distance(storageSlots[i].transform.position, Input.mousePosition) <= 32)
             {
                 Debug.Log($"Slot: Storage: {i}");
+                
                 return itemsInStorage[i];
+                
             }
         }
 

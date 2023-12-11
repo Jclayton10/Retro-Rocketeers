@@ -17,7 +17,8 @@ public class EnemyContoller : MonoBehaviour
     public float attackRange;
     public float rangeOfRandomPointRadius;
 
-    private bool isAttacking;
+    public bool isAttaking = false;
+    
     private bool isMovingTowardsGoal = false;
     private Vector3 currentDestination;
 
@@ -28,6 +29,7 @@ public class EnemyContoller : MonoBehaviour
     public AudioSource enemyHitSound;
     public int damageAmount = 10;
     public int currentHealth = 100;
+    public SphereCollider enemySphereCollider;
     private int maxHealth;
 
     [Header("Enemy HealthBar Varibles")]
@@ -42,8 +44,7 @@ public class EnemyContoller : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
         goal = GameObject.FindWithTag("PlayerObj");
-        // Eenmy 
-
+        
 
     }
     // Start is called before the first frame update
@@ -166,18 +167,20 @@ public class EnemyContoller : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, goal.transform.position) <= attackRange)
         {
-            // Stop the enemy's movement.
+            // Stop the enemy's movement when in range of player and attack the player.
             agent.isStopped = true;
             anim.SetBool("isMoving", false);
+            isAttaking = true;
             anim.SetBool("isAttacking", true);
-
-
+            
         }
-        else
+        else if (Vector3.Distance(transform.position, goal.transform.position) >= attackRange)
         {
             anim.SetBool("isAttacking", false);
             agent.isStopped = false;
             anim.SetBool("isMoving", true);
+            isAttaking = false;
+            
         }
 
     }//end of enemy movment stuff

@@ -709,6 +709,7 @@ GameObject:
   - component: {fileID: 3352280646095720933}
   - component: {fileID: 6759831398917819528}
   - component: {fileID: 1840284381531440840}
+  - component: {fileID: 7503968177327044740}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -773,12 +774,14 @@ MonoBehaviour:
   centrePoint: {fileID: 4566909804244024723}
   speed: 5
   maxRangeToPlayer: 10
-  attackRange: 2
+  attackRange: 2.5
   rangeOfRandomPointRadius: 20
+  isAttaking: 0
   agent: {fileID: 0}
   enemyHitSound: {fileID: 1840284381531440840}
-  damageAmount: 10
+  damageAmount: 5
   currentHealth: 100
+  enemySphereCollider: {fileID: 7503968177327044740}
   enemyHealthSlider: {fileID: 6543542902361193761}
 --- !u!195 &1322024308234217088
 NavMeshAgent:
@@ -946,6 +949,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &7503968177327044740
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566909804244024723}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.028916305
+  m_Center: {x: -8.525105e-18, y: 0.020748317, z: -0.004040158}
 --- !u!1 &4892161724348889542
 GameObject:
   m_ObjectHideFlags: 0

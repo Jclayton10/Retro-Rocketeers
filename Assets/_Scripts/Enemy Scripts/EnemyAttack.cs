@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    private bool hasDealtDamage = false;
+  
+    EnemyContoller enemyControl;
 
+    
+    private void Awake()
+    {
+        enemyControl = FindFirstObjectByType<EnemyContoller>();
+    }
+  
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerObj") && !hasDealtDamage)
+        if (other.CompareTag("PlayerObj") && enemyControl.isAttaking)
         {
             PlayerHelthAndRespawn playerHelth = other.GetComponent<PlayerHelthAndRespawn>();
             playerHelth.TakeDamge(EnemyContoller.enemyContoller.damageAmount);
+            enemyControl.isAttaking = false;
         }
 
     }
 
     private void OnTriggerExit(Collider other)
     {
+        Wait();
         if (other.CompareTag("PlayerObj"))
         {
-            hasDealtDamage = false;
+            enemyControl.isAttaking = true;
         }
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2.0f);
     }
 }
