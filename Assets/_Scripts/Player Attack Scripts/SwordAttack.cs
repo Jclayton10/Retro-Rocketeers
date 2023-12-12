@@ -6,7 +6,13 @@ public class SwordAttack : MonoBehaviour
 {
     public int attackDamage = 10;
     public int knockbackForce = 5;
-    private bool didHit = false;
+
+    WeaponActivate weaponContorl;
+
+    private void Awake()
+    {
+        weaponContorl = FindFirstObjectByType<WeaponActivate>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,45 +21,30 @@ public class SwordAttack : MonoBehaviour
             EnemyContoller enemy = other.GetComponent<EnemyContoller>();
             Rigidbody rb = other.GetComponentInParent<Rigidbody>();
 
-            if (rb != null && enemy != null && !didHit)
+            if (rb != null && enemy != null &&enemy.enemySphereCollider.isTrigger&&weaponContorl.isAttacking)
             {
+            
                 enemy.TakeDamage(attackDamage);
                 enemy.enemyHitSound.volume = GameMaster.Instance.AudioMaster * GameMaster.Instance.AudioSFX;
                 enemy.enemyHitSound.Play();
 
-                Vector3 knockbackDirection = (other.transform.position - transform.position).normalized;
-                rb.AddForce(knockbackDirection * knockbackForce, ForceMode.Impulse);
-                didHit = true;
             }
         }
         else if (other.CompareTag("Resource"))
         {
-            ResourceBrain enemy = other.GetComponent<ResourceBrain>();
-
-            if (enemy != null && !didHit)
+            ResourceBrain resb = other.GetComponent<ResourceBrain>();
+            EnemyContoller enemy = other.GetComponent<EnemyContoller>();
+            if (resb != null && enemy.enemySphereCollider.isTrigger&&weaponContorl.isAttacking)
             {
-                enemy.TakeDamage(attackDamage);
-                enemy.enemyHitSound.volume = GameMaster.Instance.AudioMaster * GameMaster.Instance.AudioSFX;
-                enemy.enemyHitSound.Play();
+                resb.TakeDamage(attackDamage);
+                resb.enemyHitSound.volume = GameMaster.Instance.AudioMaster * GameMaster.Instance.AudioSFX;
+                resb.enemyHitSound.Play();
 
-                didHit = true;
             }
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Enemy") || other.CompareTag("Resource"))
-        {
-            didHit = true;
-        }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Enemy") || other.CompareTag("Resource"))
-        {
-            didHit = false;
-        }
-    }
+  
+    
 }

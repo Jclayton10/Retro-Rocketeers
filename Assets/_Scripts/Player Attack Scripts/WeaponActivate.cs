@@ -8,11 +8,11 @@ public class WeaponActivate : MonoBehaviour
     public Animator playerAttackAim;
     public GameObject weaponHoslter;
     public GameObject weaponGrip;
-
+    public bool isAttacking= false;
+    bool isCooldown = false;
    
     private bool isWeapomDrawn;
     private bool isWeaponShethed;
-    public bool isAttacking;
 
     private void Awake()
     {
@@ -41,7 +41,6 @@ public class WeaponActivate : MonoBehaviour
             weaponHoslter.SetActive(false);
             weaponGrip.SetActive(true);
             playerAttackAim.SetTrigger("Withdraw");
-            isAttacking = false;
         }
         else if (isWeapomDrawn == true && GameMaster.Instance.SheathJustPressed)
         {
@@ -52,20 +51,22 @@ public class WeaponActivate : MonoBehaviour
 
             weaponHoslter.SetActive(true);
             weaponGrip.SetActive(false);
-            isAttacking = false;
             
         }
-        else if (isWeapomDrawn == true && GameMaster.Instance.AttackJustPressed)
+        else if (isWeapomDrawn == true && GameMaster.Instance.AttackJustPressed&& !isAttacking&&!isCooldown)
         {
-           isAttacking = true;
            playerAttackAim.SetTrigger("Attack");
+            isAttacking = true;
+            StartCoroutine(Cooldown());
         }
-        
        
-     
+       
     }
-   
-    
-   
-    
+    IEnumerator Cooldown()
+    {
+        isCooldown = true;
+        yield return new WaitForSeconds(1.0f);
+        isCooldown = false;
+        isAttacking=false;
+    }
 }
